@@ -19,6 +19,10 @@ relative_links:
   collections: true
 include:
   - "*.md"
+  - docs/horses.md
+  - docs/horse-buying-guide.md
+  - docs/horse-buying-guide-family.md
+  - docs/forged-arrow-eval.md
   - "CONTRIBUTING.md"
   - "README.md"
   - "LICENSE.md"
