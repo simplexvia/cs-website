@@ -1,6 +1,14 @@
-theme: jekyll-theme-primer
+title: Simplex Via LLC Website
+description: Documentation for Simplex Via website 
+baseurl: "/cs-website"
+url: "https://simplexvia.github.io" 
+theme: minima
+# theme: jekyll-theme-primer
 markdown: GFM
 plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-relative-links
   - jekyll-github-metadata
   - jekyll-seo-tag
   - jekyll-coffeescript
@@ -12,3 +20,13 @@ plugins:
   - jekyll-readme-index
   - jekyll-default-layout
   - jekyll-titles-from-headings
+relative_links:
+  enabled: true
+  collections: true
+include:
+  - "*.md"
+  - "CONTRIBUTING.md"
+  - "README.md"
+  - "LICENSE.md"
+permalink: pretty
+source: docs
