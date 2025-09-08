@@ -1,16 +1,15 @@
-
 # Materials Request Operating Procedure
 
 ## Summary Table
-| Section            | Key Points                              | Responsible Party       | Timeline        |
-|--------------------|-----------------------------------------|------------------------|-----------------|
-| Identify Need      | Check inventory to avoid duplicates     | Requester              | Before request  |
-| Submit Request     | Complete Materials Request Form         | Requester              | As needed       |
-| Department Approval| Review and approve/reject request       | Department Manager     | 24-48 hours     |
-| Procurement Review | Verify budget, source suppliers, PO     | Procurement Manager    | 2-5 days        |
-| Order Fulfillment  | Inspect goods, update inventory         | Procurement/Inventory   | Upon receipt    |
-| Payment            | Process invoice, retain records         | Finance Team           | Post-delivery   |
-| Feedback           | Provide feedback, annual review         | Requester/Procurement  | Ongoing/Annual  |
+| Section              | Key Points                                  | Responsible Party       | Timeline       |
+|----------------------|---------------------------------------------|------------------------|----------------|
+| Identify Need        | Check inventory to avoid duplicates         | Requester              | Before request |
+| Submit Request       | Complete Materials Request Form             | Requester              | As needed      |
+| Department Approval  | Review and approve/reject request           | Department Manager     | 24-48 hours    |
+| Procurement Review   | Verify budget, source suppliers, issue PO   | Procurement Manager    | 2-5 days       |
+| Order Fulfillment    | Inspect goods, update inventory             | Procurement/Inventory Clerk | Upon receipt   |
+| Payment              | Process invoice, retain records             | Finance Team           | Post-delivery  |
+| Feedback             | Provide process feedback, annual review     | Requester/Procurement Manager | Ongoing/Annual |
 
 ## 1. Purpose
 This procedure standardizes the process for requesting materials in a small business with fewer than 100 employees to ensure efficient procurement, cost control, and timely fulfillment while minimizing errors and maintaining accurate inventory records.
@@ -70,12 +69,12 @@ Applies to all employees requesting materials (e.g., office supplies, raw materi
 - **Training**: Included in employee onboarding.
 
 ## 6. Potential Issues and Resolutions
-| Issue                     | Resolution                                      |
-|---------------------------|-------------------------------------------------|
-| Delayed approvals         | Set reminders; escalate after 72 hours.         |
-| Supplier delays           | Use backup suppliers; communicate impacts.      |
-| Budget overruns           | Suggest alternatives; negotiate terms.          |
-| Incorrect items           | Return immediately; document for vendor review. |
+| Issue                | Resolution                                          |
+|----------------------|-----------------------------------------------------|
+| Delayed approvals    | Set reminders; escalate after 72 hours.             |
+| Supplier delays      | Use backup suppliers; communicate impacts.          |
+| Budget overruns      | Suggest alternatives; negotiate terms.              |
+| Incorrect items      | Return immediately; document for vendor review.     |
 
 ## Appendix A: Materials Request Form Template
 **Materials Request Form**
