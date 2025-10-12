@@ -1,12 +1,8 @@
 
-# Horsemanship  Guides
+# Horsemanship Guides
 
 -   [Horse Buyer's  Guide for Reined Cow Horse, Versatility Ranch Horse, and Cowboyin’ horses V2](./horse-buying-guide-v2.md)
 -   [Horse Selection for Reined Cow Horse, Versatility Ranch Horse, and Cowboyin](./horse-buying-guide.md)
 -   [Horse Selection for Reined Cow Horse, Versatility Ranch Horse, Cowboying and Family Use](./horse-buying-guide-family.md)
 -   [Example - Evaluation Against  Criteria - Forged Arrow](./forged-arrow-eval.md)
 
-
-# Other example Guides
-
--   [Example Materials Request Operating Procedure](./material-request-sop.md)
