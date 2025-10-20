@@ -14,6 +14,7 @@
 7. [Recommendations](#recommendations)
    - [Testing](#testing)
    - [Maintenance Plan (7-Day Schedule)](#maintenance-plan-7-day-schedule)
+   - [Turn-Around Horse Assessment](#turn-around-horse-assessment)
    - [Training Timeline](#training-timeline)
 8. [References](#references)
 
@@ -152,12 +153,38 @@ GLOREYOUS TOMCAT is an **excellent multi-use horse** with performance pedigree e
 **Total**: 2.5 hours/week  
 **Key**: **Maximum 2 days idle** (fresh on 3rd day)
 
+### Turn-Around Horse Assessment
+**Question**: Would using GLOREYOUS TOMCAT as a **turn-around horse** (lesson/teaching horse rotated among multiple riders) be good for the maintenance plan?
+
+| Assessment | Rating | Details |
+|------------|--------|---------|
+| **Suitability** | **Excellent** | Perfect fit for maintenance needs |
+| **Benefits** | | |
+| - **Idle Prevention** | ✓ | Multiple riders = daily work |
+| - **Freshness Management** | ✓ | No 3-day idle possible |
+| - **Trail Calmness** | ✓ | Safe for beginner students |
+| - **Energy Level** | ✓ | Freshness = engaging lessons |
+| **Considerations** | | |
+| - **Beginner Safety** | ✓ | Slow/calm trails = ideal |
+| - **Training Level** | ⚠ | Intermediate riders for reining |
+| - **Scheduling** | ✓ | Easy rotation among students |
+
+**Updated Maintenance with Turn-Around**:
+| Rider Type | Days/Week | Duration | **Idle Prevention** |
+|------------|-----------|----------|---------------------|
+| **Beginners (Family)** | Mon, Fri | 25-30 min | Trail rides |
+| **Intermediate Students** | Tue, Thu | 20-30 min | Arena work |
+| **Advanced (NRCHA)** | Sat | 45 min | Pattern practice |
+| **Result** | **7 days/week** | **2.5-3 hrs** | **Zero idle risk** |
+
+**Verdict**: **YES - Excellent Strategy**. Turn-around use **eliminates idle concerns** while leveraging trail calmness for beginners and pedigree for advanced riders. **Recommended primary maintenance method**.
+
 ### Training Timeline
 - **Week 1**: Vet exam + baseline rides + **2-day idle test**
-- **Month 1**: Reining polish (if NRCHA/VRH)
-- **Ongoing**: **Max 2 days idle** routine for all uses
+- **Month 1**: Reining polish (if NRCHA/VRH) + **student rotation setup**
+- **Ongoing**: **Turn-around schedule** (max 2 days idle)
 
-**GLOREYOUS TOMCAT**: Excellent multi-use horse for active owners. Perfect balance of performance pedigree and trail reliability.
+**GLOREYOUS TOMCAT**: Excellent multi-use horse for active owners. **Turn-around use = perfect maintenance solution**.
 
 ---
 
