@@ -26,7 +26,7 @@
 - **Color**: Brown
 - **Year of Birth**: 2018 (7 years old as of October 12, 2025)
 - **Registration**: #5928358
-- **Known Skills/Temperament**: Bred for performance (ranch work, cow sense); calm and slow on trails; needs regular work – fresh if left >3 days without exercise. Responsive and trainable, with performance-driven energy that requires routine to maintain calmness.
+- **Known Skills/Temperament**: Bred for performance (ranch work, cow sense); calm and slow on trails; needs regular work – **no more than 2 days idle, will be fresh on the 3rd day**. Responsive and trainable, with performance-driven energy that requires routine to maintain calmness.
 
 ## Pedigree Summary
 The pedigree emphasizes cutting and cow horse lines with strong performance influences:
@@ -46,8 +46,8 @@ GLOREYOUS TOMCAT is an **excellent multi-use horse** with performance pedigree e
 | Strengths | Challenges |
 |-----------|------------|
 | AQHA gelding, 7 years | Regular work needed |
-| Exceptional cow sense | Confirm reining/doctoring |
-| Trail proven (calm/slow) | - |
+| Exceptional cow sense | **Fresh on 3rd day (max 2 days idle)** |
+| Trail proven (calm/slow) | Confirm reining/doctoring |
 | Trainable temperament | - |
 
 ## Detailed Evaluation
@@ -110,13 +110,13 @@ GLOREYOUS TOMCAT is an **excellent multi-use horse** with performance pedigree e
 | Skills | Trail proven + basic riding | None |
 
 **Suitability**: **Strong**  
-**Training Needed**: Weekly routine
+**Training Needed**: Weekly routine (**max 2 days idle**)
 
 ## Comparison with Previous Horses
 
 | Horse | NRCHA | VRH | Cowboying | Family Use | Maintenance | Differentiator |
 |-------|-------|-----|-----------|------------|-------------|----------------|
-| **GLOREYOUS TOMCAT** | **Excellent** | **Excellent** | **Excellent** | **Strong** | 3-day work | Trail calm + pedigree |
+| **GLOREYOUS TOMCAT** | **Excellent** | **Excellent** | **Excellent** | **Strong** | **Max 2 days idle** | Trail calm + pedigree |
 | Boogers Fight Fire | Excellent | Excellent | Strong | Moderate | Low | Reining edge |
 | Fiestas Eat My Dust | Strong | Strong | Strong | Moderate | Low | Cutting focus |
 | Little Dry Starlight | Strong | Strong | Strong | **Strong** | Low | Low-maintenance |
@@ -126,35 +126,36 @@ GLOREYOUS TOMCAT is an **excellent multi-use horse** with performance pedigree e
 
 | Category | Rating | Reason | Training Needed | Maintenance |
 |----------|--------|--------|-----------------|-------------|
-| **NRCHA** | **Excellent** | Dominant cow/herd work | 2–4 months reining | Routine |
-| **VRH** | **Excellent** | All events + trail proven | 1–2 months polish | Routine |
-| **Cowboying** | **Excellent** | Cattle work + ranch steady | None | Daily ideal |
-| **Family Use** | **Strong** | Trail safe + manageable energy | Weekly routine | 3-day minimum |
+| **NRCHA** | **Excellent** | Dominant cow/herd work | 2–4 months reining | **Max 2 days idle** |
+| **VRH** | **Excellent** | All events + trail proven | 1–2 months polish | **Max 2 days idle** |
+| **Cowboying** | **Excellent** | Cattle work + ranch steady | None | **Max 2 days idle** |
+| **Family Use** | **Strong** | Trail safe + manageable energy | Weekly routine | **Max 2 days idle** |
 
 ## Recommendations
 
 ### Testing
-- Verify trail behavior with 3-day idle test
+- Verify trail behavior with **2-day idle test** (confirm fresh on 3rd day)
 - Reining footage review
 - Veterinary soundness exam
 
 ### Maintenance Plan (7-Day Schedule)
-| Day | Activity | Duration |
-|-----|----------|----------|
-| Mon | Trail ride | 30 min |
-| Tue | Arena walk/trot | 20 min |
-| Wed | REST | - |
-| Thu | Light work | 30 min |
-| Fri | Trail ride | 25 min |
-| Sat | Group ride | 45 min |
-| Sun | REST | - |
+| Day | Activity | Duration | **Purpose** |
+|-----|----------|----------|-------------|
+| Mon | Trail ride | 30 min | Prevent 3rd day freshness |
+| Tue | Arena walk/trot | 20 min | Maintain calmness |
+| **Wed** | REST | - | **Max idle day** |
+| Thu | Light work | 30 min | Reset energy |
+| Fri | Trail ride | 25 min | Family use |
+| Sat | Group ride | 45 min | Bonding |
+| **Sun** | REST | - | **Max idle day** |
 
-**Total**: 2.5 hours/week
+**Total**: 2.5 hours/week  
+**Key**: **Maximum 2 days idle** (fresh on 3rd day)
 
 ### Training Timeline
-- **Week 1**: Vet exam + baseline rides
+- **Week 1**: Vet exam + baseline rides + **2-day idle test**
 - **Month 1**: Reining polish (if NRCHA/VRH)
-- **Ongoing**: 3-day routine for all uses
+- **Ongoing**: **Max 2 days idle** routine for all uses
 
 **GLOREYOUS TOMCAT**: Excellent multi-use horse for active owners. Perfect balance of performance pedigree and trail reliability.
 
