@@ -1,7 +1,8 @@
 
 # Horses 
 
--   [GLOREYOUS TOMCAT](https://quarterhorseresource.com/home/6973679/pedigree)
+- [GLOREYOUS TOMCAT Pedigree](https://quarterhorseresource.com/home/6973679/pedigree)
+- [Gloreyous Tomcat Evaluation Report](gloreyous-tomcat-eval.md)
 
 # Horsemanship Guides
 
