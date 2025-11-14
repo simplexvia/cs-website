@@ -1,0 +1,27 @@
+# Terraform/OpenTofu - Execution OSS Tools Comparison Guide
+
+This guide provides a structured comparison of leading **open-source tools** for executing, orchestrating, and managing **Terraform** or **OpenTofu** workflows in enterprise and DevOps environments. All tools support **GitOps** principles (PR-triggered plans, drift detection, and Git as the source of truth). The table is sorted by **CNCF status** (Graduated → Sandbox → No) and then **community size** (descending).
+
+---
+
+### Comparison Table
+
+| CNCF Project       | Community Size                          | Tool                  | Learning Curve | GitOps Support                                                                 | Pros                                                                 | Cons                                                                 |
+|--------------------|-----------------------------------------|-----------------------|----------------|-------------------------------------------------------------------------------|----------------------------------------------------------------------|----------------------------------------------------------------------|
+| **Yes (Graduated)** | Large (10.8k+ stars, 3k+ contributors)  | **Crossplane** (w/ provider-terraform) | High          | Yes: Declarative K8s resources with Git sync via ArgoCD/Flux; auto-reconciliation for Terraform modules as custom resources. | - Kubernetes-native; declarative and composable for multi-cloud IaC.<br>- Extends Terraform for custom resources without full replacement; hybrid support.<br>- Strong for platform teams with K8s; auto-healing and RBAC via Kubernetes. | - Requires Kubernetes cluster (overkill if not already using it).<br>- Steep learning curve for non-K8s teams; provider installs can overload API servers.<br>- No native "plan" preview for Terraform runs; riskier for critical infra. |
+| **Yes (Sandbox)**  | Large (~5.5k stars, 200+ contributors)  | **Atlantis**         | Medium        | Yes: PR-based automation with webhooks for plan/apply; integrates with GitHub/GitLab for reviews and drift prevention. | - Free and open-source; no licensing costs.<br>- Automates plan/apply on PRs with diff comments for easy reviews.<br>- Flexible integrations with security tools (e.g., tfsec, Checkov) and VCS like GitHub/GitLab.<br>- Strong GitOps focus, reduces local runs and drift. | - Scaling challenges in large orgs (e.g., slow for complex plans, resource-intensive servers).<br>- Limited built-in policy enforcement; relies on external tools.<br>- Requires self-management of the server. |
+| **No**             | Medium (~1.5k stars, 67+ contributors)  | **Digger**           | Low           | Yes: CI/CD orchestration in GitHub Actions; dynamic PR locks, drift detection, and auto-project generation for monorepos. | - Fully open-source and free; "bring your own compute" for cost control.<br>- Fast execution (up to 30x faster via Golang); PR-level locks prevent conflicts.<br>- RBAC via OPA for fine-grained access; dynamic project detection.<br>- Seamless GitHub Actions integration without vendor lock-in. | - Primarily optimized for GitHub (less flexible for other CI/CD).<br>- Newer tool, so smaller community and fewer integrations compared to Atlantis.<br>- Advanced features (e.g., drift detection) may require pro upgrades. |
+| **No**             | Medium (~800 stars, 30+ contributors)   | **Terrateam**        | Low           | Yes: Native GitOps with webhook triggers; enforces branch/review/merge/deploy for IaC, including short-lived credentials. | - Self-hosted and scalable for enterprise; webhook-based for real-time triggers.<br>- Handles large monorepos well; open-source core with extensibility.<br>- Focus on security and compliance in orchestration. | - Less mature OSS version; some features behind paid tiers.<br>- Steeper learning curve for non-webhook setups.<br>- Limited visibility in comparisons; fewer user reviews. |
+| **No**             | Small (~400 stars, 50+ contributors)    | **Terrakube**        | Medium        | Yes: VCS integration for remote runs on PRs; supports workspaces and API-driven workflows mimicking Terraform Cloud. | - Direct Terraform Cloud drop-in with remote state, workspaces, and API.<br>- Supports OpenTofu natively; self-hosted for data sovereignty.<br>- VCS integration and collaboration features for teams. | - Smaller community and adoption; limited enterprise case studies.<br>- Documentation and support gaps compared to more mature tools.<br>- Potential setup complexity for high-scale environments. |
+
+---
+
+> **Notes**:  
+> - *Terrakube applied to CNCF Sandbox but was declined; it is not part of CNCF.*  
+> - Community metrics are approximate as of **November 2025** and based on primary GitHub repositories.  
+> - **Learning Curve** ratings:  
+>   - **Low**: Familiar CI/PR workflows (e.g., GitHub Actions).  
+>   - **Medium**: Requires configuration but accessible to Terraform users.  
+>   - **High**: Requires deep Kubernetes or systems knowledge.  
+
+For production use, prioritize tools with **CNCF backing** and **large communities** (e.g., Crossplane, Atlantis) unless specific needs (e.g., GitHub-native, low overhead) favor newer alternatives like Digger or Terrateam.

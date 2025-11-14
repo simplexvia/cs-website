@@ -7,5 +7,5 @@
 </div>
 
 
-
-[Resources](./horse.md)
+[Horseman Resources](./horse.md)
+[Cloud Native Tools](./cn-tools.md)
