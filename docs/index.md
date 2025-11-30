@@ -5,7 +5,7 @@
 <style>
 body{margin:60px 40px;background:#fff;font:18px/1.6 system-ui;color:#24292e}
 h1{position:absolute;bottom:10px;right:20px;font:5rem/1 system-ui;color:#0969da;opacity:.1}
-h2{margin:50px 0 10px;font:2.2rem system-ui}
+h2{margin:50px 0 10px;font:1,5rem system-ui}
 a{color:#0969da}
 </style>
 </head>
@@ -19,8 +19,8 @@ a{color:#0969da}
 
   <h2>Resource</h2>
   <ul>
-    <li><a href="/cloudnative-tools/cn-tools.md">Cloud Native Tools Resources</a></li>
-    <li><a href="/horseman/horse.md">Horseman Resources</a></li>
+    <li><a href="/cloudnative-tools/index.md">Cloud Native Tools Resources</a></li>
+    <li><a href="/horseman/index.md">Horseman Resources</a></li>
   </ul>
 </body>
 </html>
