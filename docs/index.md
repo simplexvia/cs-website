@@ -19,8 +19,8 @@ a{color:#0969da}
 
   <h2>Resource</h2>
   <ul>
-    <li><a href="./cn-tools.md">Cloud Native Tools Resources</a></li>
-    <li><a href="./horse.md">Horseman Resources</a></li>
+    <li><a href="/cloudnative-tools/cn-tools.md">Cloud Native Tools Resources</a></li>
+    <li><a href="/horseman/horse.md">Horseman Resources</a></li>
   </ul>
 </body>
 </html>
