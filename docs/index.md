@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <title>XYX</title>
@@ -24,3 +23,7 @@ a{color:#0969da}
   </ul>
 </body>
 </html>
+
+### Resources
+- [Cloud Native Tools Resources](/cloudnative-tools/index.md)
+- [Horseman Resources](/horseman/index.md)
