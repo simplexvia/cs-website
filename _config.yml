@@ -21,10 +21,17 @@ relative_links:
   collections: true
 include:
   - "*.md"
-  - docs/horses.md
-  - docs/horse-buying-guide.md
-  - docs/horse-buying-guide-family.md
-  - docs/forged-arrow-eval.md
+  - docs/horseman/index.md
+  - docs/horseman/horse-corerction-guide.md
+  - docs/horseman/gloreyous-tomcat-eval.md
+  - docs/horseman/horse-buying-guide-v2.md
+  - docs/horseman/horse-buying-guide-family.md
+  - docs/horseman/forged-arrow-eval.md
+  - docs/horseman/horse-buying-guide.md
+  - docs/cloudnative-tools/index.md
+  - docs/cloudnative-tools/jenkins-upgrade-triage-guide.md
+  - docs/cloudnative-tools/oss-tf-execution-slides.md
+  - docs/cloudnative-tools/oss-tf-execution-comparison.md
   - "CONTRIBUTING.md"
   - "README.md"
   - "LICENSE.md"
