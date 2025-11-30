@@ -15,15 +15,9 @@ a{color:#0969da}
     </div>
   
   <br><br><br><br>
-
-  <h2>Resource</h2>
-  <ul>
-    <li><a href="/cloudnative-tools/index.md">Cloud Native Tools Resources</a></li>
-    <li><a href="/horseman/index.md">Horseman Resources</a></li>
-  </ul>
 </body>
 </html>
 
 ### Resources
-- [Cloud Native Tools Resources](/cloudnative-tools/index.md)
-- [Horseman Resources](/horseman/index.md)
+- [Cloud Native Tools Resources](./cn-tools.md)
+- [Horseman Resources](./horse.md)
