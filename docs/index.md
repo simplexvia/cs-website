@@ -3,10 +3,10 @@
 <head>
 <title>XYX</title>
 <style>
-body{margin:50px;background:#fafafa;font:18px/1.6 Arial;color:#24292e}
-h1{position:absolute;bottom:0;right:0;font:4rem/1 Arial;color:#0366d6;opacity:.15}
-h2{margin:40px 0 8px}
-a{color:#0366d6}
+body{margin:60px 40px;background:#fff;font:18px/1.6 system-ui;color:#24292e}
+h1{position:absolute;bottom:10px;right:20px;font:5rem/1 system-ui;color:#0969da;opacity:.1}
+h2{margin:50px 0 10px;font:2.2rem system-ui}
+a{color:#0969da}
 </style>
 </head>
 <body>
