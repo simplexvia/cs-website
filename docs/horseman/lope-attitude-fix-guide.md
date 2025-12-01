@@ -6,7 +6,7 @@
 1. [The Horse We’re Talking About](#the-horse-were-talking-about)  
 2. [The Original Question](#the-original-question)  
 3. [Core Answer – What to Do in the Moment](#core-answer--what-to-do-in-the-moment)  
-4. [Common Mistakes That Create the Problem (with fixes)](#common-mistakes-that-create-the-problem)  
+4. [Common Mistakes That Create the Problem (full detail)](#common-mistakes-that-create-the-problem)  
 5. [Everyday Mistakes That Keep It Alive](#everyday-mistakes-that-keep-it-alive)  
 6. [How to Push from the Hindquarters First (fix for #10)](#how-to-push-from-the-hindquarters-first)  
 7. [Golden Rules (Never Break)](#golden-rules-never-break)  
@@ -17,7 +17,7 @@
 - Finished ranch versatility / ranch riding horse  
 - Trained through the bridle  
 - Normally ridden/shown in a correction bit  
-→ Attitude at the lope departure is almost always rider error or subtle pain.
+→ Any head-shake, tail-wring, or mini-buck at the lope departure is almost always rider-induced or subtle pain.
 
 ### The Original Question
 > “As a horseman, when putting a horse into a lope the horse initially has some attitude or not focused on the rider where it may shake its head or do a little buck. How should the horseman respond in those situations?”
@@ -39,20 +39,20 @@
 - **Option 1** (fastest): rapid trot–lope–trot or tight figure-8s until he begs to be good  
 - **Option 2**: one-rein disengage hindquarters → send straight back into lope
 
-### Common Mistakes That Create the Problem (with fixes)
+### Common Mistakes That Create the Problem (full detail)
 
-| # | Mistake                                      | Why it creates attitude                              | Immediate Fix                                                                                  |
-|---|----------------------------------------------|-------------------------------------------------------|------------------------------------------------------------------------------------------------|
-| 1 | Leaning forward at the cue                   | Drives weight onto forehand                           | Sit tall, “grow taller” the instant you ask. Video yourself.                                   |
-| 2 | Accepting first stride hollow                | Teaches protest is acceptable                         | If first stride isn’t round → down-transition and re-ask until perfect. Zero tolerance.       |
-| 3 | Holding two tight reins while asking         | Traps shoulders                                       | Light inside rein, supportive outside rein. Cue with seat/legs first.                         |
-| 4 | Asking from hollow trot                      | Already on forehand                                   | 50–100 perfect trot–walk–trot first.                                                           |
-| 5 | Always same corner/spot                      | Anticipation                                          | Randomize every departure for 30 days.                                                         |
-| 6 | Letting him lope off after any attitude      | Rewards the behavior                                 | Any attitude → correct with feet, then re-ask. Never continue.                                 |
-| 7 | Over-facing when fresh                       | Cold-backed horse gets sour                           | Walk/trot only first 10 min every ride.                                                        |
-| 8 | Constant nagging leg                         | Desensitizes → explosion                              | One clear cue → immediate correction if ignored.                                               |
-| 9 | Neglecting lateral suppleness                | Stiff ribcage can’t strike off soft                   | Every warm-up: leg-yield, shoulder-in, haunches-in, counter-arc.                               |
-|10| Riding front-to-back                         | Pulls with bit → resentment                           | See detailed section below.                                                                    |
+| # | Mistake                                          | Why it creates head-shaking / mini-bucks on a finished horse                                                                                  | Immediate Fix (do this every single time)                                                                                              |
+|---|--------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | Leaning forward or throwing your body at the cue | Even 5–10° forward tip drives seat onto forehand the exact moment he needs to lift his back → feels unfair → head flip or hop to rebalance      | Sit tall, shoulders over hips, think “grow taller” the instant you ask. Video yourself.                                               |
+| 2 | Accepting the first stride hollow                | A finished horse can leave round from the very first footfall. Accepting even one hollow stride teaches “a little protest is okay” → he exaggerates it | If first stride isn’t as round as the last stride of a winning pattern → immediate down-transition and re-ask until perfect. Zero tolerance. |
+| 3 | Holding two tight reins while asking             | Traps shoulders, blocks strike-off → horse throws head up or hops                                                                            | Light inside rein (just enough for bend), supportive but never locked outside rein. Cue with seat/legs first, hands last.               |
+| 4 | Asking from a hollow or strung-out trot          | Horse already on forehand → only way to lope is to wrench neck or buck                                                                       | Never lope until trot is round, rhythmic, and pushing from behind. Do 50–100 perfect trot–walk–trot first.                             |
+| 5 | Always loping in the same spot or corner        | Creates anticipation → he braces or protests before you even ask                                                                            | Randomize every departure for the next 30 days — middle of arena, diagonals, after leg-yield, etc.                                    |
+| 6 | Letting him lope off after any attitude         | Instantly teaches “head-shake = I still get to go forward” → he repeats it                                                                    | Any attitude → immediate correction (hustle feet or disengage), then re-ask. Never let him continue loping after a protest.           |
+| 7 | Over-facing or drilling when fresh               | Cold-backed or fresh horse gets sore/sour → expresses it at the lope departure                                                               | First 5–10 min of every ride: walk & easy trot only. Save lope work for when he’s mentally ready.                                      |
+| 8 | Constant nagging leg or dead hands               | Desensitizes him → only a big kick gets a reaction → explosion                                                                              | One clear, crisp cue. If ignored → one sharp bump + immediate hustle of feet.                                                          |
+| 9 | Neglecting lateral suppleness                    | Stiff ribcage/shoulders physically cannot strike off cleanly → he hops or twists                                                             | Every warm-up: leg-yield both ways, shoulder-in, haunches-in, counter-arc circles until loose sideways.                                |
+|10| Riding front-to-back instead of back-to-front    | You pull him into the lope with the bit → resentment → head-shake or buck                                                                   | See full “Push from the Hindquarters First” section below.                                                                            |
 
 ### Everyday Mistakes That Keep It Alive
 - Loping off on draped rein with no supporting leg → keep light inside leg until round  
@@ -77,7 +77,7 @@ Hands → voice → legs → hollow + attitude
 **One-sentence summary you can say out loud**  
 “Inside hind, outside hind, sit, soften, go.”
 
-**Quick drills (3–5 rides)**
+**Quick drills (3–5 rides)**  
 - 50 walk-to-lope departures per ride with reins on the buckle  
 - Trot–halt–trot until he rocks back on hocks  
 - Leg-yield both directions until inside hind is active
