@@ -7,7 +7,8 @@
 # Horsemanship Guides
 
 ## Riding Guides
-- [Horse Correction Guide](./horseman/horse-corerction-guide.md)
+- [Lope Attitude Fix Guide](./horseman/lope-attitude-fix-guide.md)
+- [Lope Attitude Training Plan](./horseman/lope-attitude-training-plan.md)
 
 ## Buyer Guides
 -   [Horse Buyer's  Guide for Reined Cow Horse, Versatility Ranch Horse, and Cowboyin’ horses V2](./horseman/horse-buying-guide-v2.md)
