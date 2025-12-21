@@ -7,6 +7,7 @@
 
 ## Show Guides
 -   [Cutting Horse Show Guide](./horseman/show-guide-cutting.md)
+-   [Reining Show Guide](./horseman/show-guide-reining.md)
 -   [Reined Cow Horse Show Guide](./horseman/show-guide-rch.md)
 -   [Versatility Ranch Horse Show Guide](./horseman/show-guide-vrh.md)
 
