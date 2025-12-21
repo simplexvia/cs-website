@@ -40,26 +40,26 @@ Cutting is judged, not patterned, so focus on herd work, cow control, and run co
 
 - Key Elements: Driving a cow, center work, degree of difficulty.
 - Links: 
-  - NCHA Rulebook PDF: https://nchacutting.com/docs/default-source/miscellaneous-forms/rule_book.pdf
-  - Judge Education Resources: https://www.nchacutting.com/judges/judge-education
-  - 2025 Judge Card: https://www.nchacutting.com/docs/default-source/judges/judges-card.pdf?sfvrsn=d484610b_8
-  - Judging 101 Video (2025 Updates): https://www.youtube.com/watch?v=GzAaeFt5PNg
-  - Membership Guide: https://nchacutting.com/docs/default-source/miscellaneous-forms/new-members-guide.pdf?sfvrsn=d3ab640b_4
+  - [NCHA Rulebook PDF](https://nchacutting.com/docs/default-source/miscellaneous-forms/rule_book.pdf)
+  - [Judge Education Resources](https://www.nchacutting.com/judges/judge-education)
+  - [2025 Judge Card](https://www.nchacutting.com/docs/default-source/judges/judges-card.pdf?sfvrsn=d484610b_8)
+  - [Judging 101 Video (2025 Updates)](https://www.youtube.com/watch?v=GzAaeFt5PNg)
+  - [Membership Guide](https://nchacutting.com/docs/default-source/miscellaneous-forms/new-members-guide.pdf?sfvrsn=d3ab640b_4)
 
 ## References
--  NCHA Rules and Regulations PDF: https://nchacutting.com/docs/default-source/miscellaneous-forms/rule_book.pdf
--  NCHA Judges: https://www.nchacutting.com/judges/judging
--  RULEBOOK 2025 - USCHA: https://unitedstatescutting.com/forms/USCHA%2520Rulebook%2520rev%25202025.pdf
--  Judge Education - NCHA: https://www.nchacutting.com/judges/judge-education
--  Judging 101: Hot Topics -- 2025 Judging Rules Update: https://www.youtube.com/watch?v=GzAaeFt5PNg
--  2025 Judge Card: https://www.nchacutting.com/docs/default-source/judges/judges-card.pdf?sfvrsn=d484610b_8
--  National Cutting Horse Association: https://www.nchacutting.com/
--  MEMBERSHIP GUIDE - NCHA: https://nchacutting.com/docs/default-source/miscellaneous-forms/new-members-guide.pdf?sfvrsn=d3ab640b_4
--  Shows – Arizona Cutting Horse Association: https://azcha.com/shows/
--  Event Calendar List View: https://www.queencreekaz.gov/Home/Components/Calendar/Event/38855/4144?selcat=38&sortn=EName&sortd=asc
--  Limited Age Events Calendar - NCHA: https://nchacutting.com/ncha-shows/calendar
--  2026 Futurity Entry Form - NCHA: https://nchacutting.com/shows/futurity/2026-futurity-entry-form
--  Arizona Cutting Horse Association (@AZcuttinghorse): https://www.facebook.com/AZcuttinghorse/
--  Cutting Horse Challenge - The Run For A Million: https://therunforamillion.com/cutting-horse-challenge/
--  Next Cutting - AZCHA: https://azcha.com/cutting/
--  Cave Creek Cutting Horse Association Show Schedule: https://cavecreekcutting.com/show_schedule.asp
+- [NCHA Rules and Regulations PDF](https://nchacutting.com/docs/default-source/miscellaneous-forms/rule_book.pdf)
+- [NCHA Judges](https://www.nchacutting.com/judges/judging)
+- [RULEBOOK 2025 - USCHA](https://unitedstatescutting.com/forms/USCHA%2520Rulebook%2520rev%25202025.pdf)
+- [Judge Education - NCHA](https://www.nchacutting.com/judges/judge-education)
+- [Judging 101: Hot Topics -- 2025 Judging Rules Update](https://www.youtube.com/watch?v=GzAaeFt5PNg)
+- [2025 Judge Card](https://www.nchacutting.com/docs/default-source/judges/judges-card.pdf?sfvrsn=d484610b_8)
+- [National Cutting Horse Association](https://www.nchacutting.com/)
+- [MEMBERSHIP GUIDE - NCHA](https://nchacutting.com/docs/default-source/miscellaneous-forms/new-members-guide.pdf?sfvrsn=d3ab640b_4)
+- [Shows – Arizona Cutting Horse Association](https://azcha.com/shows/)
+- [Event Calendar List View](https://www.queencreekaz.gov/Home/Components/Calendar/Event/38855/4144?selcat=38&sortn=EName&sortd=asc)
+- [Limited Age Events Calendar - NCHA](https://nchacutting.com/ncha-shows/calendar)
+- [2026 Futurity Entry Form - NCHA](https://nchacutting.com/shows/futurity/2026-futurity-entry-form)
+- [Arizona Cutting Horse Association (@AZcuttinghorse)](https://www.facebook.com/AZcuttinghorse/)
+- [Cutting Horse Challenge - The Run For A Million](https://therunforamillion.com/cutting-horse-challenge/)
+- [Next Cutting - AZCHA](https://azcha.com/cutting/)
+- [Cave Creek Cutting Horse Association Show Schedule](https://cavecreekcutting.com/show_schedule.asp)

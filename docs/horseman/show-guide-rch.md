@@ -1,4 +1,3 @@
-
 # Guide to Reined Cow Horse
 
 ## Table of Contents
@@ -44,20 +43,19 @@ Practice rein work patterns and cow work techniques. Patterns vary by event but 
 - Rein Work: Full patterns with spins, stops, circles.
 - Cow Work: Boxing, fence turns, circling.
 - Links: 
-  - 2025 NRCHA Rule Book (for 2026 prep): https://www.nrcha.com/rule-book/
-  - Sample Patterns PDF: https://nhsra.com/wp-content/uploads/2024/04/NRCHA-NHSRA-Patterns-Setup.pdf
-  - NHSRA Patterns (Round 1: Pattern 10, etc.): https://www.nrcha.com/national-reined-cow-horse-youth-association/2025-nhsra-reined-cow-horse-finalist-information/
+  - [2025 NRCHA Rule Book (for 2026 prep)](https://www.nrcha.com/rule-book/)
+  - [Sample Patterns PDF](https://nhsra.com/wp-content/uploads/2024/04/NRCHA-NHSRA-Patterns-Setup.pdf)
+  - [NHSRA Patterns (Round 1: Pattern 10, etc.)](https://www.nrcha.com/national-reined-cow-horse-youth-association/2025-nhsra-reined-cow-horse-finalist-information/)
 
 ## References
--  Rule Book - NRCHA: https://www.nrcha.com/rule-book/
--  NRCHA Patterns for NHRSA: https://nhsra.com/wp-content/uploads/2024/04/NRCHA-NHSRA-Patterns-Setup.pdf
--  2025 NHSRA Reined Cow Horse Finalist Information: https://www.nrcha.com/national-reined-cow-horse-youth-association/2025-nhsra-reined-cow-horse-finalist-information/
--  2025 NRCHA Rule Book PDF: https://treasurestatecha.com/forms/NRCHA%2520Rule%2520Book.pdf
--  NHSRA Reined Cow Horse: https://www.nrcha.com/nhsra-reined-cow-horse/
--  Schedule of Events - NRCHA: https://www.nrcha.com/schedule/
--  NRCHA Kimes Ranch Derby: https://www.nrcha.com/event/western-derby/
--  National Reined Cow Horse Association: https://www.nrcha.com/
--  Cow Horse Challenge - The Run For A Million: https://therunforamillion.com/cow-horse-challenge/
--  NRCHA Derby: https://calendar.westworldaz.com/scottsdaleaz_westworld/260116127?utm_source=bewith&utm_medium=calendar
--  Events from August 22, 2022 – June 15, 2024: https://www.nrcha.com/events/list/?tribe-bar-date=2026-02-09
-
+- [Rule Book - NRCHA](https://www.nrcha.com/rule-book/)
+- [NRCHA Patterns for NHRSA](https://nhsra.com/wp-content/uploads/2024/04/NRCHA-NHSRA-Patterns-Setup.pdf)
+- [2025 NHSRA Reined Cow Horse Finalist Information](https://www.nrcha.com/national-reined-cow-horse-youth-association/2025-nhsra-reined-cow-horse-finalist-information/)
+- [2025 NRCHA Rule Book PDF](https://treasurestatecha.com/forms/NRCHA%2520Rule%2520Book.pdf)
+- [NHSRA Reined Cow Horse](https://www.nrcha.com/nhsra-reined-cow-horse/)
+- [Schedule of Events - NRCHA](https://www.nrcha.com/schedule/)
+- [NRCHA Kimes Ranch Derby](https://www.nrcha.com/event/western-derby/)
+- [National Reined Cow Horse Association](https://www.nrcha.com/)
+- [Cow Horse Challenge - The Run For A Million](https://therunforamillion.com/cow-horse-challenge/)
+- [NRCHA Derby](https://calendar.westworldaz.com/scottsdaleaz_westworld/260116127?utm_source=bewith&utm_medium=calendar)
+- [Events from August 22, 2022 – June 15, 2024](https://www.nrcha.com/events/list/?tribe-bar-date=2026-02-09)

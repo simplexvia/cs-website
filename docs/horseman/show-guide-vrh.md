@@ -44,22 +44,22 @@ Practice using AQHA-approved patterns for each class. Refer to the official hand
 - Ranch Reining: Basic maneuvers like spins, circles, stops.
 - Other Classes: Detailed in the rulebook; show-specific patterns posted annually.
 - Links: 
-  - 2025 AQHA Rulebook (applicable for 2026 prep): https://www.aqha.com/-/get-the-2025-aqha-rulebook
-  - VRH World Patterns: https://www.aqha.com/-/patter-1 (2025 patterns; check for 2026 updates)
-  - General VRH Patterns: https://www.aqha.com/versatility-ranch-horse1
+  - [2025 AQHA Rulebook (applicable for 2026 prep)](https://www.aqha.com/-/get-the-2025-aqha-rulebook)
+  - [VRH World Patterns](https://www.aqha.com/-/patter-1) (2025 patterns; check for 2026 updates)
+  - [General VRH Patterns](https://www.aqha.com/versatility-ranch-horse1)
 
 ## References
--  AQHA VRH World Patterns: https://www.aqha.com/-/patter-1
--  Versatility Ranch Horse and Ranching Heritage Challenge: https://www.aqha.com/versatility-ranch-horse1
--  2025 World Show Patterns: https://www.aqha.com/2025-world-show-patterns
--  Versatility Ranch Horse - AQHA: https://www.aqha.com/versatility-ranch-horse
--  Versatility Ranch Horse - AQHA: https://www.aqha.com/-/versatility-ranch-horse
--  Get the 2025 AQHA Rulebook: https://www.aqha.com/-/get-the-2025-aqha-rulebook
--  Versatility Ranch Horse Competition: https://www.aqha.com/disciplines/ranching/competitions/versatility-ranch-horse-competition
--  2025 Versatility Ranch Horse PDF: https://coloradostatefair.com/wp-content/uploads/2025/03/05-APPROVED-2025-Versatility-Ranch-Horse-_A11y-1.pdf
--  AQHA VRH World Championships: https://www.aqha.com/disciplines/showing/shows/vrh-world
--  Events - Arizona Quarter Horse Association: https://www.azqha.org/events/
--  Arizona Versatility Ranch Horse Association - Facebook: https://www.facebook.com/groups/AzVRHA/posts/10163746430707342/
--  Sun Circuit: https://www.suncircuit.com/
--  Events - Arizona Versatility Ranch Horse: https://www.azvrha.com/events.html
--  2026 AQHA VRH World Qualifying: https://www.aqha.com/-/2026-aqha-versatility-ranch-horse-world-qualifying
+- [AQHA VRH World Patterns](https://www.aqha.com/-/patter-1)
+- [Versatility Ranch Horse and Ranching Heritage Challenge](https://www.aqha.com/versatility-ranch-horse1)
+- [2025 World Show Patterns](https://www.aqha.com/2025-world-show-patterns)
+- [Versatility Ranch Horse - AQHA](https://www.aqha.com/versatility-ranch-horse)
+- [Versatility Ranch Horse - AQHA](https://www.aqha.com/-/versatility-ranch-horse)
+- [Get the 2025 AQHA Rulebook](https://www.aqha.com/-/get-the-2025-aqha-rulebook)
+- [Versatility Ranch Horse Competition](https://www.aqha.com/disciplines/ranching/competitions/versatility-ranch-horse-competition)
+- [2025 Versatility Ranch Horse PDF](https://coloradostatefair.com/wp-content/uploads/2025/03/05-APPROVED-2025-Versatility-Ranch-Horse-_A11y-1.pdf)
+- [AQHA VRH World Championships](https://www.aqha.com/disciplines/showing/shows/vrh-world)
+- [Events - Arizona Quarter Horse Association](https://www.azqha.org/events/)
+- [Arizona Versatility Ranch Horse Association - Facebook](https://www.facebook.com/groups/AzVRHA/posts/10163746430707342/)
+- [Sun Circuit](https://www.suncircuit.com/)
+- [Events - Arizona Versatility Ranch Horse](https://www.azvrha.com/events.html)
+- [2026 AQHA VRH World Qualifying](https://www.aqha.com/-/2026-aqha-versatility-ranch-horse-world-qualifying)
