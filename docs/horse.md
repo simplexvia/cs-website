@@ -10,6 +10,11 @@
 - [Lope Attitude Fix Guide](./horseman/lope-attitude-fix-guide.md)
 - [Lope Attitude Training Plan](./horseman/lope-attitude-training-plan.md)
 
+## Show Guides
+-   [Cutting Horse Show Guide](./horseman/show-guide-cutting.md)
+-   [Reined Cow Horse Show Guide](./horseman/show-guide-rch.md)
+-   [Versatility Ranch Horse Show Guide](./horseman/show-guide-vrh.md)
+
 ## Buyer Guides
 -   [Horse Buyer's  Guide for Reined Cow Horse, Versatility Ranch Horse, and Cowboyin’ horses V2](./horseman/horse-buying-guide-v2.md)
 -   [Horse Selection for Reined Cow Horse, Versatility Ranch Horse, and Cowboyin](./horseman/horse-buying-guide.md)
