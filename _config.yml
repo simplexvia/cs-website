@@ -20,7 +20,7 @@ relative_links:
   enabled: true
   collections: true
 include:
-  - "*.md"
+  - docs/horseman/*.md
   - docs/horseman/index.md
   - docs/horseman/horse-corerction-guide.md
   - docs/horseman/gloreyous-tomcat-eval.md
@@ -28,6 +28,8 @@ include:
   - docs/horseman/horse-buying-guide-family.md
   - docs/horseman/forged-arrow-eval.md
   - docs/horseman/horse-buying-guide.md
+  - docs/horseman/show-prep-guide-vrh.md
+  - docs/cloudnative-tools/*.md
   - docs/cloudnative-tools/index.md
   - docs/cloudnative-tools/jenkins-upgrade-triage-guide.md
   - docs/cloudnative-tools/oss-tf-execution-slides.md
