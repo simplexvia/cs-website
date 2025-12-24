@@ -10,6 +10,7 @@
 -   [Reining Show Guide](./horseman/show-guide-reining.md)
 -   [Reined Cow Horse Show Guide](./horseman/show-guide-rch.md)
 -   [Versatility Ranch Horse Show Guide](./horseman/show-guide-vrh.md)
+    -   [Beginner's Guide to Preparing for AQHA Versatility Ranch Horse (VRH) Events](./horseman/show-prep-guide-vrh.md)
 
 ## Buyer Guides
 -   [Horse Buyer's  Guide for Reined Cow Horse, Versatility Ranch Horse, and Cowboyin’ horses V2](./horseman/horse-buying-guide-v2.md)
