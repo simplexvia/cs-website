@@ -1,4 +1,8 @@
 
+---
+layout: default
+---
+
 # Horsemanship Guides
 
 ## Riding Guides

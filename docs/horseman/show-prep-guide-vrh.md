@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Beginner's Guide to Preparing for AQHA Versatility Ranch Horse (VRH) Events
 
 #### Table of Contents
