@@ -1,0 +1,7 @@
+main:
+  - title: "Home"
+    url: "/"
+  - title: "Horseman Guides"
+    url: "/horseman/"
+  - title: "Cloud Native"
+    url: "/cloudnative-tools/"
