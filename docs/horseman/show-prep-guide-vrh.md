@@ -21,7 +21,7 @@ Ranch Cutting tests your horse's ability to separate (cut) one or two cows from 
 
 **Arena Setup Diagram** (Typical Ranch Cutting Layout):
 
-```mermaid
+```language-mermaid
 flowchart TD
     subgraph Arena
         direction TB
@@ -48,7 +48,7 @@ flowchart TD
 
    **Diagram of Circle-Stop-Rollback Drill**:
 
-```mermaid
+```language-mermaid
 flowchart LR
     Start["Start"] --> Large["Large Circle\n(Fast)"] --> Small["Small Fast Circle"]
     Small --> Straight["Enter Straight Line"] --> Stop["Stop"]
@@ -74,7 +74,7 @@ Ranch Reining evaluates reining maneuvers adapted for ranch versatility: circles
 
 **Example Pattern Diagram** (VRH Ranch Reining Pattern 1 Simplified):
 
-```mermaid
+```language-mermaid
 flowchart TB
     subgraph Arena
         Center["Center of Arena"]
@@ -98,7 +98,7 @@ flowchart TB
 
    **Drill Diagram: Circle-Speed Transition**:
 
-```mermaid
+```language-mermaid
 flowchart LR
     Large["Large Circle\n(Fast)"] --> Small["Reduce to Small Circle\n(Slow)"]
     Small --> Change["Lead Change at Center"]
@@ -124,7 +124,7 @@ Boxing is the entry-level cow phase: Hold/control a single cow at one end of the
 
 **Boxing Phase Diagram**:
 
-```mermaid
+```language-mermaid
 flowchart TD
     subgraph BoxArea["Box Area"]
         Fence["Fence\n(Short End)"]
@@ -166,7 +166,7 @@ Rollbacks are a key maneuver in ranch reining and cow work, involving a sliding 
 
 **Rollback Diagram** (Sequence View):
 
-```mermaid
+```language-mermaid
 sequenceDiagram
     participant Rider
     participant Horse
