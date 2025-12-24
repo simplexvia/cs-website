@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
     <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" type="image/x-icon">
 
-    <!-- Optional: Add Primer-specific CSS if needed -->
+    <!-- Primer CSS (optional, matches your theme) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/primer/21.0.2/build.css">
   </head>
   <body>
@@ -23,12 +23,17 @@
       {{ content }}
     </div>
 
-    <!-- Mermaid.js for diagram rendering -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-    <script>
+    <!-- Mermaid.js rendering (placed at end of body) -->
+    <script type="module">
+      import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
       mermaid.initialize({
-        startOnLoad: true,
-        theme: 'default'  // options: 'default', 'forest', 'dark', 'neutral'
+        startOnLoad: false,  // We manually run it for better control
+        theme: 'default',    // Options: 'default', 'forest', 'dark', 'neutral'
+        securityLevel: 'loose'
+      });
+      // Run on language-mermaid classes (what Jekyll creates from ```mermaid
+      mermaid.run({
+        querySelector: 'pre code.language-mermaid'
       });
     </script>
   </body>
