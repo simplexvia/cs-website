@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Steve Cotugno - Principal Technologist & Cloud / DevSecOps Architect at SimplexVia, LLC. Expert in AWS, Kubernetes, GitOps (ArgoCD), Amazon Q Agentic AI, Terraform, IBM Cloud. Consulting available starting April 2026 for aerospace, automotive, telecommunications, medical devices & healthcare, financial services, and enterprise software delivery.">
+    <meta name="keywords" content="Steve Cotugno, SimplexVia, Cloud Architect, DevSecOps, AWS, Kubernetes, EKS, OpenShift, ArgoCD, GitOps, Amazon Q, Agentic AI, Terraform, Crossplane, IBM Cloud, aerospace, automotive, telecommunications, healthcare, financial services, enterprise software">
+    <meta name="author" content="Steve Cotugno, SimplexVia, LLC">
+    <title>Steve Cotugno | SimplexVia, LLC – Cloud, DevSecOps & AI Consulting (Available April 2026)</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.20.15/babel.min.js"></script>
+    <style>
+        @media print {
+            body { background: white; color: black; }
+            header, .bg-gradient-to-r { background: #1e40af !important; color: white !important; }
+            a { color: #1e40af !important; text-decoration: underline; }
+        }
+        .form-input, .form-textarea {
+            transition: all 0.2s;
+        }
+        .form-input:focus, .form-textarea:focus {
+            outline: none;
+            ring: 2px solid #6366f1;
+            border-color: #6366f1;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans antialiased">
+    <div id="root"></div>
+
+    <script type="text/babel">
+        function Header() {
+            return (
+                <header className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-10">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <h1 className="text-5xl font-bold tracking-tight">Steve Cotugno</h1>
+                        <p className="mt-3 text-xl font-light">Principal Technologist | Cloud / DevSecOps Architect & AI Consultant<br/>
+                            <span className="text-indigo-300">SimplexVia, LLC</span> • <a href="https://simplexvia.com" target="_blank" className="text-indigo-300 hover:text-white underline">simplexvia.com</a>
+                        </p>
+                        <p className="mt-4 text-lg font-medium text-yellow-300">Available for new engagements starting April 2026</p>
+                    </div>
+                </header>
+            );
+        }
+
+        function Hero() {
+            return (
+                <section className="bg-white py-16 border-b">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <h2 className="text-4xl font-bold text-gray-900">Accelerate Your Cloud-Native & AI Transformation</h2>
+                        <p className="mt-6 text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                            20+ years delivering enterprise-grade cloud platforms, GitOps pipelines, and Agentic AI solutions through SimplexVia, LLC. 
+                            Expert in AWS EKS, IBM Cloud/OpenShift, ArgoCD, Terraform, Crossplane, and Amazon Q. 
+                            Proven success in <strong>aerospace</strong>, <strong>automotive manufacturing</strong>, <strong>telecommunications</strong>, <strong>medical devices & healthcare</strong>, <strong>financial services</strong>, and other regulated enterprise environments.
+                        </p>
+                        <p className="mt-6 text-xl font-semibold text-indigo-700">
+                            Accepting inquiries now for projects starting April 2026 onward.
+                        </p>
+                        <div className="mt-10">
+                            <a 
+                                href="https://www.linkedin.com/in/stevencotugno/" 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className="inline-block bg-indigo-600 text-white font-semibold text-lg py-4 px-10 rounded-lg shadow-lg hover:bg-indigo-700 transition"
+                            >
+                                Connect on LinkedIn →
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            );
+        }
+
+        function Services() {
+            const services = [
+                { title: "Agentic AI with Amazon Q", desc: "Strategic adoption of Amazon Q for automated test generation (247+ tests in one POC), code reviews, architecture documentation, triage acceleration, and developer productivity gains." },
+                { title: "GitOps & DevSecOps Pipelines", desc: "Declarative CI/CD with ArgoCD, Tekton, GitLab CI/CD across AWS EKS, IBM OpenShift, and hybrid environments. Security-first design." },
+                { title: "Kubernetes Platform Architecture", desc: "Design, optimization, and operations of production Kubernetes clusters (EKS, IKS, OpenShift). Helm, Kustomize, RBAC, autoscaling, HA." },
+                { title: "Infrastructure as Code & Multi-Cloud", desc: "Terraform, Crossplane, Ansible for consistent, repeatable infrastructure across AWS and IBM Cloud. Hybrid/multi-cloud patterns delivered at scale." },
+                { title: "Observability, Security & Compliance", desc: "Prometheus, Grafana, CloudWatch, HashiCorp Vault, IAM, KMS. Strong focus on zero-trust security and audit-ready platforms." }
+            ];
+
+            return (
+                <section className="py-16 bg-gray-50">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Core Consulting Services</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {services.map((s, i) => (
+                                <div key={i} className="bg-white p-8 rounded-xl shadow hover:shadow-xl transition">
+                                    <h3 className="text-2xl font-semibold text-indigo-800 mb-4">{s.title}</h3>
+                                    <p className="text-gray-700">{s.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            );
+        }
+
+        function Portfolio() {
+            const projects = [
+                { title: "Amazon Q Agentic AI POC – Wind River Systems", desc: "Led enterprise Agentic AI initiative supporting enterprise software delivery in aerospace, automotive, telecommunications, and related domains. Delivered 247 automated tests, 3+ production triage guides, and architecture documentation (API Gateway, CDN, Crossplane) accelerating development velocity." },
+                { title: "DevOps & GitOps Delivery – IBM Client Engagements", desc: "Designed production pipelines (OpenShift, Tekton, ArgoCD, Terraform, Ansible) for Fortune 500 clients in financial services, healthcare, manufacturing, and other regulated sectors. Mentored teams and consistently delivered MVPs ahead of schedule, contributing to $11.6M+ revenue impact." },
+                { title: "IBM Cloud VPC + IaC Reference Lab", desc: "Co-authored and presented official IBM Cloud VPC + Infrastructure as Code lab (public on GitHub). Published Kubernetes reference architectures in IBM Garage Center. Featured at IBM Think 2018–2020." }
+            ];
+
+            return (
+                <section className="py-16 bg-white">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <h2 className="text-4xl font-bold text-gray-900 text-center mb-12">Selected Engagements & Impact</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {projects.map((p, i) => (
+                                <div key={i} className="bg-gray-50 p-8 rounded-xl shadow hover:shadow-xl transition">
+                                    <h3 className="text-2xl font-semibold text-indigo-800 mb-4">{p.title}</h3>
+                                    <p className="text-gray-700">{p.desc}</p>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+            );
+        }
+
+        function About() {
+            return (
+                <section className="py-16 bg-gray-50">
+                    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <h2 className="text-4xl font-bold text-gray-900 mb-10">About Steve Cotugno</h2>
+                        <p className="text-xl text-gray-700 leading-relaxed max-w-4xl mx-auto mb-10">
+                            Hands-on technical leader and Principal Technologist specializing in strategic AI adoption (Amazon Q), cloud-native platform architecture, and DevSecOps for enterprise software delivery in regulated and high-stakes environments. 
+                            20+ years delivering reliable, scalable solutions across <strong>aerospace</strong>, <strong>automotive manufacturing</strong> (including components and intelligent systems), <strong>telecommunications</strong>, <strong>medical devices & healthcare</strong>, <strong>banking & financial services</strong>, and other critical industries.
+                        </p>
+                        <p className="text-lg text-gray-600 mb-10">
+                            Former IBM Senior Managing Consultant (2003–2022) with $11.6M+ consulting revenue impact across diverse sectors including finance, healthcare, government-related, and manufacturing. 
+                            Recent experience includes leading cloud-agnostic architecture and Agentic AI initiatives at Wind River Systems (Aptiv) supporting enterprise software delivery for intelligent edge and industrial applications in aerospace, automotive, telecom, and beyond. 
+                            Available for new client engagements starting April 2026.
+                        </p>
+                        <div className="flex flex-wrap justify-center gap-4">
+                            <span className="bg-indigo-100 text-indigo-800 font-medium px-5 py-2 rounded-full">AWS • EKS</span>
+                            <span className="bg-indigo-100 text-indigo-800 font-medium px-5 py-2 rounded-full">Kubernetes • OpenShift</span>
+                            <span className="bg-indigo-100 text-indigo-800 font-medium px-5 py-2 rounded-full">ArgoCD • GitOps</span>
+                            <span className="bg-indigo-100 text-indigo-800 font-medium px-5 py-2 rounded-full">Amazon Q • Agentic AI</span>
+                            <span className="bg-indigo-100 text-indigo-800 font-medium px-5 py-2 rounded-full">Terraform • Crossplane</span>
+                        </div>
+                        <p className="mt-10 text-gray-600">
+                            Full credentials: <a href="https://www.linkedin.com/in/stevencotugno/" target="_blank" className="text-indigo-600 hover:underline">LinkedIn</a> • <a href="https://www.credly.com/users/steven-cotugno.be176028" target="_blank" className="text-indigo-600 hover:underline">Credly Badges</a>
+                        </p>
+                    </div>
+                </section>
+            );
+        }
+
+        function Contact() {
+            return (
+                <section className="py-16 bg-gradient-to-r from-indigo-900 to-blue-900 text-white">
+                    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+                        <div className="text-center mb-10">
+                            <h2 className="text-4xl font-bold mb-4">Ready to Transform Your Platform?</h2>
+                            <p className="text-xl max-w-3xl mx-auto">
+                                4–12 week architecture & AI engagements • Amazon Q workshops • Platform reviews • Ongoing advisory via SimplexVia, LLC
+                            </p>
+                            <p className="mt-4 text-lg font-semibold text-yellow-200">
+                                Accepting inquiries now — first availability: April 2026
+                            </p>
+                        </div>
+
+                        <div className="bg-white rounded-xl shadow-2xl p-8 md:p-12 max-w-3xl mx-auto">
+                            <h3 className="text-2xl font-bold text-gray-800 mb-6 text-center">Send a Consultation Request</h3>
+                            
+                            <form 
+                                action="https://formspree.io/f/mpqjrjwq" 
+                                method="POST"
+                                className="space-y-6"
+                            >
+                                <div>
+                                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                    <input 
+                                        type="text" 
+                                        id="name" 
+                                        name="name" 
+                                        required 
+                                        className="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                                        placeholder="Your name"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                    <input 
+                                        type="email" 
+                                        id="email" 
+                                        name="email" 
+                                        required 
+                                        className="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                                        placeholder="your.email@example.com"
+                                    />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">Subject / Project Type</label>
+                                    <input 
+                                        type="text" 
+                                        id="subject" 
+                                        name="subject" 
+                                        required 
+                                        className="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                                        placeholder="e.g., Amazon Q Workshop, Kubernetes Migration, etc."
+                                    />
+                                </div>
+
+                                <div>
+                                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">Message / Project Details</label>
+                                    <textarea 
+                                        id="message" 
+                                        name="message" 
+                                        rows="5" 
+                                        required 
+                                        className="form-textarea w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                                        placeholder="Tell me about your project needs, timeline, tech stack, etc."
+                                    ></textarea>
+                                </div>
+
+                                <input type="text" name="_gotcha" style={{display: "none"}} />
+
+                                <div className="text-center">
+                                    <button 
+                                        type="submit" 
+                                        className="bg-indigo-600 text-white font-bold text-lg py-4 px-12 rounded-lg shadow-lg hover:bg-indigo-700 transition w-full md:w-auto"
+                                    >
+                                        Send Request →
+                                    </button>
+                                </div>
+
+                                <p className="text-center text-sm text-gray-500 mt-4">
+                                    Your message will be sent to consult_request@simplexvia.com.<br/>
+                                    Powered by Formspree.
+                                </p>
+                            </form>
+                        </div>
+
+                        <div className="text-center mt-8">
+                            <p className="text-lg text-indigo-200">
+                                Prefer direct contact? Connect on <a href="https://www.linkedin.com/in/stevencotugno/" target="_blank" className="underline hover:text-white">LinkedIn</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            );
+        }
+
+        function Footer() {
+            return (
+                <footer className="bg-gray-900 text-gray-400 py-8">
+                    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                        <p>© {new Date().getFullYear()} Steve Cotugno – SimplexVia, LLC. All rights reserved.</p>
+                        <div className="mt-4 flex flex-col items-center gap-2">
+                            <a href="https://simplexvia.com" target="_blank" className="text-indigo-400 hover:text-indigo-300">simplexvia.com</a>
+                            <a href="https://www.linkedin.com/in/stevencotugno/" target="_blank" className="text-indigo-400 hover:text-indigo-300">LinkedIn</a>
+                            <a href="./resources.md" className="text-indigo-400 hover:text-indigo-300 mt-2">Resources</a>
+                        </div>
+                    </div>
+                </footer>
+            );
+        }
+
+        function App() {
+            return (
+                <div className="min-h-screen flex flex-col">
+                    <Header />
+                    <main className="flex-grow">
+                        <Hero />
+                        <Services />
+                        <Portfolio />
+                        <About />
+                        <Contact />
+                    </main>
+                    <Footer />
+                </div>
+            );
+        }
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
