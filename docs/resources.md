@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Simplex Via 
+title: Resources
 ---
 
 ### Resources

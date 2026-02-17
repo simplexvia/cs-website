@@ -1,5 +1,6 @@
 ---
 layout: default
+title:  Horseman 
 ---
 
 # Horsemanship Guides
