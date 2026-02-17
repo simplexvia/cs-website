@@ -2,7 +2,7 @@ title: Simplex Via LLC Website
 description: Documentation for Simplex Via website 
 baseurl: "/cs-website"
 url: "https://simplexvia.github.io" 
-# theme: jekyll-theme-primer
+theme: jekyll-theme-primer
 markdown: GFM
 plugins:
   - jekyll-github-metadata
