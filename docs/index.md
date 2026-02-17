@@ -7,5 +7,4 @@ title: Simplex Via
 - Currently under consturction.
 
 ### Resources
-- [Cloud Native Tools Resources](./cn-tools.md)
-- [Horseman Resources](./horse.md)
+- [Resources](./resources.md)
