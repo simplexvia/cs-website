@@ -17,13 +17,19 @@
             header, .bg-gradient-to-r { background: #1e40af !important; color: white !important; }
             a { color: #1e40af !important; text-decoration: underline; }
         }
+        /* Improved form input visibility */
         .form-input, .form-textarea {
+            color: #111827;           /* text-gray-900 - almost black */
+            background-color: white;
             transition: all 0.2s;
+        }
+        .form-input::placeholder, .form-textarea::placeholder {
+            color: #9ca3af;           /* text-gray-400 - visible placeholder */
         }
         .form-input:focus, .form-textarea:focus {
             outline: none;
-            ring: 2px solid #6366f1;
             border-color: #6366f1;
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
         }
     </style>
 </head>
@@ -181,7 +187,7 @@
                                         id="name" 
                                         name="name" 
                                         required 
-                                        className="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-gray-900 placeholder:text-gray-400"
                                         placeholder="Your name"
                                     />
                                 </div>
@@ -193,7 +199,7 @@
                                         id="email" 
                                         name="email" 
                                         required 
-                                        className="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-gray-900 placeholder:text-gray-400"
                                         placeholder="your.email@example.com"
                                     />
                                 </div>
@@ -205,7 +211,7 @@
                                         id="subject" 
                                         name="subject" 
                                         required 
-                                        className="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="form-input w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-gray-900 placeholder:text-gray-400"
                                         placeholder="e.g., Amazon Q Workshop, Kubernetes Migration, etc."
                                     />
                                 </div>
@@ -217,7 +223,7 @@
                                         name="message" 
                                         rows="5" 
                                         required 
-                                        className="form-textarea w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500"
+                                        className="form-textarea w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-indigo-500 focus:border-indigo-500 text-gray-900 placeholder:text-gray-400"
                                         placeholder="Tell me about your project needs, timeline, tech stack, etc."
                                     ></textarea>
                                 </div>
