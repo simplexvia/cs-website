@@ -37,6 +37,7 @@ Sympozium is an open-source, Kubernetes-native platform for running fleets of AI
 3. Activate: Use TUI to select PersonaPacks and configure.
 
 ## Comparison Table
+
 | Tool          | Open Source | License     | GitHub Stars | Forks | Contributors | CNCF? | GitHub Repo Link | Notes on Activity/Maintenance |
 |---------------|-------------|-------------|--------------|-------|--------------|-------|------------------|-------------------------------|
 | **Sympozium** | Yes        | Apache 2.0 | 84          | 16   | 5           | No   | [github.com/AlexsJones/sympozium](https://github.com/AlexsJones/sympozium) | Extremely active (commits today, v0.0.65 release, UI/dashboard work) |

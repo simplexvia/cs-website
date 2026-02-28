@@ -20,5 +20,3 @@ title: Cloud Native Tools
 - [MkDocs](https://www.mkdocs.org/) Project documentation with Markdown.
 - [Diagraming tool](https://dbdiagram.io/home)
 - [Draw.io](https://app.diagrams.net/)
-- Open Source for building periodic tables [mendelable](https://github.com/pulsardev/mendelable) and [Periodic-Table](https://github.com/edisdev/periodic-table)
-
