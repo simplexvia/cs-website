@@ -38,12 +38,12 @@ Sympozium is an open-source, Kubernetes-native platform for running fleets of AI
 
 ## Comparison Table
 
-| Tool          | Open Source | License     | GitHub Stars | Forks | Contributors | CNCF? | GitHub Repo Link | Notes on Activity/Maintenance |
-|---------------|-------------|-------------|--------------|-------|--------------|-------|------------------|-------------------------------|
-| **Sympozium** | Yes        | Apache 2.0 | 84          | 16   | 5           | No   | [github.com/AlexsJones/sympozium](https://github.com/AlexsJones/sympozium) | Extremely active (commits today, v0.0.65 release, UI/dashboard work) |
-| **Kagent**    | Yes        | Apache 2.0 | ~2.3k       | ~416 | ~113        | Yes (contributed) | [github.com/kagent-dev/kagent](https://github.com/kagent-dev/kagent) | Mature, steady growth |
-| **K8sGPT**    | Yes        | Apache 2.0 | ~7.5k       | ~950 | ~114        | No   | [github.com/k8sgpt-ai/k8sgpt](https://github.com/k8sgpt-ai/k8sgpt) | Very popular, established (frequent updates from core contributors) |
-| **kubectl-ai**| Yes        | Apache 2.0 | ~7.3k       | ~680 | ~53         | No   | [github.com/GoogleCloudPlatform/kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai) | Strong adoption (Google-backed, active issues/PRs) |
+| Tool          | Open Source | License     | GitHub Stars | Forks | Contributors | CNCF?             | GitHub Repo Link                                                                 | Notes on Activity/Maintenance                          |
+|---------------|-------------|-------------|--------------|-------|--------------|-------------------|----------------------------------------------------------------------------------|--------------------------------------------------------|
+| **Sympozium** | Yes        | Apache 2.0 | 84          | 16    | 5            | No                | [github.com/AlexsJones/sympozium](https://github.com/AlexsJones/sympozium)      | Extremely active (commits today, v0.0.65 release, UI/dashboard work) |
+| **Kagent**    | Yes        | Apache 2.0 | ~2.3k       | ~416  | ~113         | Yes (contributed) | [github.com/kagent-dev/kagent](https://github.com/kagent-dev/kagent)            | Mature, steady growth                                  |
+| **K8sGPT**    | Yes        | Apache 2.0 | ~7.5k       | ~950  | ~114         | No                | [github.com/k8sgpt-ai/k8sgpt](https://github.com/k8sgpt-ai/k8sgpt)              | Very popular, established (frequent updates)           |
+| **kubectl-ai**| Yes        | Apache 2.0 | ~7.3k       | ~680  | ~53          | No                | [github.com/GoogleCloudPlatform/kubectl-ai](https://github.com/GoogleCloudPlatform/kubectl-ai) | Strong adoption (Google-backed, active issues/PRs)    |
 
 
 **K8sGPT** and **Sympozium** are both open-source AI-powered tools for Kubernetes, created by the same developer (Alex Jones). K8sGPT focuses on diagnostics and troubleshooting, while Sympozium builds on similar ideas to create a full **agentic control plane** for running fleets of AI agents — including those that administer Kubernetes clusters.
