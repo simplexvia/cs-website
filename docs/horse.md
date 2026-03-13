@@ -5,6 +5,9 @@ title:  Horseman
 
 # Horsemanship Guides
 
+## Businesses
+- [Cow Horse Digital](./cowsense/index.html)
+
 ## Riding Guides
 - [Lope Attitude Fix Guide](./horseman/lope-attitude-fix-guide.md)
 - [Lope Attitude Training Plan](./horseman/lope-attitude-training-plan.md)
