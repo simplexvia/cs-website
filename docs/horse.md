@@ -5,11 +5,13 @@ title:  Horseman
 
 # Horsemanship Guides
 
+## Colleges with Horsemanship Programs
+-   [About Horsemanship at Wyoming Catholic College, Lander, WY](https://wyomingcatholic.edu/academics/horsemanship/)
+
 ## Businesses
 - [Cow Horse Digital](./cowsense/index.html)
 - [Cow Horse Digital – Free Online Presence Review Questionnaire]( https://forms.gle/31fWHfNF8YbjAvGa9)
 
-## Riding Guides
 - [Lope Attitude Fix Guide](./horseman/lope-attitude-fix-guide.md)
 - [Lope Attitude Training Plan](./horseman/lope-attitude-training-plan.md)
 
