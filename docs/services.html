@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Service Details - SimplexVia LLC</title>
+  <title>Our Services - SimplexVia LLC</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
@@ -27,191 +27,126 @@
   </nav>
 
   <div class="max-w-7xl mx-auto px-6 py-20">
-    <h1 class="text-5xl font-bold mb-8 text-center">Service Details</h1>
-    <p class="text-center text-xl text-gray-600 mb-16">Practical AI adoption and custom digital products designed for real business results</p>
+    <h1 class="text-5xl font-bold mb-4 text-center">Our Services</h1>
+    <p class="text-center text-xl text-gray-600 mb-16 max-w-3xl mx-auto">
+      Practical AI adoption and custom digital products designed to deliver real business improvement.
+    </p>
 
     <!-- AI Services -->
-    <h2 class="text-4xl font-semibold mb-12 text-center border-b pb-4">AI Services</h2>
+    <div class="mb-20">
+      <h2 class="text-3xl font-semibold mb-8 flex items-center gap-3 justify-center">
+        <span class="text-indigo-600">🤖</span> AI Services
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <div id="readiness" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <h2 class="text-3xl font-bold mb-4">AI Readiness Assessment & Strategy Roadmap</h2>
-      <p class="text-gray-600 mb-8">Comprehensive 1–2 week assessment that evaluates your current operations, data readiness, team skills, and technology infrastructure, then delivers a prioritized 90-day AI adoption roadmap.</p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ Clear AI maturity assessment</li>
-          <li>✓ 3–5 high-ROI use cases with projected returns</li>
-          <li>✓ Customized 90-day implementation roadmap</li>
-          <li>✓ Reduced risk of wasted AI investment</li>
-        </ul>
-      </div>
-    </div>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-3">AI Readiness Assessment & Roadmap</h3>
+          <p class="text-gray-600 mb-6">Comprehensive assessment and customized 90-day roadmap to ensure successful AI adoption.</p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Save time & money by starting with clarity and focus</p>
+          <a href="services-detail.html#readiness" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
 
-    <div id="copilots" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <div class="flex justify-between items-start mb-6">
-        <h2 class="text-3xl font-bold">Generative AI Copilots & Content Systems</h2>
-        <span class="bg-indigo-100 text-indigo-700 text-sm font-medium px-4 py-2 rounded-full flex items-center gap-2">
-          ⚡ Powered by OpenRAG
-        </span>
-      </div>
-      <p class="text-gray-600 mb-8">
-        Custom OpenRAG-powered copilots trained on your internal documents, policies, past deals, and knowledge base. 
-        Every output is grounded in your real data using intelligent document parsing (Docling) and enterprise-grade retrieval (OpenSearch).
-      </p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ 50–70% faster creation of professional documents</li>
-          <li>✓ Zero hallucinations — every response is sourced from your data</li>
-          <li>✓ Consistent brand voice and accurate information</li>
-          <li>✓ Easy-to-maintain copilots built visually in Langflow</li>
-          <li>✓ Scalable from single-user to enterprise teams</li>
-        </ul>
-      </div>
-      <p class="text-xs text-gray-500 mt-8">
-        Built on OpenRAG (Langflow + Docling + OpenSearch) — the open-source platform for reliable, production-ready RAG copilots.
-      </p>
-    </div>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition relative">
+          <h3 class="text-2xl font-semibold mb-3">Generative AI Copilots & Content Systems</h3>
+          <p class="text-gray-600 mb-6">
+            OpenRAG-powered AI copilots that generate accurate, context-aware proposals, deal memos, investor updates, 
+            and marketing content grounded in your own documents.
+          </p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Accelerate content creation while eliminating hallucinations</p>
+          <span class="absolute top-4 right-6 bg-indigo-100 text-indigo-700 text-xs font-medium px-3 py-1 rounded-full flex items-center gap-1">
+            ⚡ Powered by OpenRAG
+          </span>
+          <a href="services-detail.html#copilots" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
 
-    <div id="agents" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <div class="flex justify-between items-start mb-6">
-        <h2 class="text-3xl font-bold">AI Agents & Workflow Automation</h2>
-        <span class="bg-indigo-100 text-indigo-700 text-sm font-medium px-4 py-2 rounded-full flex items-center gap-2">
-          ⚡ Powered by OpenRAG
-        </span>
-      </div>
-      <p class="text-gray-600 mb-8">
-        Intelligent OpenRAG-powered agents that autonomously handle repetitive tasks such as investor reporting, 
-        tenant communications, lead qualification, and administrative processes. 
-        Every decision is grounded in your own documents using advanced retrieval and multi-step reasoning.
-      </p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ 50–70% reduction in manual administrative work</li>
-          <li>✓ Reliable, hallucination-free automation</li>
-          <li>✓ 24/7 autonomous workflow execution</li>
-          <li>✓ Team freed for strategic, high-value activities</li>
-          <li>✓ Traceable and auditable agent decisions</li>
-        </ul>
-      </div>
-      <p class="text-xs text-gray-500 mt-8">
-        Built on OpenRAG (Langflow + Docling + OpenSearch) — enabling production-grade, document-grounded AI agents with visual workflow orchestration.
-      </p>
-    </div>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition relative">
+          <h3 class="text-2xl font-semibold mb-3">AI Agents & Workflow Automation</h3>
+          <p class="text-gray-600 mb-6">
+            Intelligent OpenRAG-powered agents that autonomously handle repetitive tasks with reliable, 
+            document-grounded reasoning and multi-step workflows.
+          </p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Free your team for high-value work</p>
+          <span class="absolute top-4 right-6 bg-indigo-100 text-indigo-700 text-xs font-medium px-3 py-1 rounded-full flex items-center gap-1">
+            ⚡ Powered by OpenRAG
+          </span>
+          <a href="services-detail.html#agents" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
 
-    <div id="industry" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <div class="flex justify-between items-start mb-6">
-        <h2 class="text-3xl font-bold">Industry-Specific AI Solutions</h2>
-        <span class="bg-indigo-100 text-indigo-700 text-sm font-medium px-4 py-2 rounded-full flex items-center gap-2">
-          ⚡ Powered by OpenRAG
-        </span>
-      </div>
-      <p class="text-gray-600 mb-8">
-        Tailored OpenRAG-powered AI solutions built specifically for your industry workflows and documents. 
-        We rapidly create accurate, production-ready RAG applications and agents using your domain knowledge.
-      </p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ Faster time-to-value with domain-specific AI</li>
-          <li>✓ Solutions built for your exact workflows</li>
-          <li>✓ Higher accuracy and relevance</li>
-          <li>✓ Competitive advantage in your niche</li>
-        </ul>
-      </div>
-      <p class="text-xs text-gray-500 mt-8">
-        Built on OpenRAG (Langflow + Docling + OpenSearch) — enabling rapid delivery of highly accurate, industry-specific AI solutions.
-      </p>
-    </div>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition relative">
+          <h3 class="text-2xl font-semibold mb-3">Industry-Specific AI Solutions</h3>
+          <p class="text-gray-600 mb-6">
+            Tailored OpenRAG-powered AI solutions built specifically for your industry workflows and documents.
+          </p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Faster results with domain-specific intelligence</p>
+          <span class="absolute top-4 right-6 bg-indigo-100 text-indigo-700 text-xs font-medium px-3 py-1 rounded-full flex items-center gap-1">
+            ⚡ Powered by OpenRAG
+          </span>
+          <a href="services-detail.html#industry" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
 
-    <div id="predictive" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <h2 class="text-3xl font-bold mb-4">Predictive Analytics & Demand Forecasting</h2>
-      <p class="text-gray-600 mb-8">Custom predictive models that deliver accurate forecasts for demand, revenue, occupancy, cash flow, and business performance.</p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ 15–30% improvement in forecasting accuracy</li>
-          <li>✓ Better decision-making and resource allocation</li>
-          <li>✓ Increased revenue and operational efficiency</li>
-        </ul>
-      </div>
-    </div>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-3">Predictive Analytics & Forecasting</h3>
+          <p class="text-gray-600 mb-6">Accurate forecasts to improve decision-making and business planning.</p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Better decisions and improved performance</p>
+          <a href="services-detail.html#predictive" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
 
-    <div id="training" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <h2 class="text-3xl font-bold mb-4">AI Employee Training & Change Management</h2>
-      <p class="text-gray-600 mb-8">Comprehensive training programs and change management support to help your team adopt AI tools effectively.</p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ High AI adoption rate across your team</li>
-          <li>✓ Reduced resistance to new technology</li>
-          <li>✓ Sustainable internal AI capability</li>
-          <li>✓ Maximized ROI on your AI investments</li>
-        </ul>
-      </div>
-    </div>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-3">AI Employee Training & Change Management</h3>
+          <p class="text-gray-600 mb-6">Training and support to help your team successfully adopt AI tools.</p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Sustainable adoption and long-term ROI</p>
+          <a href="services-detail.html#training" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
 
-    <div id="managed" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <h2 class="text-3xl font-bold mb-4">Managed AI Services</h2>
-      <p class="text-gray-600 mb-8">Ongoing monitoring, optimization, updates, and expert support to ensure your AI systems continue delivering value.</p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ Continuous performance optimization</li>
-          <li>✓ Reduced internal maintenance burden</li>
-          <li>✓ Reliable, always-on AI systems</li>
-          <li>✓ Regular new feature enhancements</li>
-        </ul>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-3">Managed AI Services</h3>
+          <p class="text-gray-600 mb-6">Ongoing monitoring, optimization, and expert support for your AI systems.</p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Hands-off reliability and continuous improvement</p>
+          <a href="services-detail.html#managed" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
       </div>
     </div>
 
     <!-- Digital Products -->
-    <h2 class="text-4xl font-semibold mb-12 text-center border-b pb-4 mt-24">Digital Products</h2>
+    <div class="mb-20">
+      <h2 class="text-3xl font-semibold mb-8 flex items-center gap-3 justify-center">
+        <span class="text-emerald-600">💻</span> Digital Products
+      </h2>
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <div id="website" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <h2 class="text-3xl font-bold mb-4">Custom Website Development</h2>
-      <p class="text-gray-600 mb-8">Modern, responsive, and high-performing websites built for conversion and AI integration.</p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ Professional, fast-loading website</li>
-          <li>✓ Strong SEO and lead generation</li>
-          <li>✓ Easy AI tool integration</li>
-        </ul>
-      </div>
-    </div>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-3">Custom Website Development</h3>
+          <p class="text-gray-600 mb-6">Modern, responsive, and high-performing websites built for conversion and AI integration.</p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Professional online presence that generates leads</p>
+          <a href="services-detail.html#website" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
 
-    <div id="software" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <h2 class="text-3xl font-bold mb-4">Custom Software Development</h2>
-      <p class="text-gray-600 mb-8">Bespoke business applications and internal tools designed to your exact workflows.</p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ Tailored software solution</li>
-          <li>✓ Improved internal efficiency</li>
-          <li>✓ Seamless system integration</li>
-        </ul>
-      </div>
-    </div>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-3">Custom Software Development</h3>
+          <p class="text-gray-600 mb-6">Bespoke business applications and internal tools tailored to your specific needs.</p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Streamlined operations and increased efficiency</p>
+          <a href="services-detail.html#software" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
 
-    <div id="mobile" class="mb-20 bg-white p-10 rounded-3xl shadow">
-      <h2 class="text-3xl font-bold mb-4">Mobile App Development</h2>
-      <p class="text-gray-600 mb-8">User-friendly iOS and Android mobile applications with optional AI features.</p>
-      <div class="bg-emerald-50 border border-emerald-200 p-8 rounded-2xl">
-        <h3 class="font-semibold text-emerald-800 mb-4">Expected Outcomes</h3>
-        <ul class="grid md:grid-cols-2 gap-3 text-emerald-700">
-          <li>✓ Engaging mobile experience</li>
-          <li>✓ iOS & Android compatibility</li>
-          <li>✓ Optional AI-powered features</li>
-        </ul>
+        <div class="bg-white p-8 rounded-3xl shadow hover:shadow-xl transition">
+          <h3 class="text-2xl font-semibold mb-3">Mobile App Development</h3>
+          <p class="text-gray-600 mb-6">User-friendly iOS and Android apps with optional AI capabilities.</p>
+          <p class="text-sm text-emerald-600 font-medium">Benefit: Better customer and team engagement on the go</p>
+          <a href="services-detail.html#mobile" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+        </div>
       </div>
     </div>
 
     <!-- Specialized Solutions -->
-    <div id="syndication" class="bg-white p-10 rounded-3xl shadow">
-      <h2 class="text-3xl font-bold mb-4">Real Estate Syndication AI Accelerator</h2>
-      <p class="text-gray-600">Targeted AI support for multifamily and hospitality syndicators (available upon request).</p>
+    <div>
+      <h2 class="text-3xl font-semibold mb-8 flex items-center gap-3 justify-center">
+        <span class="text-amber-600">⭐</span> Specialized Solutions
+      </h2>
+      <div class="max-w-lg mx-auto bg-white p-8 rounded-3xl shadow hover:shadow-xl transition text-center">
+        <h3 class="text-2xl font-semibold mb-3">Real Estate Syndication AI Accelerator</h3>
+        <p class="text-gray-600 mb-6">Targeted AI support for multifamily and hospitality syndicators (available upon request).</p>
+        <a href="services-detail.html#syndication" class="text-indigo-600 hover:text-indigo-700 font-medium">Learn more →</a>
+      </div>
     </div>
   </div>
 
