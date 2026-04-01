@@ -4,6 +4,7 @@ title: AI Tools and Resources
 ---
 
 # AI Tools, Frameworks, Agents
+- [OpenRAG Doc](https://www.openr.ag) and [OpenRAG GitHub](https://github.com/langflow-ai/openrag/) - OpenRAG is an open-source package for building agentic RAG systems that integrates with a wide range of orchestration tools, databases, and LLM providers. OSS Licenses - Apache License V2.0
 - [The Agency: AI Specialists - Transform Workflows](https://github.com/msitarzewski/agency-agents/) - prompt library, not a runtime orchestration framework
 - [CrewAI](https://github.com/crewAIInc/crewAI/tree/main) - High-level opinionated framework designed for orachestraing role-playing autonomous AI agents
 - [LangGraph](https://docs.langchain.com/oss/python/langgraph/overview) - is a low-leve, graph-based orchestration framework, treating AI workflows as directed graphs
