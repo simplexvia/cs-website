@@ -1,5 +1,5 @@
 **Triage Guidance Document**  
-**Centaur Free Flow Exerciser – Original Control Panel Only**  
+**Centaur Free Flow Exerciser –**  
 **Version 1.9** | April 8, 2026  
 
 **The Simple Path to AI & Digital Success.**  
