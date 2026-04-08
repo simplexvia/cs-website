@@ -166,6 +166,28 @@ Trips are **latched** for safety. The drive will not run until the fault is ackn
 - **Connect Drive Commissioning Software** (free PC tool):  
   [Download Connect Software](https://moen.nidec.com/en-US/drives/Products/Software/Commissioning/Connect)
 
+
+**Commander C200 / C300 VSD Trip Codes Table**  
+(Extracted from *Commander C200/C300 Control User Guide*, primarily Chapter 12 Diagnostics, pages 147–168)
+
+| Code       | Description                                      | Possible Causes                                      | Page Reference |
+|------------|--------------------------------------------------|------------------------------------------------------|----------------|
+| OV         | Over voltage                                     | Supply too high, insufficient deceleration, braking issues | 159 |
+| OI.AC      | Instantaneous output over current                | Short circuit, motor insulation fault, long cable    | 158–159 |
+| OI.br      | Braking IGBT over current                        | Brake resistor wiring/value fault                    | 158 |
+| dESt       | Two or more parameters writing to same destination | Parameter conflict (Menus 7, 8, 9, 12, 14)         | 153 |
+| I.Trip / OC| Over current / motor overload                    | Motor overload, short circuit                        | 158 |
+| UU         | Under voltage                                    | Low supply voltage                                   | — |
+| O.Ld       | Overload                                         | Excessive load or prolonged high current             | 156 |
+| Et         | External trip                                    | External safety input activated                      | 154 |
+| th         | Motor thermistor over-temperature                | Motor overheating, faulty thermistor                 | 164 |
+| FAn.F      | Fan fail                                         | Fan obstructed or failed                             | 154 |
+| PAd        | Keypad removed while in keypad mode              | Keypad disconnected during operation                 | 160 |
+| SCL        | Control word watchdog timeout                    | Control word not serviced within 1 second            | 163 |
+| HFxx       | Hardware faults (HF01–HF19)                      | Control/power PCB failure                            | 154–156 |
+| C.xx       | NV Media Card / cloning trips                    | Card errors, read-only, mismatch                     | 149–151 |
+| SL.xx      | Option module trips (slot 1)                     | Option module fault or removed                       | 163–164 |
+
 **Mermaid Sequence Diagrams**
 
 **Normal Start Flow**
@@ -202,24 +224,3 @@ sequenceDiagram
     C200VSD->>Operator: Check VSD display for exact code
     Note over Operator,C200VSD: Clear trip, fix cause, then retry
 ```
-
-**Commander C200 / C300 VSD Trip Codes Table**  
-(Extracted from *Commander C200/C300 Control User Guide*, primarily Chapter 12 Diagnostics, pages 147–168)
-
-| Code       | Description                                      | Possible Causes                                      | Page Reference |
-|------------|--------------------------------------------------|------------------------------------------------------|----------------|
-| OV         | Over voltage                                     | Supply too high, insufficient deceleration, braking issues | 159 |
-| OI.AC      | Instantaneous output over current                | Short circuit, motor insulation fault, long cable    | 158–159 |
-| OI.br      | Braking IGBT over current                        | Brake resistor wiring/value fault                    | 158 |
-| dESt       | Two or more parameters writing to same destination | Parameter conflict (Menus 7, 8, 9, 12, 14)         | 153 |
-| I.Trip / OC| Over current / motor overload                    | Motor overload, short circuit                        | 158 |
-| UU         | Under voltage                                    | Low supply voltage                                   | — |
-| O.Ld       | Overload                                         | Excessive load or prolonged high current             | 156 |
-| Et         | External trip                                    | External safety input activated                      | 154 |
-| th         | Motor thermistor over-temperature                | Motor overheating, faulty thermistor                 | 164 |
-| FAn.F      | Fan fail                                         | Fan obstructed or failed                             | 154 |
-| PAd        | Keypad removed while in keypad mode              | Keypad disconnected during operation                 | 160 |
-| SCL        | Control word watchdog timeout                    | Control word not serviced within 1 second            | 163 |
-| HFxx       | Hardware faults (HF01–HF19)                      | Control/power PCB failure                            | 154–156 |
-| C.xx       | NV Media Card / cloning trips                    | Card errors, read-only, mismatch                     | 149–151 |
-| SL.xx      | Option module trips (slot 1)                     | Option module fault or removed                       | 163–164 |
