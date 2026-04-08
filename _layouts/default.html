@@ -49,16 +49,39 @@
 
     <script src="{{ '/assets/js/scale.fix.js' | relative_url }}"></script>
 
-    <!-- Mermaid.js - Add this to enable diagram rendering -->
+    <!-- Mermaid.js - Fixed for GitHub Pages + Jekyll compatibility -->
     <script type="module">
       import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+
+      // Mermaid configuration
       mermaid.initialize({
         startOnLoad: false,
-        theme: 'default',
-        securityLevel: 'loose'
+        theme: 'default',           // Options: default, dark, neutral, base
+        securityLevel: 'loose',
+        flowchart: { useMaxWidth: true },
+        sequence: { useMaxWidth: true }
       });
-      mermaid.run({
-        querySelector: 'pre code.language-mermaid'
+
+      // Fix Jekyll output and render diagrams
+      document.addEventListener('DOMContentLoaded', async () => {
+        // Convert Jekyll's <pre><code class="language-mermaid"> to <pre class="mermaid">
+        document.querySelectorAll('pre code.language-mermaid').forEach(codeEl => {
+          const preEl = codeEl.parentElement;
+          if (preEl && preEl.tagName === 'PRE') {
+            preEl.classList.add('mermaid');
+            codeEl.classList.remove('language-mermaid'); // clean up
+          }
+        });
+
+        // Render all Mermaid diagrams
+        try {
+          await mermaid.run({
+            querySelector: 'pre.mermaid',
+            suppressErrors: true
+          });
+        } catch (err) {
+          console.error('Mermaid rendering failed:', err);
+        }
       });
     </script>
   </body>
