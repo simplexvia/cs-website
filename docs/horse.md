@@ -3,6 +3,10 @@ layout: default
 title:  Horseman 
 ---
 
+# Horse Equipment
+-   [TCentaur Horse Walker Triage Guidance](./horseman/tcentaur-walker-triage-guidance.md)   
+
+
 # Horsemanship Guides
 
 ## Colleges with Horsemanship Programs
