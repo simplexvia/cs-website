@@ -188,39 +188,12 @@ Trips are **latched** for safety. The drive will not run until the fault is ackn
 | C.xx       | NV Media Card / cloning trips                    | Card errors, read-only, mismatch                     | 149–151 |
 | SL.xx      | Option module trips (slot 1)                     | Option module fault or removed                       | 163–164 |
 
-**Mermaid Sequence Diagrams**
+**Sequence Diagrams**
 
 **Normal Start Flow**
 
-```mermaid
-sequenceDiagram
-    participant Operator
-    participant ControlPanel
-    participant C200VSD
-    participant Motor
-
-    Operator->>ControlPanel: Press START (E-stop reset, Shocker ON, Timer set)
-    ControlPanel->>C200VSD: Digital Run Command + 0-10V Analog Speed Signal
-    C200VSD->>C200VSD: Check safety interlocks + no active trips
-    C200VSD->>Motor: Ramp motor to commanded speed (0-240V / 0-550 Hz)
-    Motor->>C200VSD: Feedback (current, speed, status)
-    C200VSD->>ControlPanel: Status OK (display shows running)
-    ControlPanel->>Operator: Machine runs normally
-```
+![Normal Flow Path](./images/NormalFlow.png)
 
 **Fault/Trip Path**
 
-```mermaid
-sequenceDiagram
-    participant Operator
-    participant ControlPanel
-    participant C200VSD
-    participant Motor
-
-    Operator->>ControlPanel: Press START
-    ControlPanel->>C200VSD: Run Command + Speed Signal
-    C200VSD->>C200VSD: Trip detected (OV, I.Trip, dESt, etc.)
-    C200VSD->>ControlPanel: Display shows trip code + motor stops
-    C200VSD->>Operator: Check VSD display for exact code
-    Note over Operator,C200VSD: Clear trip, fix cause, then retry
-```
+![Fault Trip Path](./images/Fault-Trip-Path.png)
