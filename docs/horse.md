@@ -3,11 +3,10 @@ layout: default
 title:  Horseman 
 ---
 
-# Horse Equipment
--   [TCentaur Horse Walker Triage Guidance](./horseman/tcentaur-walker-triage-guidance.md)   
-
-
 # Horsemanship Guides
+
+## Horse Equipment
+-   [TCentaur Horse Walker Triage Guidance](./horseman/tcentaur-walker-triage-guidance.md)
 
 ## Colleges with Horsemanship Programs
 -   [About Horsemanship at Wyoming Catholic College, Lander, WY](https://wyomingcatholic.edu/academics/horsemanship/)
