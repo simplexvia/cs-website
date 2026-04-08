@@ -82,6 +82,8 @@ The base C200 model has **no built-in WiFi or Bluetooth**. It uses only wired co
 - **O.Ld** – Overload
 
 For the full diagnostic info including how to read the VSD display and the trip codes, see the diagonstics section (chapter 12) starting on page 147 of the [Commander C200/C300 Control User Guide](https://moen.nidec.com/drives/-/media/Project/Nidec/ControlTechniques/Documents/Technical/Control-User-Guides/Commander-C/Commander-C200-C300-Control-User-Guide-EN.pdf)
+
+
 ---
 
 ### 5. Triage Flow (Updated with VSD)
