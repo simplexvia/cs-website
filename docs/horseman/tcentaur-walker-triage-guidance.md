@@ -163,8 +163,18 @@ Trips are **latched** for safety. The drive will not run until the fault is ackn
   [moen.nidec.com/drives/services](https://moen.nidec.com/drives/services)  
 - Commander C200 Parameter Reference & Trip Code List:  
   [ctmanuals.info (search “Commander C200”)](https://ctmanuals.info)  
-- **Connect Drive Commissioning Software** (free PC tool):  
-  [Download Connect Software](https://moen.nidec.com/en-US/drives/Products/Software/Commissioning/Connect)
+
+**Connect Drive Commissioning Software** (free PC tool to read parameters, trip history, update firmware, and commission the C200 VSD)  
+- Official Product Page & Documentation:  
+  [https://moen.nidec.com/en-US/drives/Products/Software/Commissioning/Connect](https://moen.nidec.com/en-US/drives/Products/Software/Commissioning/Connect)  
+- Direct Downloads Page (latest version V03.01.02):  
+  [https://apps.controltechniques.com/Downloads/SharePoint/Download.aspx?SiteId=4&ProductId=258](https://apps.controltechniques.com/Downloads/SharePoint/Download.aspx?SiteId=4&ProductId=258)  
+- Getting Started Guide (PDF):  
+  [Download PDF](https://moen.nidec.com/drives/-/media/Project/Nidec/ControlTechniques/Documents/Technical/Getting-Started-Guides/Software/Connect/Commissioning-a-Control-Techniques-drive-using-Connect-Getting-Started-Guide-EN.pdf)  
+- **Supported Platforms**  
+  - **Windows only** (Windows 7 SP1, Windows 8, Windows 10, Windows 11 recommended).  
+  - Not available for macOS or Linux.
+
 
 
 **Commander C200 / C300 VSD Trip Codes Table**  
