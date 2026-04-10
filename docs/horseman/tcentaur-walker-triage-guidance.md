@@ -1,6 +1,6 @@
 **Triage Guidance Document**  
 **Centaur Free Flow Exerciser –**  
-**Version 1.9** | April 8, 2026  
+**Version 1.10** | April 10, 2026  
 
 **The Simple Path to AI & Digital Success.**  
 **SimplexVia LLC** – Research support
