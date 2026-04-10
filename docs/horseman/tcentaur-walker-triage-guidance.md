@@ -212,3 +212,24 @@ For the full diagnostic info including how to read the VSD display and all the t
 **Fault/Trip Path**
 
 ![Fault Trip Path](./images/Fault-Trip-Path.png)
+
+--
+
+### Appendix A – VSD Replacement Guide
+**Replacement Options for Commander C200 (C200-042 00133 A, 3 HP, 200–240 V, 13.3 A)**
+
+| Rank | Manufacturer (US Focus)       | Model / Series                  | Key Specs Match                  | Single-Phase (2-Phase) Input Support | Why Reliable / Notes                                      | Supplier Link (Official / Major Distributor) | Approx. Price (USD) |
+|------|-------------------------------|---------------------------------|----------------------------------|--------------------------------------|-----------------------------------------------------------|----------------------------------------------|---------------------|
+| 1    | Rockwell Automation (USA)     | PowerFlex 525 (25B)            | 3 HP, 13.3 A, 200–240 V, 3-ph   | **Yes** (with ~35–50% derating)     | Highest reliability, modular, excellent diagnostics       | [Rockwell PowerFlex 525 3 HP](https://www.rockwellautomation.com/en-us/products/hardware/vfds-variable-frequency-drives/25b-powerflex-525.html) | $950 – $1,100 |
+| 2    | Eaton (USA)                   | PowerXL DG1                    | 3 HP, 13–16 A, 200–240 V, 3-ph  | **Yes** (with derating)             | Built for harsh barn environments, energy-saving          | [Eaton PowerXL DG1 3 HP](https://www.eaton.com/us/en-us/catalog/drives/powerxl-dg1-variable-frequency-drives.html) | $680 – $820 |
+| 3    | Eaton (USA)                   | PowerXL DC1 (compact)          | 3 HP, 13.3 A, 200–240 V, 3-ph   | **Yes** (with derating)             | Very compact, cost-effective                              | [Eaton PowerXL DC1 3 HP](https://www.eaton.com/us/en-us/catalog/drives/powerxl-dc1-variable-frequency-drives.html) | $460 – $550 |
+| 4    | Rockwell Automation (USA)     | PowerFlex 523 (25A)            | 3 HP, 13.3 A, 200–240 V, 3-ph   | **Yes** (with derating)             | Slightly lower cost than 525, still very reliable         | [Rockwell PowerFlex 523 3 HP](https://www.rockwellautomation.com/en-us/products/hardware/vfds-variable-frequency-drives/25a-powerflex-523.html) | $680 – $790 |
+| 5    | ABB (strong US operations)    | ACS355                         | 3 HP, 13–15 A, 200–240 V, 3-ph  | **Yes** (with derating)             | Extremely robust, easy parameter cloning                  | [ABB ACS355 3 HP](https://new.abb.com/drives/low-voltage-ac/drives-and-drive-modules/acs355) | $580 – $720 |
+| 6    | Yaskawa (US manufacturing)    | GA500                          | 3 HP, 13.3 A, 200–240 V, 3-ph   | **Yes** (with derating)             | Excellent vector control, long MTBF                       | [Yaskawa GA500 3 HP](https://www.yaskawa.com/products/drives/industrial-ac-drives/ga500) | $620 – $780 |
+| 7    | Schneider Electric (US ops)   | Altivar 320 (ATV320)           | 3 HP, 13–16 A, 200–240 V, 3-ph  | **Yes** (with derating)             | Compact, native Modbus                                    | [Schneider Altivar 320 3 HP](https://www.se.com/us/en/product-range/61374-altivar-320/) | $480 – $590 |
+| 8    | Danfoss (US manufacturing)    | VLT Micro Drive (FC 51)        | 3 HP, 13.3 A, 200–240 V, 3-ph   | **Yes** (with derating)             | Harsh-environment rated                                   | [Danfoss VLT Micro Drive](https://www.danfoss.com/en-us/products/danfoss-drives/low-voltage-drives/vlt-micro-drive-fc-51/) | $510 – $650 |
+
+**Important Note on “2-Phase” (Single-Phase) Input**  
+All listed drives **support single-phase 200–240 V input** (what you called “2 phase”), but with **derating** (typically 35–50% of rated power) to prevent overheating the DC bus.  
+The original C200 also supported single-phase input with derating, so this is normal for this size drive.  
+If your barn supply is truly single-phase, the **Eaton PowerXL DC1** or **Schneider Altivar 320** are often the easiest to configure.
