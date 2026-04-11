@@ -1,6 +1,6 @@
 **Triage Guidance Document**  
 **Centaur Free Flow Exerciser –**  
-**Version 1.13** | April 10, 2026  
+**Version 1.16** | April 11, 2026  
 
 **The Simple Path to AI & Digital Success.**  
 **SimplexVia LLC** – Research support
@@ -9,6 +9,8 @@
 
 ### Purpose
 This document provides **quick, safe triage steps** for barn staff when the Centaur Free Flow Exerciser does **not** start, stop, or operate correctly using the **factory-original white/gray control panel**.  
+
+**Important Update (v1.16)**: Added dedicated **Preferred Oversized Replacements** table in Appendix A (for single-phase input with **no manual derating** required). See [Appendeix A](#appendix-a--vsd-replacement-guide) at the end of this page.
 
 ---
 
@@ -229,30 +231,31 @@ For the full diagnostic info including how to read the VSD display and all the t
 | 7    | Schneider Electric (US ops)   | Altivar 320 (ATV320)           | 3 HP, 13–16 A, 200–240 V, 3-ph  | **Yes** (with derating)             | Compact, native Modbus                                    | [Schneider Altivar 320 3 HP](https://www.se.com/us/en/product-range/61374-altivar-320/) | $480 – $590 |
 | 8    | Danfoss (US manufacturing)    | VLT Micro Drive (FC 51)        | 3 HP, 13.3 A, 200–240 V, 3-ph   | **Yes** (with derating)             | Harsh-environment rated                                   | [Danfoss VLT Micro Drive](https://www.danfoss.com/en-us/products/danfoss-drives/low-voltage-drives/vlt-micro-drive-fc-51/) | $510 – $650 |
 
+**Derating for Single-Phase Input (200–240 V “2-Phase” Supply)**  
+The **DC Bus** (bank of large capacitors) is located **inside the VSD device** itself.  
+
+**Important facts**:
+- The VSD **does NOT derate automatically**.  
+- The factory default setting on every drive (including the original C200 and all replacements) assumes **3-phase input** and allows full rated current/power.  
+- When you feed single-phase power, the rectifier charges the DC Bus less frequently, causing higher ripple current and heat in the capacitors.  
+
+**How to configure derating**:
+1. **Preferred method** — Oversize the drive (e.g., select a 5 HP or 7.5 HP model instead of a 3 HP drive).  
+   **You do NOT need to configure any derating manually.**  
+   - Simply set all motor parameters to the actual motor nameplate values (full 3 HP / 13.3 A).  
+   - The larger drive automatically has enough thermal and current headroom for safe single-phase operation.  
+   - This is the **easiest, safest, and most reliable** approach. Most installers choose this method because it avoids any manual current-limit adjustments and gives extra margin for starting torque.
+
+**Preferred Oversized Replacements Table**  
+(Recommended for single-phase input – no manual derating required)
+
+| Rank | Manufacturer (US Focus)       | Model / Series                  | Size | Single-Phase Input Support | Why Preferred                                             | Supplier Link (Official / Major Distributor) | Approx. Price (USD) |
+|------|-------------------------------|---------------------------------|------|----------------------------|-----------------------------------------------------------|----------------------------------------------|---------------------|
+| 1    | Rockwell Automation (USA)     | PowerFlex 525 (25B)            | 5 HP | Full (no derating needed)  | Highest reliability, modular, excellent diagnostics       | [Rockwell PowerFlex 525 5 HP](https://www.rockwellautomation.com/en-us/products/hardware/vfds-variable-frequency-drives/25b-powerflex-525.html) | $1,250 – $1,450 |
+| 2    | Eaton (USA)                   | PowerXL DG1                    | 5 HP | Full (no derating needed)  | Built for harsh barn environments, energy-saving          | [Eaton PowerXL DG1 5 HP](https://www.eaton.com/us/en-us/catalog/drives/powerxl-dg1-variable-frequency-drives.html) | $920 – $1,100 |
+| 3    | Eaton (USA)                   | PowerXL DC1 (compact)          | 5 HP | Full (no derating needed)  | Very compact, cost-effective                              | [Eaton PowerXL DC1 5 HP](https://www.eaton.com/us/en-us/catalog/drives/powerxl-dc1-variable-frequency-drives.html) | $680 – $820 |
+| 4    | Rockwell Automation (USA)     | PowerFlex 523 (25A)            | 5 HP | Full (no derating needed)  | Slightly lower cost than 525, still very reliable         | [Rockwell PowerFlex 523 5 HP](https://www.rockwellautomation.com/en-us/products/hardware/vfds-variable-frequency-drives/25a-powerflex-523.html) | $920 – $1,050 |
+| 5    | Schneider Electric (US ops)   | Altivar 320 (ATV320)           | 5 HP | Full (no derating needed)  | Compact, native Modbus, very easy setup                   | [Schneider Altivar 320 5 HP](https://www.se.com/us/en/product-range/61374-altivar-320/) | $650 – $780 |
+
 ---
 
-**Important Note on “2-Phase” (Single-Phase) Input**  
-All listed drives **support single-phase 200–240 V input** (what you called “2 phase”), but with **derating** (typically 35–50% of rated power) to prevent overheating the DC bus.  
-The original C200 also supported single-phase input with derating, so this is normal for this size drive.  
-If your barn supply is truly single-phase, the **Eaton PowerXL DC1** or **Schneider Altivar 320** are often the easiest to configure.
-
-**DC Bus Clarification**  
-The **DC Bus** is the bank of large capacitors located **inside the VSD device** itself.  
-When running on single-phase input, the DC Bus experiences higher ripple current and heats up more, which is why manufacturers require derating (35–50 % of rated power) to keep the capacitors within safe temperature limits and extend drive life.
-
-### Simple Explanation
-Inside every modern Variable Speed Drive (VSD) there is a section called the **DC Bus**.  
-It is a bank of large capacitors that store the DC voltage after the incoming AC power is converted (rectified) to DC.    The DC Bus then supplies clean DC power to the inverter stage that creates the variable-frequency AC for the motor.
-
-**Why derating is required for single-phase (“2-phase”) input:**
-
-- The original Commander C200 (and all the replacement drives) was **designed for 3-phase input**.
-- When you feed it single-phase power instead, the rectifier only charges the DC Bus capacitors on every half-cycle instead of three times per cycle.
-- This creates much higher ripple current → the capacitors heat up significantly more than normal.
-- To prevent overheating and premature failure of the DC Bus capacitors, the manufacturer requires **derating** (reducing the output power to 35–50 % of the drive’s rated capacity).
-
-In practice this means:
-- A 3 HP drive run on single-phase power is safely limited to roughly **1–1.5 HP** continuous load (depending on the specific model).
-- The Centaur exerciser motor is only ~3 HP, so derating is acceptable and commonly done.
-
-All the drives in Appendix A above support single-phase input **with derating**. No external DC Bus or extra hardware is needed.
