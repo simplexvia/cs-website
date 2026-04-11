@@ -1,6 +1,6 @@
 **Triage Guidance Document**  
 **Centaur Free Flow Exerciser –**  
-**Version 1.10** | April 10, 2026  
+**Version 1.13** | April 10, 2026  
 
 **The Simple Path to AI & Digital Success.**  
 **SimplexVia LLC** – Research support
@@ -229,7 +229,30 @@ For the full diagnostic info including how to read the VSD display and all the t
 | 7    | Schneider Electric (US ops)   | Altivar 320 (ATV320)           | 3 HP, 13–16 A, 200–240 V, 3-ph  | **Yes** (with derating)             | Compact, native Modbus                                    | [Schneider Altivar 320 3 HP](https://www.se.com/us/en/product-range/61374-altivar-320/) | $480 – $590 |
 | 8    | Danfoss (US manufacturing)    | VLT Micro Drive (FC 51)        | 3 HP, 13.3 A, 200–240 V, 3-ph   | **Yes** (with derating)             | Harsh-environment rated                                   | [Danfoss VLT Micro Drive](https://www.danfoss.com/en-us/products/danfoss-drives/low-voltage-drives/vlt-micro-drive-fc-51/) | $510 – $650 |
 
+---
+
 **Important Note on “2-Phase” (Single-Phase) Input**  
 All listed drives **support single-phase 200–240 V input** (what you called “2 phase”), but with **derating** (typically 35–50% of rated power) to prevent overheating the DC bus.  
 The original C200 also supported single-phase input with derating, so this is normal for this size drive.  
 If your barn supply is truly single-phase, the **Eaton PowerXL DC1** or **Schneider Altivar 320** are often the easiest to configure.
+
+**DC Bus Clarification**  
+The **DC Bus** is the bank of large capacitors located **inside the VSD device** itself.  
+When running on single-phase input, the DC Bus experiences higher ripple current and heats up more, which is why manufacturers require derating (35–50 % of rated power) to keep the capacitors within safe temperature limits and extend drive life.
+
+### Simple Explanation
+Inside every modern Variable Speed Drive (VSD) there is a section called the **DC Bus**.  
+It is a bank of large capacitors that store the DC voltage after the incoming AC power is converted (rectified) to DC.    The DC Bus then supplies clean DC power to the inverter stage that creates the variable-frequency AC for the motor.
+
+**Why derating is required for single-phase (“2-phase”) input:**
+
+- The original Commander C200 (and all the replacement drives) was **designed for 3-phase input**.
+- When you feed it single-phase power instead, the rectifier only charges the DC Bus capacitors on every half-cycle instead of three times per cycle.
+- This creates much higher ripple current → the capacitors heat up significantly more than normal.
+- To prevent overheating and premature failure of the DC Bus capacitors, the manufacturer requires **derating** (reducing the output power to 35–50 % of the drive’s rated capacity).
+
+In practice this means:
+- A 3 HP drive run on single-phase power is safely limited to roughly **1–1.5 HP** continuous load (depending on the specific model).
+- The Centaur exerciser motor is only ~3 HP, so derating is acceptable and commonly done.
+
+All the drives in Appendix A above support single-phase input **with derating**. No external DC Bus or extra hardware is needed.
