@@ -10,7 +10,7 @@
 ### Purpose
 This document provides **quick, safe triage steps** for barn staff when the Centaur Free Flow Exerciser does **not** start, stop, or operate correctly using the **factory-original white/gray control panel**.  
 
-**Important Update (v1.16)**: Added dedicated **Preferred Oversized Replacements** table in Appendix A (for single-phase input with **no manual derating** required). See [Appendeix A](#appendix-a--vsd-replacement-guide) at the end of this page.
+**Important Update (v1.16)**: Added dedicated **Preferred Oversized Replacements** table in Appendix A (for single-phase input with **no manual derating** required). In [Appendeix A](#appendix-a--vsd-replacement-guide) see the notes on [Single-Phase](#notes-on-single-phase-and-derating).
 
 ---
 
@@ -231,6 +231,7 @@ For the full diagnostic info including how to read the VSD display and all the t
 | 7    | Schneider Electric (US ops)   | Altivar 320 (ATV320)           | 3 HP, 13–16 A, 200–240 V, 3-ph  | **Yes** (with derating)             | Compact, native Modbus                                    | [Schneider Altivar 320 3 HP](https://www.se.com/us/en/product-range/61374-altivar-320/) | $480 – $590 |
 | 8    | Danfoss (US manufacturing)    | VLT Micro Drive (FC 51)        | 3 HP, 13.3 A, 200–240 V, 3-ph   | **Yes** (with derating)             | Harsh-environment rated                                   | [Danfoss VLT Micro Drive](https://www.danfoss.com/en-us/products/danfoss-drives/low-voltage-drives/vlt-micro-drive-fc-51/) | $510 – $650 |
 
+#### Notes on Single-Phase and Derating 
 **Derating for Single-Phase Input (200–240 V “2-Phase” Supply)**  
 The **DC Bus** (bank of large capacitors) is located **inside the VSD device** itself.  
 
@@ -241,7 +242,7 @@ The **DC Bus** (bank of large capacitors) is located **inside the VSD device** i
 
 **How to configure derating**:
 1. **Preferred method** — Oversize the drive (e.g., select a 5 HP or 7.5 HP model instead of a 3 HP drive).  
-   **You do NOT need to configure any derating manually.**  
+   **For an oversize 5 HP drive only, you do not need to configure any derating manually.**  
    - Simply set all motor parameters to the actual motor nameplate values (full 3 HP / 13.3 A).  
    - The larger drive automatically has enough thermal and current headroom for safe single-phase operation.  
    - This is the **easiest, safest, and most reliable** approach. Most installers choose this method because it avoids any manual current-limit adjustments and gives extra margin for starting torque.
