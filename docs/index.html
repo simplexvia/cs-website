@@ -1,56 +1,453 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SimplexVia LLC | AI & Digital Solutions</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <style>
-    .hero-bg { background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('https://picsum.photos/id/1015/2000/1200'); background-size: cover; background-position: center; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simplex Via — AI Advisory & Automation Services</title>
+<style>
+  :root{
+    --navy:#2F3B69;
+    --warm:#E3DDDC;
+    --nearwhite:#FAFAFF;
+    --white:#FFFFFF;
+    --gray:#333333;
+    --gold:#C8A96E;
+    --teal:#2C7873;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--gray);
+    background:var(--white);
+    line-height:1.55;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+
+  /* ---- Header ---- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--navy);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  header .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:14px; padding-bottom:14px;
+  }
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand img{height:38px; width:auto;}
+  .brand span{color:var(--nearwhite); font-weight:bold; font-size:18px; letter-spacing:1px;}
+  nav ul{list-style:none; display:flex; gap:28px;}
+  nav a{color:var(--nearwhite); text-decoration:none; font-size:14px; opacity:0.9;}
+  nav a:hover{opacity:1; color:var(--gold);}
+  .nav-cta{
+    background:var(--gold); color:var(--navy)!important; font-weight:bold;
+    padding:9px 18px; border-radius:4px; font-size:14px; text-decoration:none;
+    opacity:1!important;
+  }
+  @media (max-width:760px){ nav ul{display:none;} }
+
+  /* ---- Hero ---- */
+  .hero{
+    background:var(--navy);
+    color:var(--nearwhite);
+    padding:80px 0 90px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .hero-watermark{
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    width:900px; max-width:140%; opacity:0.07; pointer-events:none;
+  }
+  .hero .wrap{position:relative; z-index:1;}
+  .hero .eyebrow{
+    color:var(--gold); letter-spacing:2px; font-size:13px; font-weight:bold;
+    text-transform:uppercase; margin-bottom:18px;
+  }
+  .hero .tagline{
+    color:var(--gold); font-style:italic; font-size:14px; margin-bottom:14px;
+  }
+  .hero h1{
+    font-size:40px; font-weight:bold; max-width:780px; margin:0 auto 20px;
+  }
+  .hero p{
+    font-size:18px; max-width:620px; margin:0 auto 34px; color:var(--nearwhite); opacity:0.9;
+  }
+  .btn{
+    display:inline-block; padding:14px 30px; border-radius:4px; font-weight:bold;
+    text-decoration:none; font-size:15px; cursor:pointer; border:none;
+  }
+  .btn-gold{background:var(--gold); color:var(--navy);}
+  .btn-gold:hover{background:#d8bd8c;}
+  .btn-outline{
+    background:transparent; color:var(--nearwhite); border:1px solid rgba(255,255,255,0.5);
+    margin-left:14px;
+  }
+  .btn-outline:hover{border-color:var(--gold); color:var(--gold);}
+  .hero-sub{font-size:13px; margin-top:20px; opacity:0.7;}
+
+  /* ---- Ladder strip ---- */
+  .ladder-strip{
+    background:var(--warm); padding:34px 0; text-align:center;
+  }
+  .ladder-strip .wrap{
+    display:flex; align-items:center; justify-content:center; gap:14px; flex-wrap:wrap;
+    font-size:15px; font-weight:bold; color:var(--navy);
+  }
+  .ladder-strip .arrow{color:var(--gold); font-size:20px;}
+
+  /* ---- Section shared ---- */
+  section{padding:70px 0;}
+  .section-head{text-align:center; max-width:680px; margin:0 auto 48px;}
+  .section-head .kicker{
+    color:var(--teal); font-weight:bold; font-size:13px; letter-spacing:1.5px;
+    text-transform:uppercase; margin-bottom:10px;
+  }
+  .section-head h2{font-size:30px; color:var(--navy); margin-bottom:14px;}
+  .section-head p{font-size:16px; color:#555;}
+
+  /* ---- Tier cards ---- */
+  .tiers{display:grid; grid-template-columns:repeat(3,1fr); gap:26px;}
+  @media (max-width:900px){ .tiers{grid-template-columns:1fr;} }
+  .tier-card{
+    border:1px solid #e2e2e2; border-radius:8px; padding:32px 26px;
+    display:flex; flex-direction:column; background:var(--white);
+  }
+  .tier-card.featured{
+    border:2px solid var(--gold); box-shadow:0 8px 24px rgba(47,59,105,0.12);
+    position:relative;
+  }
+  .tier-card.featured::before{
+    content:"MOST POPULAR";
+    position:absolute; top:-13px; left:50%; transform:translateX(-50%);
+    background:var(--gold); color:var(--navy); font-size:11px; font-weight:bold;
+    padding:4px 12px; border-radius:12px; letter-spacing:1px;
+  }
+  .tier-num{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:30px; height:30px; border-radius:50%; background:var(--navy); color:var(--gold);
+    font-weight:bold; font-size:14px; margin-bottom:16px;
+  }
+  .tier-card h3{font-size:20px; color:var(--navy); margin-bottom:6px;}
+  .tier-price{font-size:26px; font-weight:bold; color:var(--teal); margin-bottom:4px;}
+  .tier-price small{font-size:13px; font-weight:normal; color:#777;}
+  .tier-tagline{font-size:13px; color:#777; margin-bottom:20px; font-style:italic;}
+  .tier-card ul{list-style:none; margin-bottom:26px; flex-grow:1;}
+  .tier-card ul li{
+    font-size:14px; padding:7px 0 7px 22px; position:relative; color:var(--gray);
+    border-bottom:1px solid #f0f0f0;
+  }
+  .tier-card ul li:last-child{border-bottom:none;}
+  .tier-card ul li::before{
+    content:"✓"; position:absolute; left:0; color:var(--teal); font-weight:bold;
+  }
+  .tier-card .btn{text-align:center; width:100%;}
+  .btn-navy{background:var(--navy); color:var(--nearwhite);}
+  .btn-navy:hover{background:#3c4a80;}
+
+  /* ---- Platforms ---- */
+  .platforms{background:var(--warm);}
+  .platforms-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px; max-width:900px; margin:0 auto;}
+  @media (max-width:760px){ .platforms-grid{grid-template-columns:1fr;} }
+  .platform-item{background:var(--white); border-radius:8px; padding:26px 22px; text-align:center; border:1px solid #e2e2e2;}
+  .platform-item h4{color:var(--navy); font-size:16px; margin-bottom:8px;}
+  .platform-item p{font-size:13px; color:#555;}
+
+  /* ---- Process ---- */
+  .process{background:var(--warm);}
+  .process-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:22px;}
+  @media (max-width:900px){ .process-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .process-grid{grid-template-columns:1fr;} }
+  .process-step{background:var(--white); border-radius:8px; padding:24px 20px;}
+  .process-step .step-no{
+    color:var(--gold); font-size:28px; font-weight:bold; margin-bottom:8px; display:block;
+  }
+  .process-step h4{font-size:15px; color:var(--navy); margin-bottom:8px;}
+  .process-step p{font-size:13px; color:#555;}
+
+  /* ---- A la carte ---- */
+  .alacarte-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:20px;}
+  @media (max-width:900px){ .alacarte-grid{grid-template-columns:1fr 1fr;} }
+  @media (max-width:560px){ .alacarte-grid{grid-template-columns:1fr;} }
+  .alacarte-card{
+    border:1px solid #e2e2e2; border-radius:8px; padding:22px; text-align:center;
+  }
+  .alacarte-card h4{color:var(--navy); font-size:15px; margin-bottom:8px;}
+  .alacarte-card .price{color:var(--teal); font-weight:bold; font-size:15px; margin-bottom:8px;}
+  .alacarte-card p{font-size:13px; color:#666;}
+
+  /* ---- Who it's for ---- */
+  .who{background:var(--navy); color:var(--nearwhite); text-align:center;}
+  .who .section-head h2{color:var(--nearwhite);}
+  .who .section-head p{color:rgba(255,255,255,0.75);}
+  .who-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px; max-width:900px; margin:0 auto;}
+  @media (max-width:760px){ .who-grid{grid-template-columns:1fr;} }
+  .who-item{padding:22px; border:1px solid rgba(255,255,255,0.15); border-radius:8px;}
+  .who-item h4{color:var(--gold); font-size:15px; margin-bottom:8px;}
+  .who-item p{font-size:13px; color:rgba(255,255,255,0.8);}
+
+  /* ---- Contact ---- */
+  .contact{background:var(--warm);}
+  .contact-box{
+    max-width:600px; margin:0 auto; background:var(--white); border-radius:10px;
+    padding:44px 40px; text-align:center; border:1px solid #e2e2e2;
+  }
+  .contact-box h2{color:var(--navy); font-size:26px; margin-bottom:12px;}
+  .contact-box p{color:#555; margin-bottom:28px; font-size:15px;}
+  .contact-box .btn{margin:0 6px;}
+  .contact-note{font-size:12px; color:#888; margin-top:20px;}
+
+  /* ---- Footer ---- */
+  footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:30px 0; text-align:center; font-size:13px;}
+  footer strong{color:var(--nearwhite);}
+  footer .tagline{color:var(--gold); font-style:italic; font-size:12px; margin-top:6px;}
+  footer .social{margin-top:14px;}
+  footer .social a{
+    display:inline-flex; align-items:center; gap:6px;
+    color:rgba(255,255,255,0.65); text-decoration:none; font-size:13px;
+  }
+  footer .social a:hover{color:var(--gold);}
+  footer .social svg{width:16px; height:16px; fill:currentColor;}
+</style>
 </head>
-<body class="font-sans text-gray-900">
+<body>
 
-  <!-- Consistent Navigation -->
-  <nav class="bg-[#E2E9F5] shadow-sm sticky top-0 z-50 border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <img src="logo-header.png" alt="Simplex Via" class="h-16 w-auto">
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <img src="simplexvia-mark-tint.png" alt="Simplex Via logo">
+      <span>SIMPLEX VIA</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#ladder">Services</a></li>
+        <li><a href="#process">How It Works</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="https://cal.com/cal-simplexvia/free-assessments" target="_blank" rel="noopener">Book Free Assessment</a>
+  </div>
+</header>
+
+<section class="hero">
+  <img class="hero-watermark" src="simplexvia-mark-tint.png" alt="">
+  <div class="wrap">
+    <div class="eyebrow">AI Advisory &amp; Automation for Small Business</div>
+    <h1>Find the one AI fix that actually pays for itself — then let us build it.</h1>
+    <p>No buzzwords, no six-figure consulting retainer. Start with a free 15-minute call. Leave with a quantified, prioritized plan — or hand the build to us.</p>
+    <a class="btn btn-gold" href="https://cal.com/cal-simplexvia/free-assessments" target="_blank" rel="noopener">Book Your Free Assessment</a>
+    <a class="btn btn-outline" href="#ladder">See How It Works</a>
+    <div class="hero-sub">Free · 15 minutes · No pitch, just discovery</div>
+  </div>
+</section>
+
+<div class="ladder-strip">
+  <div class="wrap">
+    <span>Free Assessment</span>
+    <span class="arrow">→</span>
+    <span>Paid Assessment</span>
+    <span class="arrow">→</span>
+    <span>AI Concierge</span>
+  </div>
+</div>
+
+<section id="ladder">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">The AI Offer Ladder</div>
+      <h2>Three ways to work with us</h2>
+      <p>Each tier is designed to prove value before you spend more. Start free, and only move forward when the numbers make sense.</p>
+    </div>
+
+    <div class="tiers">
+      <div class="tier-card">
+        <span class="tier-num">1</span>
+        <h3>Free Mini Assessment</h3>
+        <div class="tier-price">Free <small>· ~15 minutes</small></div>
+        <div class="tier-tagline">Discovery only — no pitch, no obligation</div>
+        <ul>
+          <li>15-minute discovery call covering Effectiveness, Efficiency &amp; Quality</li>
+          <li>5-question framework surfaces your highest-friction bottleneck</li>
+          <li>We research your single biggest opportunity between calls</li>
+          <li>Second call: one named fix, its cost, and the first step to take</li>
+          <li>No pressure — you choose whether to DIY it or bring us in</li>
+        </ul>
+        <a class="btn btn-navy" href="https://cal.com/cal-simplexvia/free-assessments" target="_blank" rel="noopener">Book the Free Call</a>
       </div>
-      <div class="flex items-center gap-8 text-sm font-medium text-gray-800">
-        <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
-        <a href="about.html" class="hover:text-blue-600 transition-colors">About</a>
-        <a href="services.html" class="text-blue-600 font-semibold">Services</a>
-        <a href="free-ai-health-check.html" class="text-blue-600 font-semibold">Free AI Health Check</a>
-        <a href="contact.html" class="hover:text-blue-600 transition-colors">Contact</a>
+
+      <div class="tier-card featured">
+        <span class="tier-num">2</span>
+        <h3>Paid Assessment</h3>
+        <div class="tier-price">Flat Fee</div>
+        <div class="tier-tagline">A full, quantified opportunity report in 48 hours</div>
+        <ul>
+          <li>30-minute structured intake (voice or live Zoom)</li>
+          <li>9-part branded report: pain points, an effort-vs-impact opportunity map, your tool stack &amp; cost, a 4-day quick-win plan, and a dollar-quantified ROI calculation</li>
+          <li>Delivered within 48 hours</li>
+          <li>Live 30-minute walkthrough, screen-share included</li>
+          <li>Every recommendation tied to a specific, prioritized action</li>
+        </ul>
+        <a class="btn btn-gold" href="#contact">Start the Paid Assessment</a>
+      </div>
+
+      <div class="tier-card">
+        <span class="tier-num">3</span>
+        <h3>AI Concierge</h3>
+        <div class="tier-price">Monthly Retainer</div>
+        <div class="tier-tagline">Done WITH you, on an ongoing basis</div>
+        <ul>
+          <li>Two 45-minute live working sessions per month</li>
+          <li>Audit → Optimize → Automate framework, every session</li>
+          <li>Unlimited async support with a 12-business-hour reply SLA</li>
+          <li>Every call documented — recordings, takeaways, and action items</li>
+          <li>Limited to a small roster so delivery quality stays high</li>
+        </ul>
+        <a class="btn btn-navy" href="#contact">Apply for Concierge</a>
       </div>
     </div>
-  </nav>
+  </div>
+</section>
 
-  <!-- Hero -->
-  <section class="hero-bg h-screen flex items-center text-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-        The Simple Path to AI & Digital Success
-      </h1>
-      <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-10">
-        Practical AI adoption and custom digital products for businesses.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="services.html" class="bg-white text-indigo-700 hover:bg-gray-100 px-10 py-4 rounded-full text-lg font-semibold">
-          Explore Our Services
-        </a>
-        <a href="free-ai-health-check.html" class="border-2 border-white hover:bg-white/10 px-10 py-4 rounded-full text-lg font-semibold">
-          Start with Free AI Health Check
-        </a>
+<section id="platforms" class="platforms">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Where We Work</div>
+      <h2>Grounded in the AI tools you already use</h2>
+      <p>Every recommendation is built around the platforms your team already has access to — no forcing a new subscription just to get started.</p>
+    </div>
+    <div class="platforms-grid">
+      <div class="platform-item">
+        <h4>ChatGPT</h4>
+        <p>For teams standardized on OpenAI's assistant and Custom GPTs.</p>
+      </div>
+      <div class="platform-item">
+        <h4>Claude &amp; Cowork</h4>
+        <p>Anthropic's Claude, including Cowork mode for hands-on file and task automation.</p>
+      </div>
+      <div class="platform-item">
+        <h4>Microsoft Copilot</h4>
+        <p>Copilot across Microsoft 365, for teams built on the Microsoft stack.</p>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <footer class="bg-black text-gray-400 py-12 text-center text-sm">
-    <p>© 2026 Simplex Via LLC •  AI & Digital Solutions • Phoenix, AZ</p>
-  </footer>
+<section id="process" class="process">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">How It Works</div>
+      <h2>From free call to finished build</h2>
+      <p>The same path every client follows — each step earns the right to the next.</p>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <span class="step-no">01</span>
+        <h4>Book a free call</h4>
+        <p>15 minutes, no prep required. We ask five questions to find your biggest bottleneck.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-no">02</span>
+        <h4>Get one free fix</h4>
+        <p>We name the single highest-value opportunity, its cost, and the first step — yours to keep either way.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-no">03</span>
+        <h4>Go deeper (optional)</h4>
+        <p>Want the full picture? The paid assessment maps every opportunity and quantifies the dollar impact.</p>
+      </div>
+      <div class="process-step">
+        <span class="step-no">04</span>
+        <h4>Build it together (optional)</h4>
+        <p>Ready to execute? The AI Concierge retainer builds, automates, and maintains the fix with you.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="alacarte">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Standalone Projects</div>
+      <h2>À la carte builds</h2>
+      <p>Already know what you need? These can be scoped and delivered as one-off projects, or rolled into a Concierge retainer.</p>
+    </div>
+    <div class="alacarte-grid">
+      <div class="alacarte-card">
+        <h4>Process Optimization</h4>
+        <div class="price">Scoped per project</div>
+        <p>Map and streamline a core workflow end to end.</p>
+      </div>
+      <div class="alacarte-card">
+        <h4>Automation Build</h4>
+        <div class="price">Scoped per project</div>
+        <p>Automations that remove manual, repetitive work for good.</p>
+      </div>
+      <div class="alacarte-card">
+        <h4>Knowledge System</h4>
+        <div class="price">Scoped per project</div>
+        <p>A knowledge base trained on your business, docs, and process.</p>
+      </div>
+      <div class="alacarte-card">
+        <h4>Speed-to-Lead Agent</h4>
+        <div class="price">Scoped per project</div>
+        <p>An AI agent that responds to new leads before they go cold.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="who" class="who">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Who This Is For</div>
+      <h2>Built for owner-operated businesses</h2>
+      <p>If any of this sounds familiar, the free call is worth 15 minutes.</p>
+    </div>
+    <div class="who-grid">
+      <div class="who-item">
+        <h4>You feel the bottleneck</h4>
+        <p>A repetitive, high-friction task is eating time you don't have — you just haven't fixed it yet.</p>
+      </div>
+      <div class="who-item">
+        <h4>You can decide fast</h4>
+        <p>You can approve the spend yourself — no procurement process required.</p>
+      </div>
+      <div class="who-item">
+        <h4>You want proof, not hype</h4>
+        <p>You'd rather see a quantified plan than sit through a sales pitch about "AI transformation."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="contact-box">
+      <h2>Start with a free 15-minute call</h2>
+      <p>No prep, no pitch — just five questions to find out if there's a quick win worth pursuing.</p>
+      <a class="btn btn-gold" href="https://cal.com/cal-simplexvia/free-assessments" target="_blank" rel="noopener">Book Your Free Call</a>
+      <div class="contact-note">Prefer email? Write to <a href="mailto:info@simplexvia.com">info@simplexvia.com</a> and we'll follow up within one business day.</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong>Simplex Via LLC</strong> — AI Advisory &amp; Automation Services<br>
+    info@simplexvia.com
+    <div class="tagline">The Simple Path to AI &amp; Digital Success</div>
+    <div class="social">
+      <a href="https://www.linkedin.com/company/simplexvia/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>

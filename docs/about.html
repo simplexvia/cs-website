@@ -1,66 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - SimplexVia LLC</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="icon" type="image/png" href="favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Simplex Via</title>
+<style>
+  :root{
+    --navy:#2F3B69;
+    --warm:#E3DDDC;
+    --nearwhite:#FAFAFF;
+    --white:#FFFFFF;
+    --gray:#333333;
+    --gold:#C8A96E;
+    --teal:#2C7873;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--gray);
+    background:var(--white);
+    line-height:1.55;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+
+  /* ---- Header ---- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--navy);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  header .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:14px; padding-bottom:14px;
+  }
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand img{height:38px; width:auto;}
+  .brand span{color:var(--nearwhite); font-weight:bold; font-size:18px; letter-spacing:1px;}
+  nav ul{list-style:none; display:flex; gap:28px;}
+  nav a{color:var(--nearwhite); text-decoration:none; font-size:14px; opacity:0.9;}
+  nav a:hover{opacity:1; color:var(--gold);}
+  nav a.active{opacity:1; color:var(--gold);}
+  .nav-cta{
+    background:var(--gold); color:var(--navy)!important; font-weight:bold;
+    padding:9px 18px; border-radius:4px; font-size:14px; text-decoration:none;
+    opacity:1!important;
+  }
+  @media (max-width:760px){ nav ul{display:none;} }
+
+  .btn{
+    display:inline-block; padding:14px 30px; border-radius:4px; font-weight:bold;
+    text-decoration:none; font-size:15px; cursor:pointer; border:none;
+  }
+  .btn-gold{background:var(--gold); color:var(--navy);}
+  .btn-gold:hover{background:#d8bd8c;}
+  .btn-outline{
+    background:transparent; color:var(--navy); border:1px solid var(--navy);
+    margin-left:14px;
+  }
+  .btn-outline:hover{border-color:var(--teal); color:var(--teal);}
+
+  /* ---- Page hero ---- */
+  .page-hero{
+    background:var(--navy); color:var(--nearwhite);
+    padding:64px 0 56px; text-align:center;
+    position:relative; overflow:hidden;
+  }
+  .page-hero-watermark{
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    width:700px; max-width:140%; opacity:0.07; pointer-events:none;
+  }
+  .page-hero .wrap{position:relative; z-index:1;}
+  .page-hero .eyebrow{
+    color:var(--gold); letter-spacing:2px; font-size:13px; font-weight:bold;
+    text-transform:uppercase; margin-bottom:16px;
+  }
+  .page-hero h1{font-size:34px; font-weight:bold;}
+
+  section{padding:64px 0;}
+
+  /* ---- About content ---- */
+  .about-wrap{max-width:760px; margin:0 auto;}
+  .about-wrap .logo-mark{
+    display:block; margin:0 auto 32px; height:90px; width:auto;
+  }
+  .about-wrap h2{color:var(--navy); font-size:24px; margin-bottom:16px;}
+  .about-wrap p{font-size:16px; color:var(--gray); margin-bottom:20px;}
+  .about-wrap .lede{
+    font-size:19px; color:var(--navy); font-weight:bold; margin-bottom:28px;
+    text-align:center;
+  }
+
+  .pillars{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:20px;
+  }
+  @media (max-width:760px){ .pillars{grid-template-columns:1fr;} }
+  .pillar{
+    background:var(--warm); border-radius:8px; padding:24px 22px; text-align:center;
+  }
+  .pillar h4{color:var(--navy); font-size:15px; margin-bottom:10px;}
+  .pillar p{font-size:13px; color:#555; margin-bottom:0;}
+
+  .about-cta{background:var(--warm); text-align:center;}
+  .about-cta h2{color:var(--navy); font-size:24px; margin-bottom:12px;}
+  .about-cta p{color:#555; margin-bottom:24px; font-size:15px;}
+
+  /* ---- Footer ---- */
+  footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:30px 0; text-align:center; font-size:13px;}
+  footer strong{color:var(--nearwhite);}
+  footer .tagline{color:var(--gold); font-style:italic; font-size:12px; margin-top:6px;}
+  footer .social{margin-top:14px;}
+  footer .social a{
+    display:inline-flex; align-items:center; gap:6px;
+    color:rgba(255,255,255,0.65); text-decoration:none; font-size:13px;
+  }
+  footer .social a:hover{color:var(--gold);}
+  footer .social svg{width:16px; height:16px; fill:currentColor;}
+</style>
 </head>
-<body class="font-sans text-gray-900">
+<body>
 
-  <!-- Consistent Navigation -->
-  <nav class="bg-[#E2E9F5] shadow-sm sticky top-0 z-50 border-b border-gray-200">
-    <div class="max-w-7xl mx-auto px-6 py-3.5 flex justify-between items-center">
-      <div class="flex items-center gap-3">
-        <img src="logo-header.png" alt="Simplex Via" class="h-16 w-auto">
-      </div>
-      <div class="flex items-center gap-8 text-sm font-medium text-gray-800">
-        <a href="index.html" class="hover:text-blue-600 transition-colors">Home</a>
-        <a href="about.html" class="text-blue-600 font-semibold">About</a>
-        <a href="services.html" class="text-blue-600 font-semibold">Services</a>
-        <a href="free-ai-health-check.html" class="text-blue-600 font-semibold">Free AI Health Check</a>
-        <a href="contact.html" class="hover:text-blue-600 transition-colors">Contact</a>
-      </div>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a href="index.html" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <img src="simplexvia-mark-tint.png" alt="Simplex Via logo">
+        <span>SIMPLEX VIA</span>
+      </a>
     </div>
-  </nav>
+    <nav>
+      <ul>
+        <li><a href="index.html#ladder">Services</a></li>
+        <li><a href="index.html#process">How It Works</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="https://cal.com/cal-simplexvia/free-assessments" target="_blank" rel="noopener">Book Free Assessment</a>
+  </div>
+</header>
 
-  <!-- Your existing about page content goes here -->
+<section class="page-hero">
+  <img class="page-hero-watermark" src="simplexvia-mark-tint.png" alt="">
+  <div class="wrap">
+    <div class="eyebrow">About Simplex Via</div>
+    <h1>A decade of successful enterprise technology adoption experience — now applied to AI for small business.</h1>
+  </div>
+</section>
 
-  <div class="max-w-5xl mx-auto px-6 py-20">
-    <h1 class="text-5xl font-bold mb-8">About SimplexVia LLC</h1>
-    
-    <p class="text-xl text-gray-600 max-w-3xl mb-12">
-      SimplexVia was founded by a former IBM consultant with over 10 years of experience helping clients successfully adopt cloud technologies and modern DevOps tools. 
-      That same hands-on expertise in guiding organizations through complex technology adoption is now applied to AI and digital products — helping businesses move beyond experimentation 
-      to achieve real, measurable improvement in efficiency, speed, and growth. 
-      We bring the same disciplined, client-centric approach — focusing on real business outcomes rather than technology for technology's sake.
-    </p>
+<section>
+  <div class="wrap about-wrap">
+    <img class="logo-mark" src="simplexvia-mark-navy.png" alt="Simplex Via mark">
 
-    <div class="grid md:grid-cols-2 gap-16 items-start">
-      <div>
-        <h2 class="text-3xl font-semibold mb-6">Our Mission</h2>
-        <p class="text-gray-600">
-          We help businesses successfully adopt AI and build custom digital products to improve efficiency, reduce costs, and drive sustainable growth.
-        </p>
+    <p class="lede">Simplex Via was founded by a former IBM consultant with over 10 years of experience successfully helping businesses adopt new technology — from cloud systems to modern software tools.</p>
+
+    <p>That same hands-on expertise in guiding organizations through complex technology adoption is now applied to AI and digital products — helping businesses move beyond experimentation to achieve real, measurable improvement in efficiency, speed, and growth.</p>
+
+    <p>We bring the same disciplined, client-centric approach — focusing on real business outcomes rather than technology for technology's sake.</p>
+
+    <div class="pillars">
+      <div class="pillar">
+        <h4>Enterprise Discipline</h4>
+        <p>The same hands-on approach used to help large organizations successfully adopt new technology, scaled to fit a small business budget and timeline.</p>
       </div>
-
-      <div>
-        <h2 class="text-3xl font-semibold mb-6">Why Choose Us</h2>
-        <ul class="space-y-4 text-gray-600">
-          <li>✓ Deep enterprise experience in technology adoption</li>
-          <li>✓ Practical AI and custom digital development</li>
-          <li>✓ Focus on successful adoption and measurable results</li>
-          <li>✓ Fast time-to-value with clear ROI</li>
-          <li>✓ Local Arizona expertise</li>
-        </ul>
+      <div class="pillar">
+        <h4>Outcomes Over Hype</h4>
+        <p>Every recommendation is tied to a measurable result — time reclaimed, revenue unlocked, or quality improved.</p>
+      </div>
+      <div class="pillar">
+        <h4>Built With You</h4>
+        <p>We work alongside your team so the capability stays in-house, not locked inside a black-box vendor relationship.</p>
       </div>
     </div>
   </div>
+</section>
 
-  <footer class="bg-black text-gray-400 py-12 text-center text-sm mt-20">
-    <p>© 2026 Simplex Via LLC • AI & Digital Solutions • Phoenix, AZ</p>
-  </footer>
+<section class="about-cta">
+  <div class="wrap">
+    <h2>See what this looks like for your business</h2>
+    <p>Start with a free 15-minute call — no pitch, just discovery.</p>
+    <a class="btn btn-gold" href="https://cal.com/cal-simplexvia/free-assessments" target="_blank" rel="noopener">Book Your Free Assessment</a>
+    <a class="btn btn-outline" href="index.html#ladder">View Services</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong>Simplex Via LLC</strong> — AI Advisory &amp; Automation Services<br>
+    info@simplexvia.com
+    <div class="tagline">The Simple Path to AI &amp; Digital Success</div>
+    <div class="social">
+      <a href="https://www.linkedin.com/company/simplexvia/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
