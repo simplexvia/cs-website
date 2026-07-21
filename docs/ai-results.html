@@ -237,8 +237,33 @@ function showClient(sums,name,date){
   const b=document.getElementById('fromJotform');
   if(b){b.style.display='block';b.textContent=(name?('Results for '+name):'Your results')+(date?(' · '+date):'');}
 }
+// Render results from the raw Jotform answers passed in the redirect.
+// ?ans=label1|label2|...|label30  (30 scored answers, in section/question order)
+function loadFromAns(){
+  const p=new URLSearchParams(location.search);
+  const raw=p.get('ans'); if(!raw) return false;
+  // Jotform escapes commas in field values as "\," — strip backslashes before matching.
+  const labels=raw.split('|').map(s=>(s||'').split(String.fromCharCode(92)).join('').replace(/\s+/g,' ').trim());
+  const flat=[]; SECTIONS.forEach(s=>s.questions.forEach(q=>flat.push(q)));
+  if(labels.length!==flat.length) return false;
+  const areaSums=[0,0,0,0,0,0];
+  for(let i=0;i<flat.length;i++){
+    const opt=flat[i].opts.find(o=>o[0].replace(/\s+/g,' ').trim()===labels[i]);
+    if(!opt) return false;                 // an answer didn't match — bail to questionnaire
+    areaSums[Math.floor(i/5)] += opt[1];
+  }
+  const total=areaSums.reduce((a,b)=>a+b,0);
+  let stage,sname;
+  if(total<=54){stage=0;sname='Level 1 — Ad Hoc';}
+  else if(total<=72){stage=1;sname='Level 2 — Operational';}
+  else{stage=2;sname='Level 3 — Strategic';}
+  document.getElementById('intro').style.display='none';
+  render(areaSums,total,stage,sname);
+  document.getElementById('fromJotform').style.display='block';
+  return true;
+}
 build();
-loadFromParams();
+if(!loadFromAns()) loadFromParams();
 </script>
 </body>
 </html>
