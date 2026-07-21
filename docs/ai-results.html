@@ -240,10 +240,12 @@ function showClient(sums,name,date){
 // Render results from the raw Jotform answers passed in the redirect.
 // ?ans=label1|label2|...|label30  (30 scored answers, in section/question order)
 function loadFromAns(){
-  const p=new URLSearchParams(location.search);
-  const raw=p.get('ans'); if(!raw) return false;
-  // Jotform escapes commas in field values as "\," — strip backslashes before matching.
-  const labels=raw.split('|').map(s=>(s||'').split(String.fromCharCode(92)).join('').replace(/\s+/g,' ').trim());
+  const m=location.search.match(/[?&]ans=([^&]*)/);
+  if(!m) return false;
+  // URLSearchParams turns "+" into a space (breaking labels like "10+ hours"); decodeURIComponent preserves it.
+  // Jotform also escapes commas in values as "\," — strip those backslashes before matching.
+  const parts=m[1].replace(/%7C/gi,'|').split('|');
+  const labels=parts.map(p=>{ let d; try{d=decodeURIComponent(p);}catch(e){d=p;} return d.split(String.fromCharCode(92)).join('').replace(/\s+/g,' ').trim(); });
   const flat=[]; SECTIONS.forEach(s=>s.questions.forEach(q=>flat.push(q)));
   if(labels.length!==flat.length) return false;
   const areaSums=[0,0,0,0,0,0];
