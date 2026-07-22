@@ -111,6 +111,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);backgroun
       <a class="btn" href="https://cal.com/cal-simplexvia/ai-action-plan-call" target="_blank" rel="noopener" style="margin-top:8px">Book your AI Action Plan call</a>
       <p style="font-size:13px;margin-top:12px;color:#3a2f18">We'll follow up with your personalized opportunities. Questions? <a href="mailto:info@simplexvia.com" style="color:#3a2f18;text-decoration:underline;font-weight:bold">info@simplexvia.com</a></p>
     </div>
+    <p class="center" style="margin:16px 0 0"><a id="feedbackLink" href="https://form.jotform.com/262024693419055" target="_blank" rel="noopener" style="color:var(--navy);font-size:13px;text-decoration:underline">Have 30 seconds? Tell us how to make this assessment better →</a></p>
     <div class="center actions" style="margin:20px 0">
       <button class="btn ghost" onclick="window.print()">Print / Save as PDF</button>
       <button class="btn ghost" onclick="restart()">Start over</button>
@@ -180,6 +181,9 @@ function render(areaSums,total,stage,sname){
   document.getElementById('stageName').textContent=sname;
   document.getElementById('stageScore').textContent='AI Readiness Score: '+total+' of 90';
   document.getElementById('benchTop').textContent = stage===0 ? 'Most small businesses start right here, at Level 1.' : (stage===1 ? "You're ahead of many small businesses, which typically sit at Level 1." : "You're well ahead of the typical small business — most are still at Level 1.");
+  // Feedback link — pass only the stage and score, never any personal details.
+  const fb=document.getElementById('feedbackLink');
+  if(fb) fb.href='https://form.jotform.com/262024693419055?q10_textbox8='+encodeURIComponent(sname)+'&q11_textbox9='+encodeURIComponent(total);
   const keys=SECTIONS.map(s=>s.key);
   const host=document.getElementById('areas'); host.innerHTML='';
   const wins=[];
