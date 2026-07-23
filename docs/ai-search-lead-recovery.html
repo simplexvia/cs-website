@@ -65,7 +65,7 @@
     font-weight:bold;
     margin-bottom:16px;
   }
-  .hero h1{
+  .hero h1, .hero h2{
     color:var(--near-white);
     font-size:38px;
     font-weight:bold;
@@ -365,13 +365,7 @@
   .del-item strong{color:var(--navy);display:block;font-size:14px;margin-bottom:2px;}
 
   /* CONTACT */
-  #contact{background:var(--navy);}
-  .contact-wrap{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:56px;
-    align-items:start;
-  }
+  #contact, #documents-contact{background:var(--navy);}
   .contact-centered{
     max-width:560px;
     margin:0 auto;
@@ -386,47 +380,6 @@
     line-height:1.5;
     margin-top:28px;
   }
-  form.contact-form{
-    background:var(--near-white);
-    border-radius:4px;
-    padding:30px;
-  }
-  form.contact-form label{
-    display:block;
-    font-size:12.5px;
-    font-weight:bold;
-    color:var(--navy);
-    margin-bottom:6px;
-    margin-top:16px;
-  }
-  form.contact-form label:first-child{margin-top:0;}
-  form.contact-form input,
-  form.contact-form select,
-  form.contact-form textarea{
-    width:100%;
-    padding:11px 12px;
-    border:1px solid #C9C2C0;
-    border-radius:2px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-size:14px;
-    color:var(--gray);
-    background:var(--white);
-  }
-  form.contact-form textarea{resize:vertical;min-height:90px;}
-  form.contact-form button{
-    margin-top:22px;
-    width:100%;
-    background:var(--gold);
-    color:var(--navy);
-    font-weight:bold;
-    font-size:14px;
-    padding:14px;
-    border:none;
-    border-radius:2px;
-    cursor:pointer;
-  }
-  form.contact-form button:hover{opacity:.9;}
-  .form-note{font-size:11.5px;color:#777;margin-top:10px;}
 
   /* FOOTER */
   footer{
@@ -440,8 +393,8 @@
   footer .legal{color:var(--near-white);opacity:.5;font-size:11.5px;max-width:520px;line-height:1.5;}
 
   @media (max-width: 860px){
-    .grid.cols-4, .grid, .ws-grid, .timeline, .del-grid, .gov-grid, .contact-wrap, .fit-grid{grid-template-columns:1fr;}
-    .hero h1{font-size:30px;}
+    .grid.cols-4, .grid, .ws-grid, .timeline, .del-grid, .gov-grid, .fit-grid{grid-template-columns:1fr;}
+    .hero h1, .hero h2{font-size:30px;}
     .btn-outline{margin-left:0;margin-top:12px;}
   }
 </style>
@@ -602,7 +555,7 @@
 <section class="hero hero-secondary" id="search-recovery">
   <div class="wrap">
     <div class="eyebrow">For Small &amp; Mid-Size Law Firms</div>
-    <h1>Recover the qualified consultations AI search is quietly taking from your firm.</h1>
+    <h2>Recover the qualified consultations AI search is quietly taking from your firm.</h2>
     <p class="lead">Organic leads are declining because the rules of legal search changed — AI-generated answers, shifting local visibility, and weak intake are pulling inquiries away before they ever reach your site. We diagnose why, then build a prioritized, attorney-controlled plan to get qualified consultations back.</p>
     <a href="https://cal.com/cal-simplexvia/request-consult" target="_blank" rel="noopener" class="btn">Request a Consultation</a>
     <a href="#program" class="btn-outline">See the Program</a>
