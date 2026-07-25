@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Simplex Via — AI Advisory & Automation Services</title>
+<title>Simplex Via — AI Advisory &amp; Automation Services</title>
+<meta name="description" content="Practical AI advisory and automation for small business. Start with a free 5-minute AI Value Self-Assessment, then get a quantified AI Action Plan. Built on two decades of enterprise technology adoption experience at IBM.">
 <style>
   :root{
     --navy:#2F3B69;
@@ -88,6 +89,34 @@
   }
   .btn-outline:hover{border-color:var(--gold); color:var(--gold);}
   .hero-sub{font-size:13px; margin-top:20px; opacity:0.7;}
+
+  /* ---- Credibility strip ---- */
+  .cred-strip{
+    background:var(--navy); border-top:1px solid rgba(255,255,255,0.12);
+    padding:16px 0;
+  }
+  .cred-strip .wrap{
+    display:flex; align-items:center; justify-content:center; gap:12px; flex-wrap:wrap;
+    font-size:13.5px; color:rgba(255,255,255,0.78); text-align:center;
+  }
+  .cred-strip .dot{color:var(--gold);}
+  .cred-strip a{color:var(--gold); text-decoration:none; font-weight:bold;}
+  .cred-strip a:hover{text-decoration:underline;}
+
+  /* ---- Outcomes band ---- */
+  .outcomes{padding:60px 0 56px;}
+  .outcomes h2{
+    text-align:center; color:var(--navy); font-size:26px; margin-bottom:34px;
+    max-width:680px; margin-left:auto; margin-right:auto;
+  }
+  .outcomes-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  @media (max-width:760px){ .outcomes-grid{grid-template-columns:1fr;} }
+  .outcome{
+    background:var(--white); border:1px solid #e4e2e1; border-radius:8px;
+    padding:26px 24px; text-align:center;
+  }
+  .outcome h4{color:var(--navy); font-size:16px; margin-bottom:10px;}
+  .outcome p{font-size:14px; color:#555;}
 
   /* ---- Ladder strip ---- */
   .ladder-strip{
@@ -238,11 +267,43 @@
   <img class="hero-watermark" src="simplexvia-mark-tint.png" alt="">
   <div class="wrap">
     <div class="eyebrow">AI Advisory &amp; Automation for Small Business</div>
-    <h1>Find the one AI fix that actually pays for itself — then let us build it.</h1>
+    <h1>Find the one AI fix that actually pays for itself — then we build it together.</h1>
     <p>No buzzwords, no six-figure consulting retainer. Start with a free 5-minute self-assessment. See exactly where your business sits on the AI curve — and what the next step is worth.</p>
     <a class="btn btn-gold" href="ai-results.html">Take the Free AI Value Assessment</a>
     <a class="btn btn-outline" href="#ladder">See How It Works</a>
     <div class="hero-sub">Free · ~5 minutes · Instant AI Value Model results</div>
+  </div>
+</section>
+
+<div class="cred-strip">
+  <div class="wrap">
+    <span>Two decades at IBM</span>
+    <span class="dot">·</span>
+    <span>25+ industries</span>
+    <span class="dot">·</span>
+    <span>30+ years building software</span>
+    <span class="dot">·</span>
+    <a href="about.html">About Simplex Via →</a>
+  </div>
+</div>
+
+<section class="outcomes">
+  <div class="wrap">
+    <h2>Every recommendation moves one of three numbers</h2>
+    <div class="outcomes-grid">
+      <div class="outcome">
+        <h4>Faster Time to Market</h4>
+        <p>Quotes, proposals, and client work out in hours instead of days. Speed is the small-business advantage — AI is how you widen it.</p>
+      </div>
+      <div class="outcome">
+        <h4>Higher Quality, Consistently</h4>
+        <p>The same standard on your busiest week as your slowest. Fewer errors, fewer rewrites, fewer things falling through.</p>
+      </div>
+      <div class="outcome">
+        <h4>Lower Cost to Operate</h4>
+        <p>Hours of manual work off your plate without adding headcount — and less spend on tools nobody uses.</p>
+      </div>
+    </div>
   </div>
 </section>
 
