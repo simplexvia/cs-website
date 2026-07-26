@@ -48,7 +48,31 @@
     padding:9px 18px; border-radius:4px; font-size:14px; text-decoration:none;
     opacity:1!important;
   }
-  @media (max-width:760px){ nav ul{display:none;} }
+  .nav-toggle{
+    display:none; background:none; border:1px solid rgba(255,255,255,0.35);
+    border-radius:4px; padding:8px 9px; cursor:pointer;
+  }
+  .nav-toggle span{
+    display:block; width:20px; height:2px; background:var(--nearwhite);
+    border-radius:2px; margin:4px 0;
+  }
+  @media (max-width:760px){
+    header .wrap{gap:10px;}
+    .brand img{height:32px;}
+    .brand span{font-size:15px; letter-spacing:0.5px;}
+    .nav-cta{padding:8px 12px; font-size:12px; white-space:nowrap;}
+    .nav-toggle{display:block;}
+    nav{
+      position:absolute; top:100%; left:0; right:0; background:var(--navy);
+      border-top:1px solid rgba(255,255,255,0.12);
+      max-height:0; overflow:hidden; transition:max-height .25s ease;
+    }
+    header.open nav{max-height:360px;}
+    nav ul{display:block; padding:4px 24px 12px;}
+    nav ul li{border-bottom:1px solid rgba(255,255,255,0.08);}
+    nav ul li:last-child{border-bottom:none;}
+    nav a{display:block; padding:14px 0; font-size:15px;}
+  }
 
   /* ---- Hero ---- */
   .hero{
@@ -250,7 +274,7 @@
       <img src="simplexvia-mark-tint.png" alt="Simplex Via logo">
       <span>SIMPLEX VIA</span>
     </div>
-    <nav>
+    <nav id="site-nav">
       <ul>
         <li><a href="#ladder">Services</a></li>
         <li><a href="#process">How It Works</a></li>
@@ -260,6 +284,9 @@
       </ul>
     </nav>
     <a class="nav-cta" href="ai-results.html">Take Free Assessment</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -511,6 +538,24 @@
     </div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var h = document.querySelector('header');
+  var t = document.querySelector('.nav-toggle');
+  if(!h || !t) return;
+  function close(){ h.classList.remove('open'); t.setAttribute('aria-expanded','false'); t.setAttribute('aria-label','Open menu'); }
+  t.addEventListener('click', function(){
+    var open = h.classList.toggle('open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+    t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  Array.prototype.forEach.call(h.querySelectorAll('nav a'), function(a){
+    a.addEventListener('click', close);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+})();
+</script>
 
 </body>
 </html>
