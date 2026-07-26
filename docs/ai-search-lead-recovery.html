@@ -48,6 +48,32 @@
     opacity:.9;
   }
   .site-nav nav a:hover{opacity:1;color:var(--gold);text-decoration:none;}
+  .nav-toggle{
+    display:none;background:none;border:1px solid rgba(255,255,255,0.35);
+    border-radius:4px;padding:8px 9px;cursor:pointer;
+  }
+  .nav-toggle span{
+    display:block;width:20px;height:2px;background:var(--near-white);
+    border-radius:2px;margin:4px 0;
+  }
+  @media (max-width:760px){
+    header.site-nav{padding-bottom:14px;}
+    .site-nav .wrap{gap:10px;}
+    .site-nav .brand img{height:32px;}
+    .site-nav .brand span{font-size:15px;letter-spacing:0.5px;}
+    .nav-toggle{display:block;}
+    .site-nav nav{
+      position:absolute;top:100%;left:0;right:0;background:var(--navy);
+      border-top:1px solid rgba(255,255,255,0.12);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    header.site-nav.open nav{max-height:360px;}
+    .site-nav nav a{
+      display:block;margin-left:0;padding:14px 24px;font-size:15px;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+    .site-nav nav a:last-child{border-bottom:none;}
+  }
 
   /* HERO */
   .hero{
@@ -409,13 +435,16 @@
         <span>SIMPLEX VIA</span>
       </a>
     </div>
-    <nav>
+    <nav id="site-nav-links">
       <a href="index.html">Home</a>
       <a href="#documents">Document Automation</a>
       <a href="#search-recovery">AI Search &amp; Recovery</a>
       <a href="about.html">About</a>
       <a href="#documents-contact">Contact</a>
     </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav-links">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </header>
 
@@ -770,6 +799,24 @@
     <div class="legal">This page describes a consulting and marketing service. It is not legal advice. Program outcomes depend on each firm's market, data, and implementation. No rankings, lead-volume, or revenue outcomes are guaranteed.</div>
   </div>
 </footer>
+
+<script>
+(function(){
+  var h = document.querySelector('header.site-nav');
+  var t = document.querySelector('.nav-toggle');
+  if(!h || !t) return;
+  function close(){ h.classList.remove('open'); t.setAttribute('aria-expanded','false'); t.setAttribute('aria-label','Open menu'); }
+  t.addEventListener('click', function(){
+    var open = h.classList.toggle('open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+    t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  Array.prototype.forEach.call(h.querySelectorAll('nav a'), function(a){
+    a.addEventListener('click', close);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+})();
+</script>
 
 </body>
 </html>
