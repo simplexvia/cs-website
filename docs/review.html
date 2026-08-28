@@ -89,6 +89,17 @@
   .ag dt{color:var(--gold-deep); font-weight:bold; font-variant-numeric:tabular-nums;}
   .ag dd{color:var(--soft); margin-bottom:4px;}
 
+  /* the value proposition */
+  .why{margin:22px 0 6px;}
+  .why-line{font-size:19px; font-weight:bold; color:var(--navy); margin-bottom:6px;}
+  .why-sub{font-size:13.5px; color:var(--mute); margin-bottom:14px;}
+  .pain{
+    background:var(--white); border:1px solid var(--line); border-left:4px solid var(--gold);
+    border-radius:0 6px 6px 0; padding:13px 16px; margin-bottom:9px;
+    font-size:14.5px; color:var(--gray);
+  }
+  .pain-foot{font-size:14.5px; color:var(--soft); margin-top:14px; font-style:italic;}
+
   /* leaks with reaction control */
   .leak{background:var(--white); border:1px solid var(--line); border-radius:8px; padding:18px 20px; margin-bottom:12px;}
   .leak .top{display:flex; gap:12px; align-items:baseline; flex-wrap:wrap;}
@@ -268,7 +279,18 @@
           "d": "Maintenance agreements lapse quietly, tune-up season is a manual phone marathon, and review requests only go out when somebody remembers."
         }
       ],
-      "nicheQ": "Which of those five costs your shop the most — and is there a sixth I've missed?"
+      "nicheQ": "Which of those five costs your shop the most — and is there a sixth I've missed?",
+      "headline": "AI for HVAC Companies: find the one fix worth making before next summer",
+      "deck": "Two and a half hours. You leave with your own bottleneck named, your own numbers on it, and a four-day plan you could start Monday.",
+      "why": "You don't have an AI problem. You have a prioritization problem.",
+      "pains": [
+        "The phone rings at 6:40 on a Saturday in July and nobody picks up. You will never know that call happened.",
+        "A tech condemns a 17-year-old unit, a $7,000 quote goes out, the homeowner says “let me talk to my wife” — and nobody calls back on day three, day ten, or next May.",
+        "The same job gets written up three times: once on the tablet, once for the invoice, once for the warranty.",
+        "You have hundreds of maintenance agreements and no system that tells you which ones lapsed last month.",
+        "You bought software that does half of this already. Nobody has had a free afternoon to turn it on."
+      ],
+      "painFoot": "None of that is a discipline problem. It's a follow-through capacity problem — and that is the one thing this technology is genuinely good at."
     },
     {
       "id": "subs",
@@ -347,7 +369,18 @@
           "d": "Every GC project manager keeps a list of subs who answer and subs who don't — and that list decides next year's invitations more reliably than your pricing does."
         }
       ],
-      "nicheQ": "Which of those five costs your shop the most — and is there a sixth I've missed?"
+      "nicheQ": "Which of those five costs your shop the most — and is there a sixth I've missed?",
+      "headline": "AI for Commercial Subcontractors: get more bids out the door without hiring another estimator",
+      "deck": "Two and a half hours. You leave with your own bottleneck named, your own numbers on it, and a four-day plan you could start Monday.",
+      "why": "You don't have an AI problem. You have a throughput problem.",
+      "pains": [
+        "Forty invitations landed this month. You bid eleven — and if someone asked, you couldn't say exactly why those eleven.",
+        "The super pointed at something on Tuesday, your foreman did it, and nobody wrote it up. That one's gone.",
+        "Your estimator is the throttle on the entire company, and he's one person with a family.",
+        "Submittals and RFIs eat the office, and every day of turnaround is a day of schedule exposure you'll hear about later.",
+        "You're profitable on paper and still waiting on retention from a job you closed in March."
+      ],
+      "painFoot": "None of that is a discipline problem. It's a throughput and documentation problem — and those are the two things this technology is genuinely good at."
     },
     {
       "id": "landscape",
@@ -426,7 +459,18 @@
           "d": "“What is happening this week?” Photos, schedule updates, and coordination across pool, gas, electrical and masonry subs. In a practice that runs on referrals and portfolio, this is what decides whether you get the next one."
         }
       ],
-      "nicheQ": "Which of those five costs your practice the most — and is there a sixth I have missed?"
+      "nicheQ": "Which of those five costs your practice the most — and is there a sixth I have missed?",
+      "headline": "AI for Design-Build Landscape Firms: spend your design hours on the clients who will actually build",
+      "deck": "Two and a half hours. You leave with your own bottleneck named, your own numbers on it, and a four-day plan you could start Monday.",
+      "why": "You don't have an AI problem. You have a design-capacity problem.",
+      "pains": [
+        "Two site visits and a concept for a homeowner with a $60K budget and a $300K wish list. Nobody billed those hours.",
+        "Their enthusiasm peaked the day you walked the property. The package went out three weeks later, by which point two other firms had called.",
+        "“Can we add a fire feature?” — four rounds of revisions, none of them invoiced, and the design has drifted from the number you quoted.",
+        "HOA review, plan check, MWELO documentation. Weeks of calendar time before anything breaks ground, and none of it billable.",
+        "Six months of build with the client living on site — and the question that decides your next referral is “what's happening this week?”"
+      ],
+      "painFoot": "None of that is a discipline problem. It's a design-capacity and documentation problem — and those are two things this technology is genuinely good at."
     }
   ],
   "responses": []
@@ -475,8 +519,8 @@
     { key:'attend', q:'Would you actually show up for 2.5 hours on a Thursday morning?',
       s:'Be honest about your calendar, not your intentions.',
       opts:['Yes','Maybe','Wrong time of day','Too long'] },
-    { key:'promise',q:'Does the headline promise make you want to attend?',
-      s:'The line at the top of the concept, not the whole page.',
+    { key:'promise',q:'Does the headline make you want to attend?',
+      s:'The line in the navy box at the top \u2014 the first thing an owner would see.',
       opts:['Yes','It is fine','Too vague','Overclaims'] },
     { key:'diag',   q:'After a workshop like that, would a $999 diagnosis for your business be worth it?',
       s:'A 30-minute call, a report inside 48 hours, and a review call.',
@@ -509,11 +553,16 @@
     document.getElementById('hdrName').textContent = w.title;
 
     h += '<section><div class="wrap">';
-    h += '<div class="card headline-card"><div class="kick">The concept</div>';
-    h += '<h3>'+esc(w.title)+'</h3><p>'+esc(w.promise)+'</p>';
+    h += '<div class="card headline-card"><div class="kick">The pitch, exactly as it would be made</div>';
+    h += '<h3>'+esc(w.headline)+'</h3><p>'+esc(w.deck)+'</p>';
     h += '<div class="meta"><span><b>Who:</b> '+esc(w.audience)+'</span></div>';
     h += '<div class="meta"><span><b>Price:</b> '+esc(w.price)+'</span><span><b>Format:</b> '+esc(w.format)+'</span><span><b>When:</b> '+esc(w.when)+'</span></div>';
     h += '</div>';
+
+    h += '<div class="why"><div class="why-line">'+esc(w.why)+'</div>';
+    h += '<p class="why-sub">The case it makes for coming \u2014 this is what an owner reads before deciding:</p>';
+    for (var pn=0; pn<w.pains.length; pn++) h += '<div class="pain">'+esc(w.pains[pn])+'</div>';
+    h += '<p class="pain-foot">'+esc(w.painFoot)+'</p></div>';
 
     h += '<div class="grid2">';
     h += '<div class="card"><h3>What they leave with</h3><ul class="plain">';
