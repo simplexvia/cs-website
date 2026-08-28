@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>Workshop Concept Review — Simplex Via</title>
+<meta name="description" content="A draft workshop concept, shared privately for feedback. Nothing on this page is for sale.">
+<style>
+  :root{
+    --navy:#2F3B69; --navy-lift:#3C4A80; --warm:#E3DDDC; --warm-deep:#D6CFCD;
+    --nearwhite:#FAFAFF; --white:#FFFFFF; --paper:#F7F6F5;
+    --gray:#333333; --soft:#555555; --mute:#7A7570; --line:#DFDBD9;
+    --gold:#C8A96E; --gold-deep:#A98A4F; --teal:#2C7873;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion:reduce){ html{scroll-behavior:auto;} *{transition:none!important;} }
+  body{
+    font-family:Arial, Helvetica, sans-serif; color:var(--gray);
+    background:var(--paper); line-height:1.55; font-size:15px;
+  }
+  .wrap{max-width:860px; margin:0 auto; padding:0 22px;}
+  h1,h2,h3{text-wrap:balance;}
+  a{color:var(--teal);}
+  :focus-visible{outline:3px solid var(--gold); outline-offset:2px;}
+
+  /* header */
+  header{
+    background:var(--navy); color:var(--nearwhite);
+    position:sticky; top:0; z-index:40; border-bottom:3px solid var(--gold);
+  }
+  header .wrap{display:flex; align-items:center; justify-content:space-between; gap:16px; padding-top:13px; padding-bottom:13px;}
+  .brandline{font-size:12px; letter-spacing:2px; text-transform:uppercase; color:var(--gold); font-weight:bold;}
+  .brandline b{display:block; color:var(--nearwhite); letter-spacing:0.4px; font-size:16px; text-transform:none; margin-top:3px;}
+  .who-tag{font-size:12px; color:rgba(255,255,255,0.6); text-align:right; line-height:1.4;}
+
+  /* intro */
+  .intro{background:var(--white); border-bottom:1px solid var(--line); padding:34px 0 30px;}
+  .intro h1{font-size:27px; color:var(--navy); margin-bottom:12px;}
+  .intro p{font-size:16px; color:var(--soft); max-width:62ch; margin-bottom:12px;}
+  .intro .ask{
+    background:var(--warm); border-left:4px solid var(--gold); border-radius:0 6px 6px 0;
+    padding:16px 18px; margin-top:18px; font-size:14.5px; max-width:66ch;
+  }
+  .intro .ask strong{color:var(--navy);}
+
+  /* switcher */
+  .switch{background:var(--white); border-bottom:1px solid var(--line); position:sticky; top:59px; z-index:35;}
+  .switch .wrap{display:flex; gap:6px; flex-wrap:wrap; padding-top:10px; padding-bottom:10px;}
+  .tab{
+    appearance:none; border:1px solid var(--line); background:var(--paper); color:var(--soft);
+    font-family:inherit; font-size:13.5px; font-weight:bold; padding:9px 16px; border-radius:20px;
+    cursor:pointer; min-height:40px;
+  }
+  .tab[aria-selected="true"]{background:var(--navy); border-color:var(--navy); color:var(--nearwhite);}
+  .tab:hover:not([aria-selected="true"]){border-color:var(--gold); color:var(--navy);}
+
+  section{padding:34px 0;}
+  .sec-label{
+    font-size:11.5px; letter-spacing:1.8px; text-transform:uppercase; color:var(--teal);
+    font-weight:bold; margin-bottom:8px;
+  }
+  h2{font-size:21px; color:var(--navy); margin-bottom:8px;}
+  .lede{font-size:15px; color:var(--soft); margin-bottom:20px; max-width:64ch;}
+
+  .card{background:var(--white); border:1px solid var(--line); border-radius:8px; padding:22px 24px; margin-bottom:16px;}
+  .card h3{font-size:16.5px; color:var(--navy); margin-bottom:8px;}
+  .card p{font-size:14.5px; color:var(--soft);}
+
+  .headline-card{background:var(--navy); color:var(--nearwhite); border:none;}
+  .headline-card .kick{font-size:11.5px; letter-spacing:1.8px; text-transform:uppercase; color:var(--gold); font-weight:bold; margin-bottom:10px;}
+  .headline-card h3{font-size:22px; color:var(--nearwhite); margin-bottom:10px;}
+  .headline-card p{color:rgba(255,255,255,0.82); font-size:15px;}
+  .headline-card .meta{
+    margin-top:16px; padding-top:14px; border-top:1px solid rgba(255,255,255,0.18);
+    font-size:13.5px; color:rgba(255,255,255,0.75); display:flex; flex-wrap:wrap; gap:6px 16px;
+  }
+  .headline-card .meta b{color:var(--gold); font-weight:bold;}
+
+  .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  @media (max-width:700px){ .grid2{grid-template-columns:1fr;} }
+  ul.plain{list-style:none; display:grid; gap:8px; margin-top:10px;}
+  ul.plain li{font-size:14px; color:var(--soft); padding-left:20px; position:relative;}
+  ul.plain li::before{content:"›"; position:absolute; left:0; color:var(--gold); font-weight:bold;}
+
+  /* agenda */
+  .ag{display:grid; grid-template-columns:74px 1fr; gap:6px 16px; font-size:14px;}
+  .ag dt{color:var(--gold-deep); font-weight:bold; font-variant-numeric:tabular-nums;}
+  .ag dd{color:var(--soft); margin-bottom:4px;}
+
+  /* leaks with reaction control */
+  .leak{background:var(--white); border:1px solid var(--line); border-radius:8px; padding:18px 20px; margin-bottom:12px;}
+  .leak .top{display:flex; gap:12px; align-items:baseline; flex-wrap:wrap;}
+  .leak .n{
+    flex:0 0 26px; height:26px; border-radius:50%; background:var(--warm); color:var(--navy);
+    font-size:12.5px; font-weight:bold; display:inline-flex; align-items:center; justify-content:center;
+  }
+  .leak h4{font-size:15.5px; color:var(--navy);}
+  .leak .lever{font-size:10.5px; letter-spacing:1.4px; text-transform:uppercase; color:var(--teal); font-weight:bold;}
+  .leak p{font-size:14px; color:var(--soft); margin:8px 0 0 38px;}
+  .rate{display:flex; gap:8px; flex-wrap:wrap; margin:12px 0 0 38px;}
+  @media (max-width:560px){ .leak p, .rate{margin-left:0;} }
+  .rate button{
+    appearance:none; font-family:inherit; font-size:12.5px; font-weight:bold; cursor:pointer;
+    border:1px solid var(--line); background:var(--paper); color:var(--soft);
+    padding:7px 13px; border-radius:16px; min-height:36px;
+  }
+  .rate button[aria-pressed="true"]{background:var(--teal); border-color:var(--teal); color:var(--white);}
+  .rate button[aria-pressed="true"].no{background:var(--mute); border-color:var(--mute);}
+  .rate button:hover:not([aria-pressed="true"]){border-color:var(--gold);}
+
+  /* questions */
+  .q{background:var(--white); border:1px solid var(--line); border-radius:8px; padding:20px 22px; margin-bottom:14px;}
+  .q .qh{font-size:15.5px; color:var(--navy); font-weight:bold; margin-bottom:4px;}
+  .q .qs{font-size:13px; color:var(--mute); margin-bottom:12px;}
+  .opts{display:flex; gap:8px; flex-wrap:wrap;}
+  .opts button{
+    appearance:none; font-family:inherit; font-size:13px; font-weight:bold; cursor:pointer;
+    border:1px solid var(--line); background:var(--paper); color:var(--soft);
+    padding:9px 15px; border-radius:18px; min-height:40px;
+  }
+  .opts button[aria-pressed="true"]{background:var(--navy); border-color:var(--navy); color:var(--nearwhite);}
+  .opts button:hover:not([aria-pressed="true"]){border-color:var(--gold);}
+  textarea, input[type=text]{
+    width:100%; font-family:inherit; font-size:14.5px; color:var(--gray);
+    border:1px solid var(--line); border-radius:6px; padding:11px 12px; background:var(--paper);
+    margin-top:10px; resize:vertical;
+  }
+  textarea{min-height:76px;}
+  textarea:focus, input:focus{background:var(--white); border-color:var(--gold); outline:none;}
+
+  /* submit */
+  .submit-bar{background:var(--white); border:2px solid var(--gold); border-radius:8px; padding:22px 24px;}
+  .submit-bar h3{font-size:17px; color:var(--navy); margin-bottom:6px;}
+  .submit-bar p{font-size:14px; color:var(--soft); margin-bottom:16px;}
+  .btn{
+    appearance:none; font-family:inherit; font-weight:bold; font-size:15px; cursor:pointer;
+    border:none; border-radius:5px; padding:14px 26px; min-height:48px;
+    background:var(--gold); color:var(--navy);
+  }
+  .btn:hover{background:#d8bd8c;}
+  .btn[disabled]{opacity:0.5; cursor:not-allowed;}
+  .btn-quiet{background:var(--paper); color:var(--navy); border:1px solid var(--line);}
+  .btn-quiet:hover{background:var(--warm);}
+  .status{margin-top:14px; font-size:13.5px; color:var(--teal); font-weight:bold;}
+  .status.warn{color:var(--gold-deep);}
+  .fallback{margin-top:16px; display:none;}
+  .fallback.show{display:block;}
+
+  footer{background:var(--navy); color:rgba(255,255,255,0.6); font-size:12.5px; padding:22px 0; text-align:center;}
+  footer b{color:var(--nearwhite);}
+  .hidden{display:none!important;}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brandline">Simplex Via · Concept Review<b id="hdrName">Workshop Concept Review</b></div>
+    <div class="who-tag">Draft concept<br>Nothing here is for sale</div>
+  </div>
+</header>
+
+<div class="intro">
+  <div class="wrap">
+    <h1>I'm thinking about running this. Tell me if it's any good.</h1>
+    <p>Below is a workshop I've designed but haven't launched. Nothing here is live — no date is booked, no tickets exist, and you can't sign up for anything on this page.</p>
+    <p>You know this industry better than I do. I'd rather find out now that a piece of it is wrong than after twenty-five people have paid for it.</p>
+    <div class="ask">
+      <strong>What I'm asking:</strong> read the concept, react to the five problems it claims are real,
+      and answer the questions at the bottom. Ten minutes, and blunt is more useful than kind. If
+      something in here is nonsense, please say so plainly — that's the single most valuable thing
+      you can give me.
+      <br><br>
+      <strong>And if I do end up running it, you're in — no charge.</strong> That's not why I'm
+      asking, and it shouldn't soften what you tell me. But it's yours either way.
+    </div>
+  </div>
+</div>
+
+<div class="switch">
+  <div class="wrap" id="tabs" role="tablist" aria-label="Which workshop"></div>
+</div>
+
+<main id="content"></main>
+
+<footer>
+  <div class="wrap"><b>Simplex Via LLC</b> · Phoenix, Arizona · concept review, not for distribution</div>
+</footer>
+
+<script id="workshop-data" type="application/json">
+{
+  "workshops": [
+    {
+      "id": "hvac",
+      "tab": "HVAC Companies",
+      "title": "AI for HVAC Companies",
+      "promise": "Find the one fix worth making before next summer",
+      "audience": "HVAC companies in Arizona, California or New Mexico, roughly 5–40 people, owner-operated",
+      "price": "$79 per company",
+      "format": "2.5 hours, live on Zoom, capped at 25 companies",
+      "when": "Thursday morning, 9:00–11:30 Phoenix time",
+      "leaveWith": [
+        "One lever and one bottleneck, written down in their own handwriting",
+        "An eight-page workbook they fill in during the session",
+        "Their own ROI number — reclaimed hours, plus what one recovered replacement job is worth",
+        "A four-day plan, one small task per day"
+      ],
+      "agenda": [
+        ["9:00", "Welcome, and one promise: no software gets sold in this room"],
+        ["9:10", "What AI actually does in an HVAC shop today — and what's marketing"],
+        ["9:25", "The ROI Compass: money, time, or customer trust. Pick one."],
+        ["10:05", "Five questions about your own shop — you write, some read theirs aloud"],
+        ["10:35", "The five places money leaks out of an HVAC shop"],
+        ["11:00", "Put a number on it — your hours, your hourly value, your average ticket"],
+        ["11:15", "What a full diagnosis involves, and the free option. Q&A."]
+      ],
+      "leaks": [
+        {"n":"01","t":"The call nobody answered","lever":"Makes money","d":"After-hours, overflow, and peak-season calls that never became a job. The caller doesn't leave a voicemail — they call the next company on the list, and you never learn it happened."},
+        {"n":"02","t":"The quote that died","lever":"Makes money","d":"A replacement estimate goes out, the homeowner says they'll think about it, and nobody calls on day three, day ten, or next May when the unit finally fails."},
+        {"n":"03","t":"The coordination tax","lever":"Hours back","d":"The dispatch board changes twenty times a day, and every change means a call to the customer and a text to the tech — real skill, but a lot of it is notification."},
+        {"n":"04","t":"Written up three times","lever":"Hours back","d":"The tech types fragments on a tablet, the office rewrites it for the customer, builds the invoice, and registers the warranty. Same facts, three or four keyboards."},
+        {"n":"05","t":"The base run on memory","lever":"Happier customers","d":"Maintenance agreements lapse quietly, tune-up season is a manual phone marathon, and review requests only go out when somebody remembers."}
+      ],
+      "nicheQ": "Which of those five costs your shop the most — and is there a sixth I've missed?"
+    },
+    {
+      "id": "subs",
+      "tab": "Commercial Subcontractors",
+      "title": "AI for Commercial Subcontractors",
+      "promise": "More bids out the door without hiring another estimator",
+      "audience": "Commercial specialty trades in Arizona, California or New Mexico — electrical, mechanical, plumbing, concrete, drywall, glazing — roughly 10–50 people",
+      "price": "$79 per company",
+      "format": "2.5 hours, live on Zoom, capped at 25 companies",
+      "when": "Thursday morning, 9:00–11:30 Phoenix time",
+      "leaveWith": [
+        "One lever and one bottleneck, written down in their own handwriting",
+        "An eight-page workbook they fill in during the session",
+        "Their bid economics — cost per bid, hit rate, and break-even win rate",
+        "A four-day plan, one small task per day"
+      ],
+      "agenda": [
+        ["9:00", "Welcome, and one promise: no software gets sold in this room"],
+        ["9:10", "What AI actually does in a specialty sub today — and what it must never touch"],
+        ["9:25", "The ROI Compass: money, time, or getting invited back. Pick one."],
+        ["10:05", "Five questions about your own shop — you write, some read theirs aloud"],
+        ["10:35", "The five places margin leaks out of a specialty sub"],
+        ["11:00", "Your bid economics — what one bid costs you, and your break-even win rate"],
+        ["11:15", "What a full diagnosis involves, and the free option. Q&A."]
+      ],
+      "leaks": [
+        {"n":"01","t":"The bid pile you never got to","lever":"Makes money","d":"Forty invitations land, you bid eleven, and the eleven got picked by what was on top. Almost nobody tracks hit rate by GC or by job type, so the triage never improves."},
+        {"n":"02","t":"The undocumented change order","lever":"Makes money","d":"The super points at something Tuesday, your foreman does it, and there's no written direction, photo or ticket. At closeout it's your word against a schedule."},
+        {"n":"03","t":"Submittals and RFIs","lever":"Hours back","d":"Registers built by hand off the spec, product data chased and reformatted, resubmittals because one small thing was missed. Every day of turnaround is schedule exposure."},
+        {"n":"04","t":"The paperwork that gets you paid","lever":"Hours back","d":"Daily reports written from memory on Friday, T&M tickets that never left a truck dashboard, pay-app backup assembled the night before it's due, retention nobody is chasing."},
+        {"n":"05","t":"Getting invited back","lever":"Happier customers","d":"Every GC project manager keeps a list of subs who answer and subs who don't — and that list decides next year's invitations more reliably than your pricing does."}
+      ],
+      "nicheQ": "Which of those five costs your shop the most — and is there a sixth I've missed?"
+    }
+  ],
+  "responses": []
+}
+</script>
+
+<script>
+(function () {
+  "use strict";
+
+  /* Where feedback is emailed to. */
+  var CONFIG = { email: "workshop-fb@simplexvia.com" };
+
+
+  var dataEl = document.getElementById('workshop-data');
+  var DATA = JSON.parse(dataEl.textContent);
+  var WORKSHOPS = DATA.workshops;
+
+  var current = WORKSHOPS[0].id;
+  var answers = {};            // per-workshop answers, keyed by workshop id
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) {
+      return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];
+    });
+  }
+  function ws(id) { for (var i=0;i<WORKSHOPS.length;i++) if (WORKSHOPS[i].id===id) return WORKSHOPS[i]; return WORKSHOPS[0]; }
+  function ans(id) { if (!answers[id]) answers[id] = {leaks:{}, choice:{}, text:{}}; return answers[id]; }
+
+  /* ---------- persistence of the viewer's own draft ---------- */
+  function saveDraft() {
+    try { localStorage.setItem('sv-review-draft', JSON.stringify(answers)); } catch (e) {}
+  }
+  function loadDraft() {
+    try {
+      var raw = localStorage.getItem('sv-review-draft');
+      if (raw) answers = JSON.parse(raw) || {};
+    } catch (e) { answers = {}; }
+  }
+
+  /* ---------- question set (same for every workshop) ---------- */
+  var CHOICES = [
+    { key:'pay',    q:'Would you pay $79 for this?',
+      s:'Assume it is exactly as described and you have the morning free.',
+      opts:['Yes, easily','Probably','Only if free','No'] },
+    { key:'attend', q:'Would you actually show up for 2.5 hours on a Thursday morning?',
+      s:'Be honest about your calendar, not your intentions.',
+      opts:['Yes','Maybe','Wrong time of day','Too long'] },
+    { key:'promise',q:'Does the headline promise make you want to attend?',
+      s:'The line at the top of the concept, not the whole page.',
+      opts:['Yes','It is fine','Too vague','Overclaims'] },
+    { key:'diag',   q:'After a workshop like that, would a $999 diagnosis for your business be worth it?',
+      s:'A 30-minute call, a report inside 48 hours, and a review call.',
+      opts:['Yes','Maybe','Too expensive','Not interested'] }
+  ];
+  var TEXTS = [
+    { key:'niche',   q:'', s:'Rank them if you like, or just name the worst one.' },
+    { key:'missing', q:'What is missing?',
+      s:'What would you have expected to see in a workshop like this that is not here?' },
+    { key:'stop',    q:'What would stop you from coming?',
+      s:'The real reason, including the unflattering ones.' },
+    { key:'wrong',   q:'What in here is wrong, or sounds like someone who has never done this work?',
+      s:'This is the most useful box on the page. Please be blunt.' },
+    { key:'who',     q:'Who else should see this?',
+      s:'Anyone in your world whose opinion I should get before I run it. No obligation.' }
+  ];
+
+  /* ---------- render ---------- */
+  function renderTabs() {
+    var h = '';
+    for (var i=0;i<WORKSHOPS.length;i++) {
+      var w = WORKSHOPS[i];
+      h += '<button class="tab" role="tab" data-id="'+esc(w.id)+'" aria-selected="'+(w.id===current)+'">'+esc(w.tab)+'</button>';
+    }
+    document.getElementById('tabs').innerHTML = h;
+  }
+
+  function renderContent() {
+    var w = ws(current), a = ans(current), h = '';
+    document.getElementById('hdrName').textContent = w.title;
+
+    h += '<section><div class="wrap">';
+    h += '<div class="card headline-card"><div class="kick">The concept</div>';
+    h += '<h3>'+esc(w.title)+'</h3><p>'+esc(w.promise)+'</p>';
+    h += '<div class="meta"><span><b>Who:</b> '+esc(w.audience)+'</span></div>';
+    h += '<div class="meta"><span><b>Price:</b> '+esc(w.price)+'</span><span><b>Format:</b> '+esc(w.format)+'</span><span><b>When:</b> '+esc(w.when)+'</span></div>';
+    h += '</div>';
+
+    h += '<div class="grid2">';
+    h += '<div class="card"><h3>What they leave with</h3><ul class="plain">';
+    for (var i=0;i<w.leaveWith.length;i++) h += '<li>'+esc(w.leaveWith[i])+'</li>';
+    h += '</ul></div>';
+    h += '<div class="card"><h3>How the morning runs</h3><dl class="ag">';
+    for (var j=0;j<w.agenda.length;j++) h += '<dt>'+esc(w.agenda[j][0])+'</dt><dd>'+esc(w.agenda[j][1])+'</dd>';
+    h += '</dl></div>';
+    h += '</div></div></section>';
+
+    h += '<section style="background:var(--white); border-top:1px solid var(--line); border-bottom:1px solid var(--line);"><div class="wrap">';
+    h += '<div class="sec-label">React to these</div><h2>The five problems it claims are real</h2>';
+    h += '<p class="lede">This is the core of the workshop. If one of these is not a real problem in your world, that is exactly what I need to know.</p>';
+    for (var k=0;k<w.leaks.length;k++) {
+      var L = w.leaks[k], sel = a.leaks[L.n] || '';
+      h += '<div class="leak"><div class="top"><span class="n">'+esc(L.n)+'</span><h4>'+esc(L.t)+'</h4><span class="lever">'+esc(L.lever)+'</span></div>';
+      h += '<p>'+esc(L.d)+'</p><div class="rate" data-leak="'+esc(L.n)+'">';
+      var R = ['Costs us real money','Minor for us','Not a problem','Not how it works'];
+      for (var r=0;r<R.length;r++) {
+        var no = (r >= 2) ? ' class="no"' : '';
+        h += '<button type="button"'+no+' data-v="'+esc(R[r])+'" aria-pressed="'+(sel===R[r])+'">'+esc(R[r])+'</button>';
+      }
+      h += '</div></div>';
+    }
+    h += '</div></section>';
+
+    h += '<section><div class="wrap">';
+    h += '<div class="sec-label">Your read</div><h2>Seven questions</h2>';
+    h += '<p class="lede">Answer what you have an opinion on and skip the rest. Nothing here is required.</p>';
+
+    for (var c=0;c<CHOICES.length;c++) {
+      var C = CHOICES[c], csel = a.choice[C.key] || '';
+      h += '<div class="q"><div class="qh">'+esc(C.q)+'</div><div class="qs">'+esc(C.s)+'</div><div class="opts" data-choice="'+esc(C.key)+'">';
+      for (var o=0;o<C.opts.length;o++)
+        h += '<button type="button" data-v="'+esc(C.opts[o])+'" aria-pressed="'+(csel===C.opts[o])+'">'+esc(C.opts[o])+'</button>';
+      h += '</div>';
+      if (C.key === 'pay' || C.key === 'diag')
+        h += '<textarea data-text="'+esc(C.key)+'_why" placeholder="Why? (optional, but this is the useful part)">'+esc(a.text[C.key+'_why']||'')+'</textarea>';
+      h += '</div>';
+    }
+    for (var t=0;t<TEXTS.length;t++) {
+      var T = TEXTS[t], q = T.q || w.nicheQ;
+      h += '<div class="q"><div class="qh">'+esc(q)+'</div><div class="qs">'+esc(T.s)+'</div>';
+      h += '<textarea data-text="'+esc(T.key)+'">'+esc(a.text[T.key]||'')+'</textarea></div>';
+    }
+
+    h += '<div class="submit-bar"><h3>Send it back</h3>';
+    h += '<p>Your name is optional — but it helps me follow up with a question, and it&rsquo;s how I know who to give the free seat to if this ends up running.</p>';
+    h += '<input type="text" data-text="name" placeholder="Name and company (optional)" value="'+esc(a.text.name||'')+'">';
+    h += '<div style="margin-top:16px; display:flex; gap:10px; flex-wrap:wrap;">';
+    h += '<button class="btn" type="button" id="sendBtn">Email my answers</button>';
+    h += '<button class="btn btn-quiet" type="button" id="copyBtn">Just copy the text</button></div>';
+    h += '<div class="status" id="status"></div>';
+    h += '<div class="fallback" id="fallback"><p style="font-size:13.5px;color:var(--soft);margin-bottom:8px;">Copy this and send it to Steve however you like:</p><textarea id="fallbackText" style="min-height:160px;"></textarea></div>';
+    h += '</div></div></section>';
+
+    document.getElementById('content').innerHTML = h;
+  }
+
+  /* ---------- collect + send ---------- */
+  function collect() {
+    var a = ans(current), w = ws(current);
+    return {
+      workshop: w.title,
+      date: new Date().toISOString().slice(0,10),
+      name: a.text.name || '',
+      leaks: a.leaks, choice: a.choice, text: a.text
+    };
+  }
+  function asPlainText(R) {
+    var out = ['Workshop concept feedback — ' + R.workshop, 'From: ' + (R.name || 'anonymous'), 'Date: ' + R.date, ''];
+    out.push('THE FIVE PROBLEMS');
+    var w = ws(current);
+    for (var i=0;i<w.leaks.length;i++) {
+      var L = w.leaks[i];
+      out.push('  ' + L.n + ' ' + L.t + ' — ' + (R.leaks[L.n] || 'no answer'));
+    }
+    out.push('', 'QUESTIONS');
+    for (var c=0;c<CHOICES.length;c++) {
+      out.push('  ' + CHOICES[c].q);
+      out.push('    ' + (R.choice[CHOICES[c].key] || 'no answer'));
+      var why = R.text[CHOICES[c].key + '_why'];
+      if (why) out.push('    why: ' + why);
+    }
+    for (var t=0;t<TEXTS.length;t++) {
+      var q = TEXTS[t].q || w.nicheQ;
+      if (R.text[TEXTS[t].key]) { out.push('  ' + q); out.push('    ' + R.text[TEXTS[t].key]); }
+    }
+    return out.join('\n');
+  }
+  function showFallback(R, msg) {
+    var f = document.getElementById('fallback');
+    document.getElementById('fallbackText').value = asPlainText(R);
+    f.classList.add('show');
+    var s = document.getElementById('status');
+    s.className = 'status warn';
+    s.textContent = msg;
+  }
+
+  function send() {
+    var R = collect();
+    var body = asPlainText(R);
+    var subject = 'Workshop feedback — ' + R.workshop;
+    // always surface the text first: mailto can be blocked, and nothing should be lost
+    showFallback(R, 'Opening your email app. If nothing happens, copy the text below and send it however you like.');
+    try { navigator.clipboard.writeText(body); } catch (e) {}
+    var href = 'mailto:' + encodeURIComponent(CONFIG.email)
+             + '?subject=' + encodeURIComponent(subject)
+             + '&body=' + encodeURIComponent(body);
+    if (href.length > 1800) {                     // long answers break some mail clients
+      showFallback(R, 'Your answers are longer than an email link can carry — they are copied to your clipboard and shown below. Paste them into an email to ' + CONFIG.email + '.');
+      return;
+    }
+    try { window.location.href = href; } catch (e) {}
+  }
+
+  /* ---------- events ---------- */
+  document.addEventListener('click', function (e) {
+    var tab = e.target.closest && e.target.closest('.tab');
+    if (tab) { current = tab.dataset.id; renderTabs(); renderContent(); window.scrollTo({top:0}); return; }
+
+    var rateBtn = e.target.closest && e.target.closest('.rate button');
+    if (rateBtn) {
+      var group = rateBtn.parentNode, a = ans(current);
+      var already = rateBtn.getAttribute('aria-pressed') === 'true';
+      var bs = group.querySelectorAll('button');
+      for (var i=0;i<bs.length;i++) bs[i].setAttribute('aria-pressed','false');
+      if (already) { delete a.leaks[group.dataset.leak]; }
+      else { rateBtn.setAttribute('aria-pressed','true'); a.leaks[group.dataset.leak] = rateBtn.dataset.v; }
+      saveDraft(); return;
+    }
+
+    var optBtn = e.target.closest && e.target.closest('.opts button');
+    if (optBtn) {
+      var g = optBtn.parentNode, an = ans(current);
+      var was = optBtn.getAttribute('aria-pressed') === 'true';
+      var bb = g.querySelectorAll('button');
+      for (var k=0;k<bb.length;k++) bb[k].setAttribute('aria-pressed','false');
+      if (was) { delete an.choice[g.dataset.choice]; }
+      else { optBtn.setAttribute('aria-pressed','true'); an.choice[g.dataset.choice] = optBtn.dataset.v; }
+      saveDraft(); return;
+    }
+
+    if (e.target.id === 'sendBtn') { send(); return; }
+    if (e.target.id === 'copyBtn') {
+      var R = collect();
+      showFallback(R, 'Copied below — paste it into an email or a text.');
+      var ta = document.getElementById('fallbackText');
+      ta.focus(); ta.select();
+      try { navigator.clipboard.writeText(asPlainText(R)); } catch (err) {}
+      return;
+    }
+  });
+
+  document.addEventListener('input', function (e) {
+    var key = e.target.dataset && e.target.dataset.text;
+    if (!key) return;
+    ans(current).text[key] = e.target.value;
+    saveDraft();
+  });
+
+  /* ---------- boot ---------- */
+  loadDraft();
+  renderTabs();
+  renderContent();
+
+})();
+</script>
+</body>
+</html>
