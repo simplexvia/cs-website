@@ -89,7 +89,7 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);backgroun
         <div style="border-left:3px solid var(--gold);padding:7px 12px;background:#fff;border-radius:0 6px 6px 0"><b style="color:var(--navy)">Level 2 — Operational:</b> <span style="color:#444;font-size:13.5px">Tools and automation handle defined tasks reliably, with basic guardrails in place.</span></div>
         <div style="border-left:3px solid var(--gold);padding:7px 12px;background:#fff;border-radius:0 6px 6px 0"><b style="color:var(--navy)">Level 3 — Strategic:</b> <span style="color:#444;font-size:13.5px">AI is tied to goals, measured, and actively driving growth — not just efficiency.</span></div>
       </div>
-      <p style="font-size:13.5px;color:#444;margin:14px 0 0">You'll also see your biggest <b>value lever</b> — Effectiveness (makes money), Efficiency (hours back), or Quality (happier customers) — the fastest place to focus next.</p>
+      <p style="font-size:13.5px;color:#444;margin:14px 0 0">You'll also see your biggest <b>value lever</b> on the ROI Compass — Effectiveness (makes money), Efficiency (hours back), or Quality (happier customers) — the fastest place to focus next.</p>
     </div>
     <p class="center" style="margin-top:20px;font-size:13px;color:var(--teal);font-weight:bold">About 5 minutes · Instant results · Free — no obligation</p>
     <p class="center" style="margin-top:18px"><a class="btn" href="https://form.jotform.com/262007821807050">Start the assessment</a></p>
@@ -202,7 +202,7 @@ function render(areaSums,total,stage,sname){
   _ls.sort((a,b)=>a.pct-b.pct);
   const _big=_ls[0];
   const _lb=document.getElementById('leverBox');
-  if(_lb) _lb.innerHTML='<div style="color:var(--navy);font-weight:bold;font-size:12px;text-transform:uppercase;letter-spacing:.05em">Your biggest lever right now</div><div style="font-size:19px;font-weight:bold;color:var(--navy);margin:3px 0 6px">'+_big.id+' — '+_big.tag+'</div><p style="margin:0;font-size:13.5px;color:#444">The three ways AI creates value: <b>Effectiveness</b> (makes money) · <b>Efficiency</b> (hours back) · <b>Quality</b> (happier customers). Based on your answers, <b>'+_big.id+'</b> has the most room to grow — the fastest place to focus next.</p>';
+  if(_lb) _lb.innerHTML='<div style="color:var(--navy);font-weight:bold;font-size:12px;text-transform:uppercase;letter-spacing:.05em">Your ROI Compass result</div><div style="font-size:19px;font-weight:bold;color:var(--navy);margin:3px 0 6px">'+_big.id+' — '+_big.tag+'</div><p style="margin:0;font-size:13.5px;color:#444">The ROI Compass measures three ways AI creates value: <b>Effectiveness</b> (makes money) · <b>Efficiency</b> (hours back) · <b>Quality</b> (happier customers). Based on your answers, <b>'+_big.id+'</b> has the most room to grow — the fastest place to focus next.</p>';
   // Feedback link — pass only the stage and score, never any personal details.
   const fb=document.getElementById('feedbackLink');
   if(fb) fb.href='https://form.jotform.com/262024693419055?q10_textbox8='+encodeURIComponent(sname)+'&q11_textbox9='+encodeURIComponent(total);
