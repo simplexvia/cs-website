@@ -150,6 +150,17 @@
     margin-bottom:44px;
   }
   .section-head{margin-bottom:44px;}
+  .section-head .eyebrow{margin-bottom:10px;}
+  .cmp-table{width:100%;border-collapse:collapse;background:var(--white);margin-bottom:18px;}
+  .cmp-table thead th{text-align:left;background:var(--navy);color:var(--near-white);font-size:13px;padding:14px 18px;}
+  .cmp-table thead th:first-child{background:var(--warm);}
+  .cmp-table th[scope="row"]{text-align:left;background:var(--warm);color:var(--navy);font-size:13px;padding:14px 18px;width:150px;vertical-align:top;}
+  .cmp-table td{padding:14px 18px;font-size:14px;vertical-align:top;}
+  .cmp-table tbody th,.cmp-table tbody td{border-top:1px solid rgba(47,59,105,0.10);}
+  @media (max-width:760px){ .cmp-table th[scope="row"]{width:auto;} }
+  .cmp-note{font-size:13.5px;color:var(--navy);border-left:3px solid var(--gold);padding-left:14px;margin-bottom:40px;}
+  .sub-head{font-size:15px;color:var(--navy);font-weight:bold;margin-bottom:18px;}
+  @media (max-width:760px){ .cmp-table th[scope="row"]{width:auto;} }
 
   /* PROBLEM / SHIFT TABLE */
   .shift-table{
@@ -438,7 +449,7 @@
     <nav id="site-nav-links">
       <a href="index.html">Home</a>
       <a href="#documents">Document Automation</a>
-      <a href="#search-recovery">AI Search &amp; Recovery</a>
+      <a href="#search-recovery">AI Search and Recovery</a>
       <a href="about.html">About</a>
       <a href="#documents-contact">Contact</a>
     </nav>
@@ -634,7 +645,7 @@
 <section class="section-white" id="program">
   <div class="wrap">
     <div class="section-head">
-      <h2 class="section-title">The AI Search &amp; Lead Recovery Program</h2>
+      <h2 class="section-title">The AI Search and Lead Recovery Program</h2>
       <p class="section-sub">A phased engagement that moves from diagnosis to a repeatable operating model — sold as a fixed-fee audit first, with implementation and ongoing optimization available as next steps.</p>
     </div>
     <div class="grid cols-5">
@@ -645,8 +656,8 @@
       </div>
       <div class="card">
         <div class="num">Phase 1</div>
-        <h3>AI Search &amp; Lead Recovery Audit</h3>
-        <p>3–4 weeks. Identify why leads declined and what should be fixed first.</p>
+        <h3>AI Search and Lead Recovery Audit</h3>
+        <p>3–5 weeks. Identify why leads declined and what should be fixed first.</p>
       </div>
       <div class="card">
         <div class="num">Phase 2</div>
@@ -655,7 +666,7 @@
       </div>
       <div class="card">
         <div class="num">Phase 3</div>
-        <h3>Authority &amp; AI Visibility Program</h3>
+        <h3>Managed Authority and AI Visibility Program</h3>
         <p>Monthly. Build sustainable visibility and a qualified pipeline over time.</p>
       </div>
       <div class="card">
@@ -668,7 +679,7 @@
       Not sure which to start with? The Diagnostic is a genuinely lighter engagement — not a discounted version of the audit — built for solo and very small firms, or anyone who wants confirmation before committing to the full scope. We'll recommend the right entry point on your first call. <a href="#contact">Ask which fits →</a>
     </div>
     <div class="entry-callout no-obligation">
-      <strong>No obligation to continue.</strong> Each phase is scoped, quoted, and contracted separately — you see the findings from the Diagnostic or Audit before deciding whether to move into the Recovery Sprint. The only phase with a term commitment is the Managed Authority &amp; AI Visibility Program (Phase 3), a monthly retainer with a 6-month minimum once you opt in.
+      <strong>No obligation to continue.</strong> Each phase is scoped, quoted, and contracted separately — you see the findings from the Diagnostic or Audit before deciding whether to move into the Recovery Sprint. The only phase with a term commitment is the Managed Authority and AI Visibility Program (Phase 3), a monthly retainer with a 6-month minimum once you opt in.
     </div>
   </div>
 </section>
@@ -702,15 +713,16 @@
         </ul>
       </div>
     </div>
-    <div class="fit-note"><strong>Missing analytics, messy CRM data, or no current SEO vendor?</strong> None of that is a disqualifier — Phase 1 of the recovery sprint is built specifically to repair tracking and attribution gaps like these.</div>
+    <div class="fit-note"><strong>Missing analytics, messy CRM data, or no current SEO vendor?</strong> None of that is a disqualifier — the Days 1–15 window of the 90-Day Recovery Sprint (Phase 2) is built specifically to repair tracking and attribution gaps like these, and the Audit documents them first.</div>
   </div>
 </section>
 
 <section class="section-white" id="audit">
   <div class="wrap">
     <div class="section-head">
-      <h2 class="section-title">What the audit covers</h2>
-      <p class="section-sub">Ten workstreams diagnose the full path from search demand to retained matter — not just rankings.</p>
+          <div class="eyebrow">Phase 1 · AI Search and Lead Recovery Audit</div>
+          <h2 class="section-title">What the audit covers</h2>
+          <p class="section-sub">Ten workstreams diagnose the full path from search demand to retained matter — not just rankings. The Phase 0 Diagnostic covers a reduced subset of these.</p>
     </div>
     <div class="ws-grid">
       <div class="ws-item"><div class="badge">1</div><div><h4>Business &amp; Matter Economics</h4><p>Most profitable practice areas and matter types</p></div></div>
@@ -730,8 +742,9 @@
 <section class="section-light" id="process">
   <div class="wrap">
     <div class="section-head">
-      <h2 class="section-title">A 90-day path from diagnosis to recovery</h2>
-      <p class="section-sub">Once the audit is complete, the recovery sprint follows a disciplined sequence — fix measurement first, then revenue pages, then authority, then AI visibility.</p>
+          <div class="eyebrow">Phase 2 · 90-Day Recovery Sprint</div>
+          <h2 class="section-title">A 90-day path from diagnosis to recovery</h2>
+          <p class="section-sub">Once the audit is complete, the Recovery Sprint — scoped and quoted separately — follows a disciplined sequence: fix measurement first, then revenue pages, then authority, then AI visibility.</p>
     </div>
     <div class="timeline">
       <div class="tl-step">
@@ -772,9 +785,36 @@
 <section class="section-light" id="deliverables">
   <div class="wrap">
     <div class="section-head">
-      <h2 class="section-title">What the Full Audit delivers</h2>
-      <p class="section-sub">A documented, defensible audit workbook — not a slide deck of vanity metrics. This is the deliverable set for the Phase 1 AI Search &amp; Lead Recovery Audit; the Phase 0 Diagnostic delivers a lighter version — a discovery workshop, an analytics review, three priority pages, an initial AI-visibility check, and a prioritized action list.</p>
-    </div>
+          <div class="eyebrow">Phase 0 and Phase 1 · What You Receive</div>
+          <h2 class="section-title">What each engagement delivers</h2>
+          <p class="section-sub">A documented, defensible audit workbook — not a slide deck of vanity metrics. Both entry points produce written findings you keep; they differ in depth, not in rigour.</p>
+        </div>
+
+        <table class="cmp-table">
+          <thead>
+            <tr><th></th><th>Phase 0 · Lead Recovery Diagnostic</th><th>Phase 1 · AI Search and Lead Recovery Audit</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Best when</th>
+              <td>You want the cause confirmed before committing to a larger scope.</td>
+              <td>The causes look plural, and you need a defensible plan across every property that carries your firm&rsquo;s name.</td>
+            </tr>
+            <tr>
+              <th scope="row">Duration</th>
+              <td>2&ndash;3 weeks</td>
+              <td>3&ndash;5 weeks</td>
+            </tr>
+            <tr>
+              <th scope="row">You receive</th>
+              <td>Discovery workshop; analytics and Search Console review; high-level local and technical review; review of three priority pages; initial AI visibility benchmark; executive findings; prioritized action list.</td>
+              <td>All ten audit workstreams; lead attribution and marketing-technology review; practice-area opportunity matrix; local profile analysis; content and authority inventory; AI-search prompt benchmark; conversion and intake review; ethics and governance risk register; 90-day roadmap; executive readout.</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="cmp-note">The Diagnostic is a genuinely smaller, separately scoped engagement &mdash; not a discounted Audit. Each phase is scoped, quoted, and contracted on its own; we&rsquo;ll recommend the right entry point, and talk through fees, on the first call.</p>
+
+        <p class="sub-head">The Phase 1 deliverable set, in detail</p>
     <div class="del-grid">
       <div class="del-item"><strong>Executive Findings</strong>The root-cause analysis behind the lead decline, in plain business terms.</div>
       <div class="del-item"><strong>Practice-Area Opportunity Matrix</strong>Where to focus based on demand, value, and capacity.</div>
