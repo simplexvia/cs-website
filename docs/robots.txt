@@ -1,0 +1,17 @@
+# simplexvia.com
+#
+# Content-Signal declares how this site's content may be used downstream.
+# It is a deliberate stance, not a default:
+#   search    = yes  — index it and show it in results
+#   ai-input  = yes  — assistants may read and cite this site when answering.
+#                      This is the entire point. Simplex Via sells AI-findability;
+#                      opting out of it here would be self-defeating.
+#   ai-train  = no   — reading and citing is welcome; training on it is a separate
+#                      question and the answer is no.
+# Reference: https://contentsignals.org · Cloudflare Content Signals Policy.
+
+User-Agent: *
+Content-Signal: search=yes, ai-input=yes, ai-train=no
+Allow: /
+
+Sitemap: https://simplexvia.com/sitemap.xml

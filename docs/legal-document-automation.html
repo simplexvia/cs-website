@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legal Document Automation for Law Firms | Simplex Via</title>
+<meta name="description" content="Stop re-typing the same client facts into every closing, trust and estate document. A forms audit turns your highest-volume documents into attorney-reviewed templates that cut drafting time by 50-80%.">
+<style>
+  :root{
+    --navy:#2F3B69;
+    --warm:#E3DDDC;
+    --near-white:#FAFAFF;
+    --white:#FFFFFF;
+    --gray:#333333;
+    --gold:#C8A96E;
+    --teal:#2C7873;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:Arial, Helvetica, sans-serif;
+    color:var(--gray);
+    background:var(--white);
+    line-height:1.6;
+  }
+  img{max-width:100%;display:block;}
+  a{color:inherit;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+
+  /* NAV */
+  header.site-nav{
+    position:sticky;
+    top:0;
+    z-index:50;
+    background:var(--navy);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+    padding-top:14px;
+    padding-bottom:14px;
+  }
+  .site-nav .wrap{display:flex;align-items:center;justify-content:space-between;}
+  .site-nav .brand{display:flex;align-items:center;gap:12px;}
+  .site-nav .brand img{height:38px;width:auto;}
+  .site-nav .brand span{color:var(--near-white);font-weight:bold;font-size:18px;letter-spacing:1px;}
+  .site-nav nav a{
+    color:var(--near-white);
+    text-decoration:none;
+    font-size:14px;
+    margin-left:28px;
+    opacity:.9;
+  }
+  .site-nav nav a:hover{opacity:1;color:var(--gold);text-decoration:none;}
+  .nav-toggle{
+    display:none;background:none;border:1px solid rgba(255,255,255,0.35);
+    border-radius:4px;padding:8px 9px;cursor:pointer;
+  }
+  .nav-toggle span{
+    display:block;width:20px;height:2px;background:var(--near-white);
+    border-radius:2px;margin:4px 0;
+  }
+  @media (max-width:760px){
+    header.site-nav{padding-bottom:14px;}
+    .site-nav .wrap{gap:10px;}
+    .site-nav .brand img{height:32px;}
+    .site-nav .brand span{font-size:15px;letter-spacing:0.5px;}
+    .nav-toggle{display:block;}
+    .site-nav nav{
+      position:absolute;top:100%;left:0;right:0;background:var(--navy);
+      border-top:1px solid rgba(255,255,255,0.12);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    header.site-nav.open nav{max-height:360px;}
+    .site-nav nav a{
+      display:block;margin-left:0;padding:14px 24px;font-size:15px;
+      border-bottom:1px solid rgba(255,255,255,0.08);
+    }
+    .site-nav nav a:last-child{border-bottom:none;}
+  }
+
+  /* HERO */
+  .hero{
+    background:var(--navy);
+    position:relative;
+    overflow:hidden;
+    padding:80px 0 96px;
+  }
+  .hero .wrap{position:relative;z-index:1;max-width:760px;}
+  .eyebrow{
+    color:var(--gold);
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:16px;
+  }
+  .hero h1, .hero h2{
+    color:var(--near-white);
+    font-size:38px;
+    font-weight:bold;
+    line-height:1.2;
+    margin-bottom:20px;
+  }
+  .hero p.lead{
+    color:var(--near-white);
+    opacity:.92;
+    font-size:17px;
+    max-width:640px;
+    margin-bottom:32px;
+  }
+  .btn{
+    display:inline-block;
+    background:var(--gold);
+    color:var(--navy);
+    font-weight:bold;
+    font-size:14px;
+    text-decoration:none;
+    padding:14px 30px;
+    border-radius:2px;
+  }
+  .btn:hover{opacity:.9;}
+  .btn-outline{
+    display:inline-block;
+    background:transparent;
+    color:var(--near-white);
+    font-weight:bold;
+    font-size:14px;
+    text-decoration:none;
+    padding:13px 28px;
+    border:1px solid rgba(250,250,255,.5);
+    border-radius:2px;
+    margin-left:14px;
+  }
+  .btn-outline:hover{border-color:var(--near-white);}
+
+  /* SECTION HEADERS */
+  section{padding:72px 0;}
+  .section-light{background:var(--warm);}
+  .section-white{background:var(--white);}
+  .section-navy{background:var(--navy);}
+  h2.section-title{
+    font-size:28px;
+    font-weight:bold;
+    color:var(--navy);
+    margin-bottom:14px;
+  }
+  .section-navy h2.section-title,
+  .section-navy p.section-sub{color:var(--near-white);}
+  p.section-sub{
+    font-size:15px;
+    color:#555;
+    max-width:680px;
+    margin-bottom:44px;
+  }
+  .section-head{margin-bottom:44px;}
+  .section-head .eyebrow{margin-bottom:10px;}
+  .cmp-table{width:100%;border-collapse:collapse;background:var(--white);margin-bottom:18px;}
+  .cmp-table thead th{text-align:left;background:var(--navy);color:var(--near-white);font-size:13px;padding:14px 18px;}
+  .cmp-table thead th:first-child{background:var(--warm);color:var(--navy);}
+  .cmp-table th[scope="row"]{text-align:left;background:var(--warm);color:var(--navy);font-size:13px;padding:14px 18px;width:150px;vertical-align:top;}
+  .cmp-table td{padding:14px 18px;font-size:14px;vertical-align:top;}
+  .cmp-table tbody th,.cmp-table tbody td{border-top:1px solid rgba(47,59,105,0.10);}
+  @media (max-width:760px){ .cmp-table th[scope="row"]{width:auto;} }
+  .cmp-note{font-size:13.5px;color:var(--navy);border-left:3px solid var(--gold);padding-left:14px;margin-bottom:40px;}
+  .sub-head{font-size:15px;color:var(--navy);font-weight:bold;margin-bottom:18px;}
+  @media (max-width:760px){ .cmp-table th[scope="row"]{width:auto;} }
+
+  /* PROBLEM / SHIFT TABLE */
+  .shift-table{
+    width:100%;
+    border-collapse:collapse;
+    background:var(--white);
+  }
+  .shift-table th{
+    text-align:left;
+    background:var(--navy);
+    color:var(--near-white);
+    font-size:13px;
+    padding:14px 18px;
+  }
+  .shift-table td{
+    padding:14px 18px;
+    font-size:14px;
+    border-bottom:1px solid var(--warm);
+  }
+  .shift-table tr:last-child td{border-bottom:none;}
+  .source-note{
+    margin-top:14px;
+    font-size:11.5px;
+    color:#777;
+    line-height:1.5;
+  }
+  .source-note a{color:var(--teal);}
+
+  /* ROI COMPASS */
+  .lever-tag{
+    display:inline-block;
+    color:var(--teal);
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:11.5px;
+    font-weight:bold;
+    margin-bottom:10px;
+  }
+  .lever-example{
+    margin-top:14px;
+    padding-top:12px;
+    border-top:1px solid #EEE9E8;
+  }
+  .lever-example p{
+    font-size:12.5px;
+    color:#666;
+    line-height:1.5;
+    margin-bottom:6px;
+  }
+  .lever-example p:last-child{margin-bottom:0;}
+  .lever-example strong{color:var(--navy);}
+
+  /* CARD GRID */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:24px;
+  }
+  .grid.cols-3{grid-template-columns:repeat(3,1fr);}
+  .grid.cols-4{grid-template-columns:repeat(4,1fr);}
+  .grid.cols-5{grid-template-columns:1.1fr repeat(4,1fr);}
+  .card{
+    background:var(--white);
+    border:1px solid #DDD6D4;
+    border-radius:4px;
+    padding:26px;
+  }
+  .card.phase-zero{
+    background:var(--warm);
+    border:1px dashed #B9AFAC;
+  }
+  .card.phase-zero .num{color:var(--teal);}
+  .section-navy .card{
+    background:rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.14);
+  }
+  .card .num{
+    display:inline-block;
+    color:var(--gold);
+    font-weight:bold;
+    font-size:13px;
+    margin-bottom:10px;
+  }
+  .card h3{
+    font-size:16px;
+    color:var(--navy);
+    margin-bottom:8px;
+  }
+  .section-navy .card h3{color:var(--near-white);}
+  .card p{font-size:13.5px;color:#555;}
+  .section-navy .card p{color:var(--near-white);opacity:.85;}
+
+  /* STAT CARDS */
+  .card.stat{text-align:center;}
+  .card.stat .stat-figure{
+    font-size:32px;
+    font-weight:bold;
+    color:var(--navy);
+    margin-bottom:8px;
+  }
+  .card.stat p{font-size:13px;color:#555;}
+
+  /* SECONDARY HERO (offering #2 on this page) */
+  .hero.hero-secondary{padding:56px 0 68px;}
+  .divider-band{
+    background:var(--gold);
+    color:var(--navy);
+    text-align:center;
+    padding:14px 0;
+    font-size:13px;
+    font-weight:bold;
+    letter-spacing:.06em;
+    text-transform:uppercase;
+  }
+
+  /* WORKSTREAM LIST */
+  .ws-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
+    gap:12px;
+  }
+  .ws-item{
+    display:flex;
+    gap:10px;
+    background:var(--white);
+    border:1px solid #DDD6D4;
+    border-radius:4px;
+    padding:13px 14px;
+  }
+  .ws-item .badge{
+    flex:0 0 auto;
+    width:24px;height:24px;
+    border-radius:50%;
+    background:var(--navy);
+    color:var(--near-white);
+    font-weight:bold;
+    font-size:11.5px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .ws-item h4{font-size:13px;color:var(--navy);margin-bottom:2px;}
+  .ws-item p{font-size:12px;color:#666;}
+
+  /* LIGHT ENTRY CALLOUT */
+  .entry-callout{
+    margin-top:28px;
+    padding:18px 22px;
+    background:var(--warm);
+    border-left:3px solid var(--gold);
+    border-radius:2px;
+    font-size:14px;
+    color:var(--gray);
+  }
+  .entry-callout a{color:var(--navy);font-weight:bold;text-decoration:underline;}
+  .section-navy .entry-callout{background:rgba(255,255,255,.06);color:var(--near-white);}
+  .section-navy .entry-callout a{color:var(--gold);}
+  .entry-callout.no-obligation{
+    margin-top:14px;
+    border-left-color:var(--teal);
+    background:var(--white);
+    border:1px solid #DDD6D4;
+    border-left:3px solid var(--teal);
+  }
+  .entry-callout.no-obligation strong{color:var(--teal);}
+
+  /* FIT SECTION */
+  .fit-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+  }
+  .fit-card{
+    background:var(--white);
+    border-radius:4px;
+    padding:26px 28px;
+    border-top:3px solid var(--teal);
+  }
+  .fit-card.caution{border-top-color:var(--gold);}
+  .fit-card h3{font-size:15px;color:var(--navy);margin-bottom:14px;}
+  .fit-list{list-style:none;}
+  .fit-list li{
+    font-size:13.5px;
+    color:var(--gray);
+    padding-left:22px;
+    position:relative;
+    margin-bottom:10px;
+  }
+  .fit-list li::before{
+    content:"✓";
+    position:absolute;left:0;
+    color:var(--teal);
+    font-weight:bold;
+  }
+  .fit-card.caution .fit-list li::before{
+    content:"—";
+    color:var(--gold);
+  }
+  .fit-note{
+    margin-top:22px;
+    font-size:13px;
+    color:#555;
+    background:var(--white);
+    border-radius:4px;
+    padding:16px 20px;
+  }
+  .fit-note strong{color:var(--navy);}
+
+  /* PROCESS TIMELINE */
+  .timeline{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:24px;
+  }
+  .tl-step{
+    background:var(--near-white);
+    border-top:3px solid var(--gold);
+    padding:24px 20px;
+  }
+  .tl-step .step-num{
+    color:var(--gold);
+    font-weight:bold;
+    font-size:22px;
+    margin-bottom:8px;
+  }
+  .tl-step h4{font-size:14px;color:var(--navy);margin-bottom:8px;}
+  .tl-step p{font-size:13px;color:#555;}
+
+  /* GOVERNANCE */
+  .gov-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:start;
+  }
+  .gov-list{list-style:none;}
+  .gov-list li{
+    color:var(--near-white);
+    font-size:14.5px;
+    padding-left:26px;
+    position:relative;
+    margin-bottom:14px;
+    opacity:.92;
+  }
+  .gov-list li::before{
+    content:"—";
+    position:absolute;
+    left:0;
+    color:var(--gold);
+  }
+
+  /* DELIVERABLES */
+  .del-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:14px;
+  }
+  .del-item{
+    background:var(--white);
+    border:1px solid #DDD6D4;
+    border-radius:4px;
+    padding:16px 18px;
+    font-size:13.5px;
+    color:var(--gray);
+  }
+  .del-item strong{color:var(--navy);display:block;font-size:14px;margin-bottom:2px;}
+
+  /* CONTACT */
+  #contact, #documents-contact{background:var(--navy);}
+  .contact-centered{
+    max-width:560px;
+    margin:0 auto;
+    text-align:center;
+  }
+  .contact-centered .btn{margin-bottom:8px;}
+  .contact-copy h2{color:var(--near-white);}
+  .contact-copy p{color:var(--near-white);opacity:.88;font-size:15px;margin-bottom:20px;}
+  .contact-copy .disclaimer{
+    font-size:12px;
+    opacity:.65;
+    line-height:1.5;
+    margin-top:28px;
+  }
+
+  /* FOOTER */
+  footer{
+    background:#232C4E;
+    padding:32px 0;
+  }
+  footer .wrap{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;}
+  footer .brand{display:flex;align-items:center;gap:10px;}
+  footer img{height:24px;opacity:.85;}
+  footer .tag{color:var(--near-white);opacity:.6;font-size:12px;}
+  footer .legal{color:var(--near-white);opacity:.5;font-size:11.5px;max-width:520px;line-height:1.5;}
+
+  @media (max-width: 860px){
+    .grid, .grid.cols-3, .grid.cols-4, .grid.cols-5, .ws-grid, .timeline, .del-grid, .gov-grid, .fit-grid, .cmp-grid{grid-template-columns:1fr;}
+    .hero h1, .hero h2{font-size:30px;}
+    .btn-outline{margin-left:0;margin-top:12px;}
+  }
+</style>
+<link rel="canonical" href="https://simplexvia.com/legal-document-automation.html">
+<link rel="icon" href="simplexvia-mark-navy.png">
+<meta name="theme-color" content="#2F3B69">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Simplex Via">
+<meta property="og:url" content="https://simplexvia.com/legal-document-automation.html">
+<meta property="og:title" content="Legal Document Automation for Law Firms | Simplex Via">
+<meta property="og:description" content="Stop re-typing the same client facts into every closing, trust and estate document. A forms audit turns your highest-volume documents into attorney-reviewed templates that cut drafting time by 50-80%.">
+<meta property="og:image" content="https://simplexvia.com/simplexvia-logo.png">
+<meta property="og:image:width" content="1050">
+<meta property="og:image:height" content="600">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Legal Document Automation for Law Firms | Simplex Via">
+<meta name="twitter:description" content="Stop re-typing the same client facts into every closing, trust and estate document. A forms audit turns your highest-volume documents into attorney-reviewed templates that cut drafting time by 50-80%.">
+<meta name="twitter:image" content="https://simplexvia.com/simplexvia-logo.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    { "@type": "ProfessionalService", "@id": "https://simplexvia.com/#organization",
+       "name": "Simplex Via LLC", "url": "https://simplexvia.com/",
+       "logo": "https://simplexvia.com/simplexvia-logo.png",
+       "areaServed": { "@type": "Country", "name": "United States" } },
+    { "@type": "Service", "@id": "https://simplexvia.com/legal-document-automation.html#service", "name": "Legal Document Automation",
+       "alternateName": "Legal document automation and forms consulting",
+       "serviceType": "Legal document automation and forms consulting",
+       "provider": { "@id": "https://simplexvia.com/#organization" },
+       "areaServed": { "@type": "Country", "name": "United States" },
+       "audience": { "@type": "BusinessAudience", "name": "Small and mid-size law firms" },
+       "description": "A forms audit and automation build for small and mid-size law firms: the highest-volume, most time-consuming documents - closing packages, trust and estate sets, retainer agreements - turned into attorney-reviewed templates. Attorney-reviewed, not attorney-replaced.",
+       "url": "https://simplexvia.com/legal-document-automation.html" },
+    { "@type": "BreadcrumbList", "itemListElement": [
+       { "@type": "ListItem", "position": 1, "name": "Simplex Via", "item": "https://simplexvia.com/" },
+       { "@type": "ListItem", "position": 2, "name": "For Law Firms", "item": "https://simplexvia.com/for-law-firms.html" },
+       { "@type": "ListItem", "position": 3, "name": "Legal Document Automation", "item": "https://simplexvia.com/legal-document-automation.html" } ] }
+  ]
+}
+</script>
+</head>
+<header class="site-nav">
+  <div class="wrap">
+    <div class="brand">
+      <a href="index.html" style="display:flex;align-items:center;gap:12px;text-decoration:none;">
+        <img src="simplexvia-mark-tint.png" alt="Simplex Via logo">
+        <span>SIMPLEX VIA</span>
+      </a>
+    </div>
+    <nav id="site-nav-links">
+      <a href="index.html">Home</a>
+      <a href="for-law-firms.html">For Law Firms</a>
+      <a href="#documents-why">Why It Matters</a>
+      <a href="#documents-included">What's Included</a>
+      <a href="about.html">About</a>
+      <a href="#documents-contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="hero" id="documents">
+  <div class="wrap">
+    <div class="eyebrow">For Small &amp; Mid-Size Law Firms</div>
+    <h2>Stop re-typing the same client facts into every closing, trust, and estate document.</h2>
+    <p class="lead">Attorneys report spending 40–50% of the day on documentation and drafting alone. We audit your highest-volume, most time-consuming forms — closing packages, trust and estate document sets, retainer agreements — and turn them into attorney-reviewed templates that cut drafting time by 50–80%.</p>
+    <a href="https://cal.com/cal-simplexvia/request-consult" target="_blank" rel="noopener" class="btn">Request a Forms Audit</a>
+    <a href="#documents-included" class="btn-outline">See What's Included</a>
+  </div>
+</section>
+
+<section class="section-light" id="documents-why">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">The forms aren't the marketing kind — they're the ones costing you billable hours</h2>
+      <p class="section-sub">Every one of these numbers is a document-automation opportunity, not a demand problem — the work is already coming in, it's just taking too long to process once it does.</p>
+    </div>
+    <div class="grid cols-4">
+      <div class="card stat">
+        <div class="stat-figure">40–50%</div>
+        <h3>Of the day</h3>
+        <p>Share of the average attorney's day spent on documentation and drafting.</p>
+      </div>
+      <div class="card stat">
+        <div class="stat-figure">11.2 hrs</div>
+        <h3>Lost weekly</h3>
+        <p>Hours lost each week to document creation and management friction — at least 6 of those hours pure waste.</p>
+      </div>
+      <div class="card stat">
+        <div class="stat-figure">50–80%</div>
+        <h3>Drafting time cut</h3>
+        <p>Typical reduction in drafting time on document types that get automated.</p>
+      </div>
+      <div class="card stat">
+        <div class="stat-figure">15–25 hrs</div>
+        <h3>Recovered monthly</h3>
+        <p>Hours recovered by a firm producing 50 documents a month, once those documents are templated.</p>
+      </div>
+    </div>
+    <p class="source-note">Sources: Clio Legal Trends Report, via <a href="https://www.casestatus.com/blog/what-do-lawyers-spend-their-time-doing" target="_blank" rel="noopener">CaseStatus</a>; <a href="https://metajure.com/lawyers-waste-six-hours-a-week-on-document-management-issues-2/" target="_blank" rel="noopener">MetaJure</a>; <a href="https://mitratech.com/resource-hub/guides/roi-of-document-automation/" target="_blank" rel="noopener">Mitratech</a>; <a href="https://xpressdox.com/document-automation-roi-law-firms/" target="_blank" rel="noopener">XpressDox</a>.</p>
+  </div>
+</section>
+
+<section class="section-white" id="documents-included">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">What the Forms Audit &amp; Automation build includes</h2>
+      <p class="section-sub">A diagnostic-and-build engagement, scoped in 1–2 weeks, that finds a firm's highest-time-cost, highest-repetition documents and turns them into automated templates your own staff can run.</p>
+    </div>
+    <div class="ws-grid">
+      <div class="ws-item"><div class="badge">1</div><div><h4>Forms &amp; Document Time Audit</h4><p>Which documents get produced most, how long each takes by hand, and who drafts them today</p></div></div>
+      <div class="ws-item"><div class="badge">2</div><div><h4>Automation Opportunity Ranking</h4><p>Every candidate document scored by volume × time × error risk</p></div></div>
+      <div class="ws-item"><div class="badge">3</div><div><h4>Template &amp; Interview-Flow Build</h4><p>Structured intake feeding clause-logic templates in your firm's own language</p></div></div>
+      <div class="ws-item"><div class="badge">4</div><div><h4>Tooling Recommendation</h4><p>A fit assessment matched to your size, budget, and existing systems</p></div></div>
+      <div class="ws-item"><div class="badge">5</div><div><h4>Attorney Review Workflow</h4><p>Every automated draft routes to a named attorney before a client sees it</p></div></div>
+      <div class="ws-item"><div class="badge">6</div><div><h4>Rollout &amp; Measurement</h4><p>A before/after time comparison on your own numbers, not industry averages</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="section-light" id="documents-verticals">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">Two practice areas, two very different document problems</h2>
+      <p class="section-sub">Document volume and complexity look different by practice area — these two show the range.</p>
+    </div>
+    <div class="fit-grid">
+      <div class="fit-card">
+        <h3>Real Estate Attorneys</h3>
+        <ul class="fit-list">
+          <li>Long, repetitive document sets within a single closing — purchase agreement, closing disclosure, deed, title documents, lien releases, 1099-S — all drawn from the same handful of facts</li>
+          <li>Hard, unmovable deadlines — a drafting bottleneck on one file can jam the whole closing calendar</li>
+          <li>High transaction volume means templated closing documents pay back fastest here</li>
+        </ul>
+      </div>
+      <div class="fit-card">
+        <h3>Trust &amp; Estate Attorneys</h3>
+        <ul class="fit-list">
+          <li>Deep document sets within a single engagement — will, revocable trust, financial power of attorney, healthcare directive, plus later funding documents</li>
+          <li>Sensitive intake — family structure, successor trustees, guardianship, asset inventory — captured once and reused everywhere</li>
+          <li>Consistency matters as much as speed — automated clause logic keeps a trust and its companion pour-over will aligned</li>
+        </ul>
+      </div>
+    </div>
+    <div class="fit-note">The same audit model extends to any practice area with high-repetition documents — family law, immigration, personal injury. Real estate and trust/estate are the clearest contrast: one shows document volume within a transaction, the other shows document depth within an engagement.</div>
+  </div>
+</section>
+
+<section class="section-navy" id="documents-governance">
+  <div class="wrap">
+    <div class="gov-grid">
+      <div>
+        <div class="eyebrow">Why This Isn't Just Software</div>
+        <h2 class="section-title">Attorney-reviewed, not attorney-replaced</h2>
+        <p class="section-sub">Automated first drafts are drafts, not filings. Every template is built to route through your attorneys, not around them.</p>
+        <a href="https://cal.com/cal-simplexvia/request-consult" target="_blank" rel="noopener" class="btn">Talk to Us About Fit</a>
+      </div>
+      <ul class="gov-list">
+        <li>Every automated first draft routes to a named attorney for review before it reaches a client or gets filed.</li>
+        <li>No template collects or stores client data outside your firm's existing confidentiality and security controls.</li>
+        <li>Clause language is approved by the responsible attorney before any template goes live.</li>
+        <li>Built to complement your existing practice management and document systems, not replace attorney judgment.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section-white" id="documents-compass">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow" style="color:var(--navy);">The ROI Compass</div>
+      <h2 class="section-title">Every recommendation moves one of three numbers</h2>
+      <p class="section-sub">The ROI Compass is how Simplex Via ranks every recommendation it makes, in any engagement. Applied to your firm's paperwork, the three numbers read like this. The Automation Opportunity Ranking names which number each document bears on, what it measures against today, and by what mechanism &mdash; so you can sequence the build against something other than a vendor's opinion.</p>
+    </div>
+    <div class="grid cols-3">
+      <div class="card">
+        <div class="lever-tag">Effectiveness</div>
+        <h3>It Makes You Money</h3>
+        <p>Freed drafting capacity becomes billable capacity &mdash; another closing, another estate plan, another client &mdash; in practices where drafting time, not demand, is the real ceiling. Measured against your current matter volume, not hours saved in the abstract.</p>
+        <div class="lever-example">
+          <p><strong>Real estate:</strong> A closing practice held back by drafting backlog can close more files the same month, same staff.</p>
+          <p><strong>Trust &amp; estate:</strong> A practice turning away consultations during peak season can convert more of them into signed engagements.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="lever-tag">Efficiency</div>
+        <h3>It Gives You Hours Back</h3>
+        <p>The same client and matter facts captured once instead of re-typed into every closing, trust, or estate document. This is the dominant number in a document automation engagement.</p>
+        <div class="lever-example">
+          <p><strong>Real estate:</strong> Property address, parties, price, and closing date captured once, reused across the purchase agreement, closing disclosure, and deed.</p>
+          <p><strong>Trust &amp; estate:</strong> Family structure, successor trustee, and guardian choices captured once, reused across the will, trust, POA, and healthcare directive.</p>
+        </div>
+      </div>
+      <div class="card">
+        <div class="lever-tag">Quality</div>
+        <h3>It Makes The Work Hold Up</h3>
+        <p>The same standard on your busiest closing week as your slowest, produced through a named attorney's review checkpoint before any draft reaches a client or gets filed.</p>
+        <div class="lever-example">
+          <p><strong>Real estate:</strong> The same review checkpoint on your busiest closing week as your slowest &mdash; before a deed gets recorded.</p>
+          <p><strong>Trust &amp; estate:</strong> A trust and its companion pour-over will that always reference the same fiduciary designations and dates.</p>
+        </div>
+      </div>
+    </div>
+    <p class="cmp-note" style="margin-top:32px;margin-bottom:0;">Every document in your Automation Opportunity Ranking carries the number it bears on, its baseline, and the mechanism behind it. Efficiency is measured directly on your own documents; converting freed time into more billable matters is confirmed with you, not assumed.</p>
+  </div>
+</section>
+
+<section class="section-light" id="documents-deliverables">
+  <div class="wrap">
+    <div class="section-head">
+      <h2 class="section-title">What you walk away with</h2>
+      <p class="section-sub">A prioritized roadmap plus the built templates for the first priority tier, delivered in Simplex Via's standard report format.</p>
+    </div>
+    <div class="del-grid">
+      <div class="del-item"><strong>Automation Roadmap</strong>Every candidate document ranked by expected time savings, sequenced by priority.</div>
+      <div class="del-item"><strong>Built Templates (Priority Tier)</strong>The first set of interview-flow templates, ready for staff to run.</div>
+      <div class="del-item"><strong>Time-Savings Report</strong>A before/after drafting-time comparison specific to your firm's own documents.</div>
+    </div>
+  </div>
+</section>
+
+<section id="documents-contact">
+  <div class="wrap">
+    <div class="contact-copy contact-centered">
+      <h2 class="section-title">Find out how many hours your team could get back</h2>
+      <p>Pick a time that works for you and we'll come prepared to talk through your highest-volume documents.</p>
+      <a href="https://cal.com/cal-simplexvia/request-consult" target="_blank" rel="noopener" class="btn">Request a Forms Audit</a>
+      <p class="disclaimer">This page is for general business inquiries only. Scheduling does not create an attorney-client relationship with Simplex Via, and please do not include confidential client or matter information.</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">
+      <img src="simplexvia-mark-navy.png" alt="Simplex Via mark">
+      <span class="tag">The Simple Path to AI &amp; Digital Success</span>
+    </div>
+    <div class="legal">This page describes a consulting and marketing service. It is not legal advice. Program outcomes depend on each firm's market, data, and implementation. No rankings, lead-volume, or revenue outcomes are guaranteed.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var h = document.querySelector('header.site-nav');
+  var t = document.querySelector('.nav-toggle');
+  if(!h || !t) return;
+  function close(){ h.classList.remove('open'); t.setAttribute('aria-expanded','false'); t.setAttribute('aria-label','Open menu'); }
+  t.addEventListener('click', function(){
+    var open = h.classList.toggle('open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+    t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  Array.prototype.forEach.call(h.querySelectorAll('nav a'), function(a){
+    a.addEventListener('click', close);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+})();
+</script>
+
+</body>
+</html>
