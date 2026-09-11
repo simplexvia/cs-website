@@ -1,0 +1,68 @@
+# cs-website — THIS REPOSITORY PUBLISHES.
+#
+# docs/ is served at https://simplexvia.com. More importantly, anything ever
+# committed stays readable in git history even after a later commit deletes it.
+# A file removed next week is still public. So the rule is not "clean it up
+# later" — it is "never let it in".
+#
+# The source of truth is ai-business/website/. docs/ is an rsync mirror of it
+# (deploy_website.sh). Nothing in docs/ is edited by hand.
+#
+# To publish something these rules block, override deliberately and knowingly:
+#     git add -f <file>
+
+# ---- Internal business material ---------------------------------------------
+# These follow the naming convention used in ai-business/. If one is ever copied
+# here by accident, git refuses it rather than quietly publishing the rate card.
+*_INTERNAL.*
+Pricing_*
+Negotiation_*
+Scoping_*
+*_Prompt.md
+CLAUDE.md
+
+# ---- Client material ---------------------------------------------------------
+clients/
+client_results/
+*_Audit.*
+*_Action_Plan*
+*HANDOVER*
+*HANDOFF*
+
+# ---- Working formats ---------------------------------------------------------
+# Spreadsheets, decks and documents are internal here without exception.
+# A genuine public download is the rare case — use git add -f for it.
+*.xlsx
+*.xls
+*.docx
+*.doc
+*.pptx
+*.ppt
+*.pdf
+*.csv
+
+# ---- Credentials -------------------------------------------------------------
+.env
+.env.*
+*.pem
+*.key
+*_token*
+*secret*
+credentials*
+
+# ---- Jekyll build output -----------------------------------------------------
+# docs/.nojekyll turns the build off, but these appear if it is ever run locally.
+_site/
+.jekyll-cache/
+.jekyll-metadata
+Gemfile.lock
+vendor/
+node_modules/
+
+# ---- OS and editor junk ------------------------------------------------------
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
