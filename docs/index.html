@@ -284,67 +284,163 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "@id": "https://simplexvia.com/#organization",
-  "name": "Simplex Via LLC",
-  "url": "https://simplexvia.com/",
-  "logo": "https://simplexvia.com/simplexvia-logo.png",
-  "image": "https://simplexvia.com/simplexvia-logo.png",
-  "slogan": "The Simple Path to AI & Digital Success",
-  "description": "Practical AI adoption and custom digital products for owner-operated businesses. Every recommendation is judged against the ROI Compass: does it make you money, give you hours back, or make customers happier.",
-  "areaServed": { "@type": "Country", "name": "United States" },
-  "hasOfferCatalog": [
+  "@graph": [
     {
-      "@type": "OfferCatalog",
-      "name": "The AI Offer Ladder",
-      "description": "The core engagement path. Three tiers, each designed to prove value before the client spends more.",
-      "itemListElement": [
-        { "@type": "Offer", "name": "Free AI Value Self-Assessment", "price": "0", "priceCurrency": "USD",
-          "url": "https://simplexvia.com/ai-results.html",
-          "description": "Thirty questions across six areas of the business, about five minutes, instant results and no call. Produces the AI Value Model: a level and score per area with the biggest, lowest-effort opportunities highlighted.",
-          "itemOffered": { "@type": "Service", "name": "AI Value Self-Assessment" } },
-        { "@type": "Offer", "name": "AI Action Plan",
-          "description": "A flat-fee deep dive. Structured intake, then a nine-part quantified report within 48 hours covering pain points, the ROI Compass opportunity map, tool stack and cost, a four-day quick-win plan, revenue opportunities and a dollar-quantified ROI, plus a live walkthrough.",
-          "itemOffered": { "@type": "Service", "name": "AI Action Plan" } },
-        { "@type": "Offer", "name": "AI Concierge",
-          "description": "A monthly retainer, done with the client rather than for them. Two 45-minute working sessions a month on an Audit, Optimize, Automate framework, with unlimited async support and a 12-business-hour reply SLA. Limited roster.",
-          "itemOffered": { "@type": "Service", "name": "AI Concierge" } }
+      "@type": "ProfessionalService",
+      "@id": "https://simplexvia.com/#organization",
+      "name": "Simplex Via LLC",
+      "url": "https://simplexvia.com/",
+      "logo": "https://simplexvia.com/simplexvia-logo.png",
+      "image": "https://simplexvia.com/simplexvia-logo.png",
+      "slogan": "The Simple Path to AI & Digital Success",
+      "description": "Practical AI adoption and custom digital products for owner-operated businesses. Every recommendation is judged against the ROI Compass: does it make you money, give you hours back, or make customers happier.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "United States"
+      },
+      "hasOfferCatalog": [
+        {
+          "@type": "OfferCatalog",
+          "name": "The AI Offer Ladder",
+          "description": "The core engagement path. Three tiers, each designed to prove value before the client spends more.",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Free AI Value Self-Assessment",
+              "price": "0",
+              "priceCurrency": "USD",
+              "url": "https://simplexvia.com/ai-results.html",
+              "description": "Thirty questions across six areas of the business, about five minutes, instant results and no call. Produces the AI Value Model: a level and score per area with the biggest, lowest-effort opportunities highlighted.",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Value Self-Assessment"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "AI Action Plan",
+              "description": "A flat-fee deep dive. Structured intake, then a nine-part quantified report within 48 hours covering pain points, the ROI Compass opportunity map, tool stack and cost, a four-day quick-win plan, revenue opportunities and a dollar-quantified ROI, plus a live walkthrough.",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Action Plan"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "AI Concierge",
+              "description": "A monthly retainer, done with the client rather than for them. Two 45-minute working sessions a month on an Audit, Optimize, Automate framework, with unlimited async support and a 12-business-hour reply SLA. Limited roster.",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Concierge"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "A la carte builds",
+          "description": "Standalone projects, scoped and quoted per project, or rolled into an AI Concierge retainer.",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "Process Optimization",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Process Optimization"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Automation Build",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Automation Build"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Knowledge System",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Knowledge System"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Speed-to-Lead Agent",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Speed-to-Lead Agent"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "High-End Website",
+              "url": "https://simplexvia.com/high-end-websites.html",
+              "description": "A custom-designed site for businesses whose product is a changing list of individually-different things. Every item gets its own page and web address, generated from a spreadsheet the owner controls, with structured data so search engines and AI assistants can read and cite it.",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "High-End Website Build",
+                "url": "https://simplexvia.com/high-end-websites.html"
+              }
+            }
+          ]
+        },
+        {
+          "@type": "OfferCatalog",
+          "name": "Industry engagements",
+          "description": "Vertical packages built on the same method, sold separately from the ladder.",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "name": "AI Search and Lead Recovery for law firms",
+              "url": "https://simplexvia.com/ai-search-lead-recovery.html",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "AI Search and Lead Recovery",
+                "url": "https://simplexvia.com/ai-search-lead-recovery.html"
+              }
+            },
+            {
+              "@type": "Offer",
+              "name": "Legal Document Automation",
+              "url": "https://simplexvia.com/legal-document-automation.html",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Legal Document Automation",
+                "url": "https://simplexvia.com/legal-document-automation.html"
+              }
+            }
+          ]
+        }
       ]
     },
     {
-      "@type": "OfferCatalog",
-      "name": "A la carte builds",
-      "description": "Standalone projects, scoped and quoted per project, or rolled into an AI Concierge retainer.",
-      "itemListElement": [
-        { "@type": "Offer", "name": "Process Optimization",
-          "itemOffered": { "@type": "Service", "name": "Process Optimization" } },
-        { "@type": "Offer", "name": "Automation Build",
-          "itemOffered": { "@type": "Service", "name": "Automation Build" } },
-        { "@type": "Offer", "name": "Knowledge System",
-          "itemOffered": { "@type": "Service", "name": "Knowledge System" } },
-        { "@type": "Offer", "name": "Speed-to-Lead Agent",
-          "itemOffered": { "@type": "Service", "name": "Speed-to-Lead Agent" } },
-        { "@type": "Offer", "name": "High-End Website",
-          "url": "https://simplexvia.com/high-end-websites.html",
-          "description": "A custom-designed site for businesses whose product is a changing list of individually-different things. Every item gets its own page and web address, generated from a spreadsheet the owner controls, with structured data so search engines and AI assistants can read and cite it.",
-          "itemOffered": { "@type": "Service", "name": "High-End Website Build",
-                           "url": "https://simplexvia.com/high-end-websites.html" } }
-      ]
+      "@type": "WebSite",
+      "@id": "https://simplexvia.com/#website",
+      "url": "https://simplexvia.com/",
+      "name": "Simplex Via",
+      "publisher": {
+        "@id": "https://simplexvia.com/#organization"
+      },
+      "inLanguage": "en-US"
     },
     {
-      "@type": "OfferCatalog",
-      "name": "Industry engagements",
-      "description": "Vertical packages built on the same method, sold separately from the ladder.",
-      "itemListElement": [
-        { "@type": "Offer", "name": "AI Search and Lead Recovery for law firms",
-          "url": "https://simplexvia.com/ai-search-lead-recovery.html",
-          "itemOffered": { "@type": "Service", "name": "AI Search and Lead Recovery",
-                           "url": "https://simplexvia.com/ai-search-lead-recovery.html" } },
-        { "@type": "Offer", "name": "Legal Document Automation",
-          "url": "https://simplexvia.com/legal-document-automation.html",
-          "itemOffered": { "@type": "Service", "name": "Legal Document Automation",
-                           "url": "https://simplexvia.com/legal-document-automation.html" } }
-      ]
+      "@type": "WebPage",
+      "@id": "https://simplexvia.com/#webpage",
+      "url": "https://simplexvia.com/",
+      "name": "Simplex Via — AI Advisory & Automation Services",
+      "description": "Find the one AI fix that pays for itself, then build it together. The AI Offer Ladder, a la carte builds, and industry engagements for owner-operated businesses.",
+      "isPartOf": {
+        "@id": "https://simplexvia.com/#website"
+      },
+      "publisher": {
+        "@id": "https://simplexvia.com/#organization"
+      },
+      "about": {
+        "@id": "https://simplexvia.com/#organization"
+      },
+      "inLanguage": "en-US"
     }
   ]
 }
