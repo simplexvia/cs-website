@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About — Simplex Via</title>
-<meta name="description" content="Simplex Via was founded by Steven Cotugno — over thirty years building software and two decades as an IBM managing consultant, helping companies across 25+ industries ship faster, work cleaner, and spend less. Now applied to AI for small business.">
+<meta name="description" content="Founded by Steven Cotugno — thirty years building software, two decades at IBM, most as a managing consultant, across 25+ industries. Now applied to AI for small business.">
 <link rel="canonical" href="https://simplexvia.com/about.html">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Simplex Via">
 <meta property="og:title" content="About — Simplex Via">
-<meta property="og:description" content="Founded by Steven Cotugno — thirty years building software, two decades as an IBM managing consultant across 25+ industries. Now applied to AI for small business.">
+<meta property="og:description" content="Founded by Steven Cotugno — thirty years building software, two decades at IBM, most as a managing consultant, across 25+ industries. Now applied to AI.">
 <meta property="og:url" content="https://simplexvia.com/about.html">
 <meta property="og:image" content="https://simplexvia.com/simplexvia-logo.png">
 <meta property="og:image:width" content="1050">
 <meta property="og:image:height" content="600">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="About — Simplex Via">
-<meta name="twitter:description" content="Founded by Steven Cotugno — thirty years building software, two decades as an IBM managing consultant across 25+ industries. Now applied to AI for small business.">
+<meta name="twitter:description" content="Founded by Steven Cotugno — thirty years building software, two decades at IBM, most as a managing consultant, across 25+ industries. Now applied to AI.">
 <meta name="twitter:image" content="https://simplexvia.com/simplexvia-logo.png">
 <style>
   :root{
@@ -127,6 +127,19 @@
   .about-wrap{max-width:760px; margin:0 auto;}
   .about-wrap .logo-mark{
     display:block; margin:0 auto 32px; height:90px; width:auto;
+  }
+  .about-wrap .byline{
+    display:grid; grid-template-columns:132px 1fr; gap:28px;
+    align-items:start; margin-bottom:20px;
+  }
+  .about-wrap .portrait{
+    width:132px; height:132px; border-radius:50%;
+    object-fit:cover; background:var(--white); margin:0;
+  }
+  .about-wrap .byline .lede{margin-bottom:0;}
+  @media (max-width:600px){
+    .about-wrap .byline{grid-template-columns:1fr; gap:16px; justify-items:start;}
+    .about-wrap .portrait{width:108px; height:108px;}
   }
   .about-wrap h2{color:var(--navy); font-size:24px; margin-bottom:16px;}
   .about-wrap p{font-size:16px; color:var(--gray); margin-bottom:20px;}
@@ -241,7 +254,7 @@
       "worksFor": {
         "@id": "https://simplexvia.com/#organization"
       },
-      "description": "Founder of Simplex Via LLC. Over thirty years building software and two decades as an IBM managing consultant helping organizations adopt new technology and get a real return on it. Most recently a principal technologist for cloud and AI platforms, co-leading an enterprise AI proof-of-concept spanning 11 use cases and more than 25 engineers, and personally delivering the architecture documentation, 247 automated tests, and AI-assisted triage guides. Work spanned more than 25 industries, and included training roughly 100 client technical professionals and consultants across the United States, Canada, the United Kingdom, Ireland and India.",
+      "description": "Founder of Simplex Via LLC. Over thirty years building software and two decades at IBM, most of them as a managing consultant, helping organizations adopt new technology and get a real return on it. Most recently a principal technologist for cloud and AI platforms at Wind River (Aptiv), co-leading an enterprise AI proof-of-concept spanning 11 use cases and more than 25 engineers, and personally delivering the architecture documentation, 247 automated tests, and AI-assisted triage guides. Work spanned more than 25 industries, and included training roughly 100 client technical professionals and consultants across the United States, Canada, the United Kingdom, Ireland and India.",
       "knowsAbout": [
         "Practical AI adoption for small business",
         "Enterprise AI proof-of-concept delivery",
@@ -279,14 +292,15 @@
       ],
       "sameAs": [
         "https://www.linkedin.com/in/stevencotugno/"
-      ]
+      ],
+      "image": "https://simplexvia.com/founder-photo.jpg"
     },
     {
       "@type": "AboutPage",
       "@id": "https://simplexvia.com/about.html#webpage",
       "url": "https://simplexvia.com/about.html",
       "name": "About Simplex Via",
-      "description": "Simplex Via was founded by Steven Cotugno - over thirty years building software and two decades as an IBM managing consultant, now applying the same method to small business with AI.",
+      "description": "Simplex Via was founded by Steven Cotugno - over thirty years building software and two decades at IBM, most of them as a managing consultant, now applying the same method to small business with AI.",
       "isPartOf": {
         "@id": "https://simplexvia.com/#website"
       },
@@ -357,9 +371,13 @@
   <div class="wrap about-wrap">
     <img class="logo-mark" src="simplexvia-mark-navy.png" alt="Simplex Via mark">
 
-    <p class="lede">Simplex Via was founded by <a class="inline-link" href="https://www.linkedin.com/in/stevencotugno/" target="_blank" rel="noopener">Steven Cotugno</a> — over thirty years building software, and two decades as an IBM managing consultant helping organizations adopt new technology and get a real return on it. Today that technology is AI. The job hasn't changed: it makes you money, gives you hours back, and makes customers happier.</p>
+    <div class="byline">
+      <img class="portrait" src="founder-photo.jpg" width="400" height="400"
+           alt="Steven Cotugno, founder of Simplex Via LLC">
+      <p class="lede">Simplex Via was founded by <a class="inline-link" href="https://www.linkedin.com/in/stevencotugno/" target="_blank" rel="noopener">Steven Cotugno</a> — over thirty years building software, and two decades at IBM, most of them as a managing consultant, helping organizations adopt new technology and get a real return on it. Today that technology is AI. The job hasn't changed: it makes you money, gives you hours back, and makes customers happier.</p>
+    </div>
 
-    <p>Most recently, as a principal technologist for cloud and AI platforms, I co-led an enterprise AI proof-of-concept spanning 11 use cases and more than 25 engineers — and personally delivered the output: architecture documentation, 247 automated tests, and AI-assisted triage guides that cut the hours engineers spent chasing blocking issues.</p>
+    <p>Most recently, as a principal technologist for cloud and AI platforms at Wind River (Aptiv), I co-led an enterprise AI proof-of-concept spanning 11 use cases and more than 25 engineers — and personally delivered the output: architecture documentation, 247 automated tests, and AI-assisted triage guides that cut the hours engineers spent chasing blocking issues.</p>
 
     <p>That's the same idea at a different scale. A small business doesn't need 247 tests. It needs the quote out today instead of Thursday, the same answer every time, and four hours a week back. Same method, same three outcomes — I call it the ROI Compass — just pointed at your business instead of a product line.</p>
 
