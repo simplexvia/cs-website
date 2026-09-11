@@ -6,12 +6,33 @@
 #   ai-input  = yes  — assistants may read and cite this site when answering.
 #                      This is the entire point. Simplex Via sells AI-findability;
 #                      opting out of it here would be self-defeating.
-#   ai-train  = no   — reading and citing is welcome; training on it is a separate
-#                      question and the answer is no.
+#   ai-train  = yes  — changed from "no" on 11 September 2026. Reasoning below,
+#                      because the reason is not obvious and the decision looks
+#                      wrong without it.
+#
+# Why ai-train=yes
+#
+#   1. It was unenforceable. Cloudflare blocks AI crawlers per BOT, not per
+#      PURPOSE, and its own dialog says so: "This option will block all Training
+#      crawlers, even those who use the same bot for Search." Googlebot, BingBot,
+#      ClaudeBot, GPTBot and Applebot are all mixed-purpose. Blocking training
+#      blocked them outright — Googlebot included. A stated preference the
+#      infrastructure cannot deliver is decoration, not policy.
+#
+#   2. It was the wrong trade anyway. Blocking training protects content that IS
+#      the product — a newspaper archive, a course library. This site is an
+#      advertisement. Being in the weights means a model knows Simplex Via exists
+#      without having to fetch anything, which is durable presence rather than
+#      per-query luck. There is no licensing revenue here to protect.
+#
+# So the file now matches what the edge actually enforces. If that ever stops
+# being true, fix the edge or fix the file — never leave them disagreeing, because
+# enforcement wins and the file becomes a story we tell ourselves.
+#
 # Reference: https://contentsignals.org · Cloudflare Content Signals Policy.
 
 User-Agent: *
-Content-Signal: search=yes, ai-input=yes, ai-train=no
+Content-Signal: search=yes, ai-input=yes, ai-train=yes
 Allow: /
 
 Sitemap: https://simplexvia.com/sitemap.xml
