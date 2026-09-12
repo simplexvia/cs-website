@@ -103,6 +103,44 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);backgroun
       "areaServed": {
         "@type": "Country",
         "name": "United States"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "@id": "https://simplexvia.com/#ladder",
+        "name": "The AI Offer Ladder",
+        "description": "The core engagement path. Three tiers, each designed to prove value before the client spends more: start free and only move up when the numbers justify it.",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Free AI Value Self-Assessment",
+            "price": "0",
+            "priceCurrency": "USD",
+            "url": "https://simplexvia.com/ai-results.html",
+            "itemOffered": {
+              "@id": "https://simplexvia.com/ai-results.html#service"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "AI Action Plan",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://simplexvia.com/#service-action-plan",
+              "name": "AI Action Plan",
+              "description": "A flat-fee deep dive and the next step after this assessment. A 30-minute structured intake, then a nine-part branded report within 48 hours covering pain points, the ROI Compass opportunity map, tool stack and cost, a four-day quick-win plan, where AI can grow revenue, and a dollar-quantified ROI, plus a live walkthrough."
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "AI Concierge",
+            "itemOffered": {
+              "@type": "Service",
+              "@id": "https://simplexvia.com/#service-concierge",
+              "name": "AI Concierge",
+              "description": "A monthly retainer, done with the client rather than for them. Two 45-minute live working sessions a month on an Audit, Optimize, Automate framework, unlimited async support with a 12-business-hour reply SLA, and every call documented. Deliberately limited to a small roster so delivery quality holds."
+            }
+          }
+        ]
       }
     },
     {
@@ -167,30 +205,12 @@ body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--dark);backgroun
           "@id": "https://simplexvia.com/#organization"
         }
       },
-      "isPartOf": {
-        "@type": "OfferCatalog",
-        "@id": "https://simplexvia.com/#ladder",
-        "name": "The AI Offer Ladder",
-        "description": "The core engagement path. Three tiers, each designed to prove value before the client spends more: start free and only move up when the numbers justify it."
-      },
       "isRelatedTo": [
         {
-          "@type": "Service",
-          "name": "AI Action Plan",
-          "position": 2,
-          "description": "Rung two of the AI Offer Ladder, and the next step after this assessment. A flat-fee deep dive: a 30-minute structured intake, then a nine-part branded report within 48 hours covering pain points, the ROI Compass opportunity map, tool stack and cost, a four-day quick-win plan, where AI can grow revenue, and a dollar-quantified ROI, plus a live walkthrough.",
-          "provider": {
-            "@id": "https://simplexvia.com/#organization"
-          }
+          "@id": "https://simplexvia.com/#service-action-plan"
         },
         {
-          "@type": "Service",
-          "name": "AI Concierge",
-          "position": 3,
-          "description": "Rung three of the AI Offer Ladder. A monthly retainer done with the client rather than for them: two 45-minute live working sessions a month on an Audit, Optimize, Automate framework, unlimited async support with a 12-business-hour reply SLA, and every call documented. Deliberately limited to a small roster so delivery quality holds.",
-          "provider": {
-            "@id": "https://simplexvia.com/#organization"
-          }
+          "@id": "https://simplexvia.com/#service-concierge"
         }
       ]
     },
