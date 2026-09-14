@@ -453,6 +453,9 @@
   footer img{height:24px;opacity:.85;}
   footer .tag{color:var(--near-white);opacity:.6;font-size:12px;}
   footer .legal{color:var(--near-white);opacity:.5;font-size:11.5px;max-width:520px;line-height:1.5;}
+  footer .nap{color:var(--near-white);opacity:.85;font-size:12.5px;margin:10px 0 6px;}
+  footer .nap a{color:inherit;text-decoration:none;}
+  footer .nap a:hover{text-decoration:underline;}
 
   @media (max-width: 860px){
     .grid, .grid.cols-3, .grid.cols-4, .grid.cols-5, .ws-grid, .timeline, .del-grid, .gov-grid, .fit-grid, .cmp-grid{grid-template-columns:1fr;}
@@ -480,9 +483,25 @@
   "@context": "https://schema.org",
   "@graph": [
     { "@type": "ProfessionalService", "@id": "https://simplexvia.com/#organization",
+      "telephone": "+1-480-415-4552",
+      "email": "info@simplexvia.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Phoenix", "addressRegion": "AZ", "addressCountry": "US" },
       "name": "Simplex Via LLC", "url": "https://simplexvia.com/",
       "logo": "https://simplexvia.com/simplexvia-logo-mark.png",
-      "areaServed": { "@type": "Country", "name": "United States" } },
+      "areaServed": [
+        { "@type": "City", "name": "Phoenix, AZ" },
+        { "@type": "City", "name": "Scottsdale, AZ" },
+        { "@type": "City", "name": "Chandler, AZ" },
+        { "@type": "City", "name": "Gilbert, AZ" },
+        { "@type": "City", "name": "Mesa, AZ" },
+        { "@type": "City", "name": "Tempe, AZ" },
+        { "@type": "City", "name": "Glendale, AZ" },
+        { "@type": "City", "name": "Peoria, AZ" },
+        { "@type": "City", "name": "Surprise, AZ" },
+        { "@type": "City", "name": "Goodyear, AZ" },
+        { "@type": "City", "name": "Avondale, AZ" },
+        { "@type": "City", "name": "Buckeye, AZ" }
+      ] },
     { "@type": "WebSite", "@id": "https://simplexvia.com/#website",
       "url": "https://simplexvia.com/", "name": "Simplex Via",
       "publisher": { "@id": "https://simplexvia.com/#organization" },
@@ -523,7 +542,7 @@
       <a href="ai-search-lead-recovery.html">AI Search &amp; Lead Recovery</a>
       <a href="legal-document-automation.html">Document Automation</a>
       <a href="about.html">About</a>
-      <a href="#contact">Contact</a>
+      <a href="contact.html">Contact</a>
     </nav>
     <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav-links">
       <span></span><span></span><span></span>
@@ -630,6 +649,7 @@
       <img src="simplexvia-mark-navy.png" alt="Simplex Via mark">
       <span class="tag">The Simple Path to AI &amp; Digital Success</span>
     </div>
+    <div class="nap">Simplex Via LLC &middot; Phoenix, AZ &middot; <a href="tel:+14804154552">(480) 415-4552</a> &middot; <a href="mailto:info@simplexvia.com">info@simplexvia.com</a></div>
     <div class="legal">This page describes a consulting and marketing service. It is not legal advice. Program outcomes depend on each firm's market, data, and implementation. No rankings, lead-volume, or revenue outcomes are guaranteed.</div>
   </div>
 </footer>
