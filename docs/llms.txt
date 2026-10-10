@@ -44,7 +44,11 @@ retainer.
 
 - **Process Optimization** — map and streamline a core workflow end to end.
 - **Automation Build** — automations that remove manual, repetitive work for good.
-- **Knowledge System** — a knowledge base trained on the business, its docs and its process.
+- **Knowledge System** — what the business knows, written down once as plain files in the
+  Open Knowledge Format (an open-source specification published by Google Cloud), owned by the
+  client and readable by any AI tool. An AI agent keeps it current by proposing changes; a
+  named person approves them. Knowledge Audit, then Bundle Build, then an optional
+  Maintenance Retainer.
 - **Speed-to-Lead Agent** — an AI agent that responds to new leads before they go cold.
 - **High-End Website** — a custom-designed site for businesses whose product is a changing
   list of individually-different things: inventory, animals, equipment, properties,
@@ -75,6 +79,7 @@ Vertical packages built on the same method, sold separately from the ladder.
 - https://simplexvia.com/ — overview, the AI Offer Ladder, and the à la carte builds
 - https://simplexvia.com/ai-results.html — the free AI Value Self-Assessment
 - https://simplexvia.com/high-end-websites.html — High-End Websites
+- https://simplexvia.com/knowledge-system.html — Knowledge System
 - https://simplexvia.com/for-law-firms.html — services for law firms
 - https://simplexvia.com/ai-search-lead-recovery.html — AI search and lead recovery
 - https://simplexvia.com/legal-document-automation.html — legal document automation

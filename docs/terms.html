@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms of Service — Simplex Via</title>
+<meta name="description" content="The terms that govern use of simplexvia.com and services purchased from Simplex Via LLC, including payment, refunds and limits of liability.">
+<link rel="canonical" href="https://simplexvia.com/terms.html">
+<meta name="robots" content="index, follow">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Simplex Via">
+<meta property="og:title" content="Terms of Service — Simplex Via">
+<meta property="og:description" content="The terms that govern use of simplexvia.com and services purchased from Simplex Via LLC, including payment, refunds and limits of liability.">
+<meta property="og:url" content="https://simplexvia.com/terms.html">
+<meta property="og:image" content="https://simplexvia.com/simplexvia-card-v2.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Terms of Service — Simplex Via">
+<meta name="twitter:description" content="The terms that govern use of simplexvia.com and services purchased from Simplex Via LLC, including payment, refunds and limits of liability.">
+<meta name="twitter:image" content="https://simplexvia.com/simplexvia-card-v2.png">
+<style>
+  :root{
+    --navy:#2F3B69;
+    --warm:#E3DDDC;
+    --nearwhite:#FAFAFF;
+    --white:#FFFFFF;
+    --gray:#333333;
+    --gold:#C8A96E;
+    --teal:#2C7873;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:var(--gray);
+    background:var(--white);
+    line-height:1.55;
+  }
+  a{color:inherit;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1100px; margin:0 auto; padding:0 24px;}
+
+  /* ---- Header ---- */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:var(--navy);
+    border-bottom:1px solid rgba(255,255,255,0.08);
+  }
+  header .wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding-top:14px; padding-bottom:14px;
+  }
+  .brand{display:flex; align-items:center; gap:12px;}
+  .brand img{height:38px; width:auto;}
+  .brand span{color:var(--nearwhite); font-weight:bold; font-size:18px; letter-spacing:1px;}
+  nav ul{list-style:none; display:flex; gap:28px;}
+  nav a{color:var(--nearwhite); text-decoration:none; font-size:14px; opacity:0.9;}
+  nav a:hover{opacity:1; color:var(--gold);}
+  nav a.active{opacity:1; color:var(--gold);}
+  .nav-cta{
+    background:var(--gold); color:var(--navy)!important; font-weight:bold;
+    padding:9px 18px; border-radius:4px; font-size:14px; text-decoration:none;
+    opacity:1!important;
+  }
+  .nav-toggle{
+    display:none; background:none; border:1px solid rgba(255,255,255,0.35);
+    border-radius:4px; padding:8px 9px; cursor:pointer;
+  }
+  .nav-toggle span{
+    display:block; width:20px; height:2px; background:var(--nearwhite);
+    border-radius:2px; margin:4px 0;
+  }
+  @media (max-width:760px){
+    header .wrap{gap:10px;}
+    .brand img{height:32px;}
+    .brand span{font-size:15px; letter-spacing:0.5px;}
+    .nav-cta{padding:8px 12px; font-size:12px; white-space:nowrap;}
+    .nav-toggle{display:block;}
+    nav{
+      position:absolute; top:100%; left:0; right:0; background:var(--navy);
+      border-top:1px solid rgba(255,255,255,0.12);
+      max-height:0; overflow:hidden; transition:max-height .25s ease;
+    }
+    header.open nav{max-height:360px;}
+    nav ul{display:block; padding:4px 24px 12px;}
+    nav ul li{border-bottom:1px solid rgba(255,255,255,0.08);}
+    nav ul li:last-child{border-bottom:none;}
+    nav a{display:block; padding:14px 0; font-size:15px;}
+  }
+
+  .btn{
+    display:inline-block; padding:14px 30px; border-radius:4px; font-weight:bold;
+    text-decoration:none; font-size:15px; cursor:pointer; border:none;
+  }
+  .btn-gold{background:var(--gold); color:var(--navy);}
+  .btn-gold:hover{background:#d8bd8c;}
+  .btn-outline{
+    background:transparent; color:var(--navy); border:1px solid var(--navy);
+    margin-left:14px;
+  }
+  .btn-outline:hover{border-color:var(--teal); color:var(--teal);}
+
+  /* ---- Page hero ---- */
+  .page-hero{
+    background:var(--navy); color:var(--nearwhite);
+    padding:64px 0 56px; text-align:center;
+    position:relative; overflow:hidden;
+  }
+  .page-hero-watermark{
+    position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);
+    width:700px; max-width:140%; opacity:0.07; pointer-events:none;
+  }
+  .page-hero .wrap{position:relative; z-index:1;}
+  .page-hero .eyebrow{
+    color:var(--gold); letter-spacing:2px; font-size:13px; font-weight:bold;
+    text-transform:uppercase; margin-bottom:16px;
+  }
+  .page-hero h1{font-size:34px; font-weight:bold;}
+  @media (max-width:760px){
+    .page-hero h1{font-size:25px;}
+    .page-hero h1 br{display:none;}
+  }
+
+  section{padding:64px 0;}
+
+  /* ---- About content ---- */
+  .about-wrap{max-width:760px; margin:0 auto;}
+  .about-wrap .logo-mark{
+    display:block; margin:0 auto 32px; height:90px; width:auto;
+  }
+  .about-wrap .byline{
+    display:grid; grid-template-columns:132px 1fr; gap:28px;
+    align-items:start; margin-bottom:20px;
+  }
+  .about-wrap .portrait{
+    width:132px; height:132px; border-radius:50%;
+    object-fit:cover; background:var(--white); margin:0;
+  }
+  .about-wrap .byline .lede{margin-bottom:0;}
+  @media (max-width:600px){
+    .about-wrap .byline{grid-template-columns:1fr; gap:16px; justify-items:start;}
+    .about-wrap .portrait{width:108px; height:108px;}
+  }
+  .about-wrap h2{color:var(--navy); font-size:24px; margin-bottom:16px;}
+  .about-wrap p{font-size:16px; color:var(--gray); margin-bottom:20px;}
+  .about-wrap a.inline-link{color:var(--navy); text-decoration:underline; text-underline-offset:3px;}
+  .about-wrap a.inline-link:hover{color:var(--teal);}
+  .li-link{
+    display:inline-flex; align-items:center; gap:8px; margin-top:18px;
+    color:var(--navy); text-decoration:none; font-size:14px; font-weight:bold;
+  }
+  .li-link:hover{color:var(--teal);}
+  .li-link svg{width:18px; height:18px; fill:currentColor;}
+
+  .about-wrap .lede{
+    font-size:19px; color:var(--navy); font-weight:bold; margin-bottom:28px;
+    text-align:center;
+  }
+
+  .about-wrap .framework-kicker{
+    text-align:center; color:var(--teal); font-weight:bold; font-size:13px; letter-spacing:1.5px;
+    text-transform:uppercase; margin-top:8px;
+  }
+
+  .pillars{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:22px; margin-top:20px;
+  }
+  @media (max-width:760px){ .pillars{grid-template-columns:1fr;} }
+  .pillar{
+    background:var(--warm); border-radius:8px; padding:24px 22px; text-align:center;
+  }
+  .pillar h4{color:var(--navy); font-size:15px; margin-bottom:10px;}
+  .pillar p{font-size:13px; color:#555; margin-bottom:0;}
+
+  .industries{margin:36px 0 32px;}
+  .industries .ind-lead{font-size:15px; color:#555; margin-bottom:14px;}
+  .ind-tags{display:flex; flex-wrap:wrap; gap:8px;}
+  .ind-tag{
+    background:var(--warm); color:var(--navy); font-size:13px; font-weight:bold;
+    padding:6px 13px; border-radius:4px; white-space:nowrap;
+  }
+
+  .li-wrap{text-align:center; margin-top:8px;}
+
+  .tie-grid{
+    display:grid; grid-template-columns:repeat(3,1fr); gap:20px;
+    margin:30px 0 36px; text-align:left;
+  }
+  @media (max-width:760px){ .tie-grid{grid-template-columns:1fr;} }
+  .tie-card{background:var(--white); border-radius:8px; padding:24px 22px;}
+  .tie-card .tie-num{
+    display:block; color:var(--gold); font-weight:bold; font-size:22px;
+    line-height:1; margin-bottom:10px;
+  }
+  .tie-card h4{color:var(--navy); font-size:15px; margin-bottom:8px;}
+  .tie-card p{font-size:13.5px; color:#555; margin-bottom:0;}
+
+  .about-cta{background:var(--warm); text-align:center;}
+  .about-cta h2{color:var(--navy); font-size:24px; margin-bottom:12px;}
+  .about-cta p{color:#555; margin-bottom:24px; font-size:15px;}
+
+  /* ---- Footer ---- */
+  footer{background:var(--navy); color:rgba(255,255,255,0.65); padding:30px 0; text-align:center; font-size:13px;}
+  footer strong{color:var(--nearwhite);}
+  footer .tagline{color:var(--gold); font-style:italic; font-size:12px; margin-top:6px;}
+  footer .social{margin-top:14px;}
+  footer .social a{
+    display:inline-flex; align-items:center; gap:6px;
+    color:rgba(255,255,255,0.65); text-decoration:none; font-size:13px;
+  }
+  footer .social a:hover{color:var(--gold);}
+  footer .social svg{width:16px; height:16px; fill:currentColor;}
+</style>
+<style>
+  .legal-wrap{max-width:760px; margin:0 auto;}
+  .legal-wrap .updated{
+    color:#777; font-size:13px; text-transform:uppercase; letter-spacing:1px;
+    margin-bottom:28px; padding-bottom:18px; border-bottom:1px solid #e5e5e5;
+  }
+  .legal-wrap h2{
+    color:var(--navy); font-size:20px; margin:38px 0 12px;
+    padding-top:4px;
+  }
+  .legal-wrap h2:first-of-type{margin-top:0;}
+  .legal-wrap h3{color:var(--navy); font-size:16px; margin:24px 0 8px;}
+  .legal-wrap p{font-size:15.5px; color:var(--gray); margin-bottom:16px;}
+  .legal-wrap ul{margin:0 0 18px 22px;}
+  .legal-wrap li{font-size:15.5px; color:var(--gray); margin-bottom:9px;}
+  .legal-wrap a{color:var(--navy); text-decoration:underline; text-underline-offset:3px;}
+  .legal-wrap a:hover{color:var(--teal);}
+  .legal-wrap .callout{
+    background:var(--warm); border-left:4px solid var(--gold);
+    border-radius:0 6px 6px 0; padding:20px 22px; margin:0 0 30px;
+  }
+  .legal-wrap .callout p{margin-bottom:0; font-size:15.5px;}
+  .legal-wrap .callout p + p{margin-top:12px;}
+  .legal-wrap table{
+    width:100%; border-collapse:collapse; margin:0 0 20px; font-size:14.5px;
+  }
+  .legal-wrap th{
+    text-align:left; color:var(--navy); font-size:13px; text-transform:uppercase;
+    letter-spacing:0.5px; padding:10px 12px; border-bottom:2px solid var(--navy);
+  }
+  .legal-wrap td{padding:11px 12px; border-bottom:1px solid #e8e8e8; vertical-align:top;}
+  .legal-wrap tr:last-child td{border-bottom:none;}
+  @media (max-width:600px){
+    .legal-wrap table, .legal-wrap thead, .legal-wrap tbody,
+    .legal-wrap th, .legal-wrap td, .legal-wrap tr{display:block;}
+    .legal-wrap thead{display:none;}
+    .legal-wrap tr{border-bottom:1px solid #e8e8e8; padding:8px 0;}
+    .legal-wrap td{border-bottom:none; padding:4px 0;}
+    .legal-wrap td:first-child{font-weight:bold; color:var(--navy);}
+  }
+  .legal-wrap .lede{
+    font-size:18px; color:var(--navy); font-weight:bold; margin-bottom:26px;
+  }
+</style>
+<link rel="icon" href="simplexvia-mark-navy.png">
+<meta name="theme-color" content="#2F3B69">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://simplexvia.com/terms.html#webpage",
+      "url": "https://simplexvia.com/terms.html",
+      "name": "Terms of Service — Simplex Via",
+      "description": "The terms that govern use of simplexvia.com and services purchased from Simplex Via LLC, including payment, refunds and limits of liability.",
+      "isPartOf": { "@id": "https://simplexvia.com/#website" },
+      "about": { "@id": "https://simplexvia.com/#organization" },
+      "datePublished": "2026-09-16",
+      "dateModified": "2026-10-02",
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://simplexvia.com/#organization",
+      "name": "Simplex Via LLC",
+      "url": "https://simplexvia.com/",
+      "logo": "https://simplexvia.com/simplexvia-logo-mark.png",
+      "image": "https://simplexvia.com/simplexvia-card-v2.png",
+      "slogan": "The Simple Path to AI & Digital Success",
+      "description": "Practical AI adoption and custom digital products for owner-operated businesses.",
+      "telephone": "+1-480-415-4552",
+      "email": "info@simplexvia.com",
+      "address": { "@type": "PostalAddress", "addressLocality": "Phoenix", "addressRegion": "AZ", "addressCountry": "US" },
+      "sameAs": [
+        "https://www.linkedin.com/company/simplexvia/",
+        "https://www.bizapedia.com/az/simplex-via-llc.html"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://simplexvia.com/#website",
+      "url": "https://simplexvia.com/",
+      "name": "Simplex Via",
+      "publisher": { "@id": "https://simplexvia.com/#organization" },
+      "inLanguage": "en-US"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <a href="index.html" style="display:flex; align-items:center; gap:12px; text-decoration:none;">
+        <img src="simplexvia-mark-tint.png" alt="Simplex Via logo">
+        <span>SIMPLEX VIA</span>
+      </a>
+    </div>
+    <nav id="site-nav">
+      <ul>
+        <li><a href="index.html#ladder">Services</a></li>
+        <li><a href="index.html#process">How It Works</a></li>
+        <li><a href="for-law-firms.html">For Law Firms</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" href="ai-results.html">Take Free Assessment</a>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section class="page-hero">
+  <img class="page-hero-watermark" src="simplexvia-mark-tint.png" alt="">
+  <div class="wrap">
+    <div class="eyebrow">Simplex Via LLC</div>
+    <h1>Terms of Service</h1>
+  </div>
+</section>
+
+<section>
+  <div class="wrap legal-wrap">
+    <p class="updated">Effective 2 October 2026</p>
+
+    <div class="callout">
+      <p><strong>What this is.</strong> These terms govern this website and anything bought
+      through it. Where you and Simplex Via have signed a proposal, statement of work or
+      engagement agreement, that document governs the work and these terms fill the gaps.</p>
+    </div>
+
+    <h2>1. Who you are dealing with</h2>
+
+    <p>Simplex Via LLC is an Arizona limited liability company based in Phoenix, Arizona. In
+    these terms, &ldquo;we&rdquo; and &ldquo;us&rdquo; mean Simplex Via LLC, and
+    &ldquo;you&rdquo; means the person or business using this site or buying from us.</p>
+
+    <h2>2. Using this site</h2>
+
+    <p>Read it, share it, link to it, quote it with attribution. What you may not do is copy it
+    wholesale, scrape it for a competing service, or republish substantial parts of it as your
+    own.</p>
+
+    <p>The text, page designs, graphics, the <strong>ROI Compass</strong> name, and the
+    <strong>AI Value Self-Assessment</strong> &mdash; its questions, their wording, the choice of
+    what to ask and the way the answers are scored &mdash; belong to Simplex Via LLC.</p>
+
+    <p>Underlying ideas do not, and we do not claim them. Business methods and ways of organising
+    a service are not anyone's property, ours included; some of what is described here is common
+    practice in this field, or adapted from work others have shared openly. What is ours is the
+    particular expression of it on this page &mdash; and the self-assessment, which is ours
+    outright.</p>
+
+    <h2>3. The free self-assessment</h2>
+
+    <p>The AI Value Self-Assessment produces a score from the answers you give it. It is an
+    informational tool, not a professional opinion, an audit or a valuation. It cannot see your
+    business, it takes your answers at face value, and it guarantees nothing. Treat the output
+    as a starting point for a conversation, which is what it is.</p>
+
+    <h2>4. Paid services</h2>
+
+    <p>What we will do, what it costs and when it is due are set out in a written proposal, a
+    statement of work, or on the checkout page for the item you are buying. Nothing on this site
+    is an offer capable of acceptance until we have both agreed the scope in writing.</p>
+
+    <p>Payments are processed by Stripe. Card details go to Stripe, not to us. Prices are in US
+    dollars. Where sales tax applies it is added at checkout or on the invoice.</p>
+
+    <h2>5. Workshops and seats</h2>
+
+    <ul>
+      <li>A seat is reserved when payment clears, not when a form is submitted.</li>
+      <li>Capacity is limited and stated at the point of sale. When the seats are gone, the
+      registration closes.</li>
+      <li>If we cancel or reschedule a session, you choose: a full refund, or a seat at the new
+      date.</li>
+    </ul>
+
+    <h2>6. Refunds</h2>
+
+    <h3>Workshop seats</h3>
+
+    <p>A seat is a reserved place in a session with limited capacity, so a late cancellation
+    cannot usually be resold. The policy below is built so that your money is never simply
+    kept. Outside the window it comes back; inside it, it moves.</p>
+
+    <ul>
+      <li><strong>Seven or more days before the session.</strong> Full refund, no reason
+      required.</li>
+      <li><strong>Inside seven days.</strong> The fee is not returned in cash, but it is not
+      lost either. Send a colleague in your place, or apply the full amount to any later
+      session &mdash; your choice. Tell us before the session begins.</li>
+      <li><strong>Failure to appear without prior notice.</strong> The fee is held as a credit
+      toward a later session, good for twelve months. Ask us at any time and we will tell you
+      what credit you hold.</li>
+      <li><strong>If Simplex Via cancels or reschedules.</strong> Full refund, or a seat at the
+      new date &mdash; your choice.</li>
+    </ul>
+
+    <h3>Advisory and implementation work</h3>
+
+    <ul>
+      <li>Before work begins on a fixed-fee deliverable, a request to cancel is refunded in
+      full.</li>
+      <li>Once work has begun, the unearned portion is refunded and the work completed to that
+      point is invoiced.</li>
+      <li>Where a signed engagement agreement sets different terms, that agreement wins.</li>
+    </ul>
+
+    <p>Refunds are returned to the original payment method and typically appear within five to
+    ten business days, depending on your bank.</p>
+
+    <h2>7. What is and is not promised</h2>
+
+    <p>We promise to do the work competently, to tell you the truth about what we find, and to
+    say so when the honest answer is that an AI change is not worth making in your business.
+    That is the whole of what is promised.</p>
+
+    <p>Nothing else is a promise. Where this site, a proposal or a conversation describes a
+    result &mdash; revenue gained, hours returned, inquiries recovered, visibility improved
+    &mdash; read it as what past results indicate, or what can be reasonably anticipated in
+    comparable circumstances. It is not a commitment, a projection or a guarantee, and it is
+    not a representation that your business will see the same thing.</p>
+
+    <p>Outcomes depend on your market, your data, your team and your follow-through. In the
+    case of AI search visibility they also depend on systems run by Google, OpenAI, Anthropic
+    and others that nobody outside those companies controls and that change without notice.
+    Any figure quoted from past work describes that engagement and nothing else.</p>
+
+    <h2>8. AI output and your own judgement</h2>
+
+    <p>Our work involves AI systems, and AI systems get things wrong. Deliverables, scores,
+    drafts and recommendations are professional input for your decision, not the decision
+    itself. Review anything consequential before you act on it, and take legal, tax, accounting
+    or regulatory advice from the licensed professional whose job that is. Nothing we produce is
+    legal, tax, financial or investment advice.</p>
+
+    <h2>9. Your responsibilities</h2>
+
+    <ul>
+      <li>Give us accurate information. The quality of the answer depends on it.</li>
+      <li>Make sure you have the right to share any data, documents or system access you hand
+      over, and that doing so does not breach a duty you owe someone else.</li>
+      <li>Where your industry is regulated &mdash; law, healthcare, finance &mdash; you remain
+      responsible for compliance in your own practice. Tell us the constraints and they will be
+      designed around.</li>
+    </ul>
+
+    <h2>10. Confidentiality</h2>
+
+    <p>What you tell us in the course of an engagement stays confidential, and what we show you
+    of our methods, pricing and templates stays confidential too. How your information is
+    handled in practice is set out in the <a href="privacy.html">Privacy Policy</a>.</p>
+
+    <h2>11. Who owns what</h2>
+
+    <p>When a deliverable is paid for in full, it is yours: the action plan, the documents, the
+    configurations and the custom work built for your business.</p>
+
+    <p>What we keep is <strong>all intellectual knowledge relating to the development of that
+    deliverable</strong>, together with everything we brought to the job or would bring to the
+    next one: the methods, frameworks, processes, techniques, templates, assessment instruments,
+    prompts, tooling, source materials and general know-how we work with, and any skill,
+    experience or understanding gained in doing your work and retained in the unaided memory of
+    the people who did it. We may use all of it for any client, at any time. This is a statement
+    of what we are free to reuse, not a claim to own every method we apply &mdash; see
+    section 2.</p>
+
+    <p>That retention is subject to section 10 and does not cut into it. It is not permission to
+    disclose your confidential information, to reuse material that identifies you, or to name you
+    as the source of anything. You are buying the deliverable. You are not buying the toolbox
+    that made it.</p>
+
+    <h2>12. Limits of liability</h2>
+
+    <p>This section limits what Simplex Via LLC can be made to pay if something goes wrong.
+    Read it before you buy.</p>
+
+    <div class="callout">
+      <p><strong>SIMPLEX VIA LLC IS NOT LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL,
+      EXEMPLARY OR PUNITIVE DAMAGES OF ANY KIND. LOST PROFITS, LOST REVENUE, LOST BUSINESS, LOST
+      OPPORTUNITIES, LOST GOODWILL, AND LOST OR CORRUPTED DATA ARE EXPRESSLY EXCLUDED, AS IS
+      BUSINESS INTERRUPTION &mdash; WHETHER OR NOT THOSE LOSSES WERE FORESEEABLE, AND WHETHER OR
+      NOT WE WERE TOLD THEY WERE POSSIBLE.</strong></p>
+      <p><strong>FOR EVERY OTHER CLAIM, OUR TOTAL LIABILITY IS CAPPED AT THE TOTAL FEES YOU
+      ACTUALLY PAID US IN THE TWELVE MONTHS BEFORE THE EVENT THE CLAIM ARISES FROM. IF YOU PAID
+      US NOTHING IN THAT PERIOD &mdash; WHICH INCLUDES USING THIS SITE AND THE FREE
+      SELF-ASSESSMENT &mdash; OUR TOTAL LIABILITY IS ZERO.</strong></p>
+    </div>
+
+    <p>To be specific about what that covers: it applies to every theory of liability, whether
+    contract, warranty, negligence, strict liability, statute or anything else; it applies to all
+    claims added together rather than to each claim separately; and it applies to Simplex Via LLC
+    together with its members, managers, employees, contractors and agents, each of whom may rely
+    on this section.</p>
+
+    <p>Nothing here limits liability for fraud, intentional misconduct or gross negligence, or
+    waives any right that cannot lawfully be waived. If a court finds any limit above
+    unenforceable, that limit is reduced to what the law allows and the rest stand.</p>
+
+    <p>This site and the free self-assessment are provided as they are, without warranty of any
+    kind, express or implied, including any implied warranty of merchantability or fitness for a
+    particular purpose.</p>
+
+    <h2>13. If something goes wrong</h2>
+
+    <p>Tell us first. Write to <a href="mailto:info@simplexvia.com">info@simplexvia.com</a> and
+    describe the problem, and we will try to resolve it directly within thirty days. Most things
+    end there.</p>
+
+    <p>These terms are governed by the laws of the State of Arizona, without regard to its
+    conflict-of-laws rules. Any dispute that cannot be resolved between us belongs in the state
+    or federal courts located in Maricopa County, Arizona, and both of us consent to their
+    jurisdiction.</p>
+
+    <h2>14. The usual housekeeping</h2>
+
+    <ul>
+      <li>If any part of these terms is found unenforceable, the rest stays in force.</li>
+      <li>Not enforcing something once does not waive the right to enforce it later.</li>
+      <li>You may not assign an engagement to someone else without our written agreement.</li>
+      <li>These terms, plus any signed proposal or statement of work, are the entire agreement
+      between us on their subject.</li>
+    </ul>
+
+    <h2>15. Changes</h2>
+
+    <p>These terms may change. The effective date at the top changes with them, and the version
+    in force when you bought something is the version that governs that purchase.</p>
+
+    <h2>16. Contact</h2>
+
+    <p><strong>Simplex Via LLC</strong><br>
+    Phoenix, Arizona, United States<br>
+    <a href="mailto:info@simplexvia.com">info@simplexvia.com</a> &middot;
+    <a href="tel:+14804154552">(480) 415-4552</a></p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <strong>Simplex Via LLC</strong> &mdash; AI Advisory &amp; Automation Services<br>
+    Phoenix, AZ &middot; <a href="tel:+14804154552">(480) 415-4552</a> &middot; <a href="mailto:info@simplexvia.com">info@simplexvia.com</a>
+    <div class="tagline">The Simple Path to AI &amp; Digital Success</div>
+    <div class="legal-links" style="margin-top:12px; font-size:12px;">
+      <a href="privacy.html">Privacy Policy</a> &middot; <a href="terms.html">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var h = document.querySelector('header');
+  var t = document.querySelector('.nav-toggle');
+  if(!h || !t) return;
+  function close(){ h.classList.remove('open'); t.setAttribute('aria-expanded','false'); t.setAttribute('aria-label','Open menu'); }
+  t.addEventListener('click', function(){
+    var open = h.classList.toggle('open');
+    t.setAttribute('aria-expanded', open ? 'true' : 'false');
+    t.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  Array.prototype.forEach.call(h.querySelectorAll('nav a'), function(a){
+    a.addEventListener('click', close);
+  });
+  document.addEventListener('keydown', function(e){ if(e.key === 'Escape') close(); });
+})();
+</script>
+
+</body>
+</html>
