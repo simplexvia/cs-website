@@ -43,7 +43,7 @@ Scoped and quoted per project. Delivered as one-off builds, or rolled into an AI
 retainer.
 
 - **Process Optimization** — map and streamline a core workflow end to end.
-- **Automation Build** — automations that remove manual, repetitive work for good.
+- **Workflow Fix** — removes one manual, repetitive job for good, priced against the hours it gives back.
 - **Knowledge System** — what the business knows, written down once as plain files in the
   Open Knowledge Format (an open-source specification published by Google Cloud), owned by the
   client and readable by any AI tool. An AI agent keeps it current by proposing changes; a
